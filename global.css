@@ -1,0 +1,916 @@
+/* =========================================================
+   WINDOW CLEANING SERVICE
+   GLOBAL CSS
+   Fresh Glass Design System
+   ========================================================= */
+
+
+/* =========================================================
+   1. ROOT VARIABLES
+   ========================================================= */
+
+:root {
+
+    /* Brand Colors */
+    --primary-color: #1677B8;
+    --secondary-color: #67C7E8;
+
+    /* Background Colors */
+    --bg-color: #F7FBFD;
+    --card-color: #FFFFFF;
+    --surface-color: #FFFFFF;
+
+    /* Text Colors */
+    --text-color: #172B3A;
+    --text-light: #6B7C89;
+    --white-color: #FFFFFF;
+
+    /* Border */
+    --border-color: #DCEEF5;
+
+    /* Status Colors */
+    --success-color: #22A06B;
+    --warning-color: #E9A23B;
+    --danger-color: #D64545;
+
+    /* Shadows */
+    --shadow-sm: 0 4px 12px rgba(23, 43, 58, 0.08);
+    --shadow-md: 0 8px 24px rgba(23, 43, 58, 0.10);
+    --shadow-lg: 0 15px 35px rgba(23, 43, 58, 0.14);
+
+    /* Border Radius */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+
+    /* Container */
+    --container-width: 1200px;
+
+    /* Section Spacing */
+    --section-padding: 80px;
+
+    /* Transition */
+    --transition: 0.3s ease;
+
+    /* Header */
+    --header-height: 80px;
+}
+
+
+/* =========================================================
+   2. DARK MODE
+   ========================================================= */
+
+html.dark-mode {
+
+    --bg-color: #0F1A21;
+    --card-color: #172832;
+    --surface-color: #1C303B;
+
+    --text-color: #F4FAFC;
+    --text-light: #B5C7D0;
+
+    --white-color: #FFFFFF;
+
+    --border-color: #2D4653;
+
+    --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.20);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.25);
+    --shadow-lg: 0 15px 35px rgba(0, 0, 0, 0.30);
+}
+
+/* =========================================================
+   3. GLOBAL RESET
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Poppins", Arial, sans-serif;
+
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+    line-height: 1.6;
+
+    transition:
+        background-color var(--transition),
+        color var(--transition);
+}
+
+
+/* =========================================================
+   4. BASIC ELEMENTS
+   ========================================================= */
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+
+/* =========================================================
+   5. CONTAINER
+   ========================================================= */
+
+.container {
+    width: 90%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   6. COMMON SECTION
+   ========================================================= */
+
+section {
+    width: 100%;
+    padding: var(--section-padding) 0;
+}
+
+
+/* =========================================================
+   7. SECTION HEADING
+   ========================================================= */
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-heading h2 {
+    margin-bottom: 15px;
+
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 700;
+
+    color: var(--text-color);
+}
+
+.section-heading p {
+    max-width: 650px;
+    margin: 0 auto;
+
+    font-size: 16px;
+    color: var(--text-light);
+}
+
+
+/* =========================================================
+   8. HEADINGS
+   ========================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    color: var(--text-color);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 52px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+h6 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+p {
+    margin: 0;
+    color: var(--text-light);
+}
+
+
+/* =========================================================
+   9. COMMON BUTTON SYSTEM
+   ========================================================= */
+
+.btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 160px;
+    height: 50px;
+
+    padding: 0 24px;
+
+    border-radius: var(--radius-sm);
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color var(--transition),
+        color var(--transition),
+        border-color var(--transition),
+        transform var(--transition);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* Primary Button */
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+
+    border: 2px solid var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+
+    color: var(--text-color);
+}
+
+
+/* Secondary Button */
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+
+    border: 2px solid var(--secondary-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+
+    color: var(--white-color);
+}
+
+
+/* Outline Button */
+
+.btn-outline {
+    background-color: transparent;
+
+    color: var(--primary-color);
+
+    border: 2px solid var(--primary-color);
+}
+
+.btn-outline:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+
+/* =========================================================
+   10. BUTTON GROUP
+   ========================================================= */
+
+.btn-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+/* =========================================================
+   11. COMMON CARD
+   ========================================================= */
+
+.card {
+    background-color: var(--card-color);
+
+    border: 1px solid var(--border-color);
+
+    border-radius: var(--radius-md);
+
+    padding: 30px;
+
+    box-shadow: var(--shadow-sm);
+
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition),
+        border-color var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+
+    border-color: var(--secondary-color);
+}
+
+
+/* =========================================================
+   12. ICON BOX
+   ========================================================= */
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+
+    font-size: 24px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   13. FORM ELEMENTS
+   ========================================================= */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    color: var(--text-color);
+}
+
+.form-control {
+    width: 100%;
+
+    height: 50px;
+
+    padding: 0 15px;
+
+    background-color: var(--card-color);
+
+    color: var(--text-color);
+
+    border: 1px solid var(--border-color);
+
+    border-radius: var(--radius-sm);
+
+    outline: none;
+
+    transition:
+        border-color var(--transition),
+        box-shadow var(--transition);
+}
+
+textarea.form-control {
+    height: 140px;
+    padding: 15px;
+    resize: vertical;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+
+    box-shadow:
+        0 0 0 3px rgba(22, 119, 184, 0.12);
+}
+
+.form-control::placeholder {
+    color: var(--text-light);
+}
+
+
+/* =========================================================
+   14. BADGES
+   ========================================================= */
+
+.badge {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 6px 12px;
+
+    border-radius: 30px;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.badge-primary {
+    background-color: rgba(22, 119, 184, 0.12);
+    color: var(--primary-color);
+}
+
+.badge-secondary {
+    background-color: rgba(103, 199, 232, 0.20);
+    color: var(--primary-color);
+}
+
+.badge-success {
+    background-color: rgba(34, 160, 107, 0.12);
+    color: var(--success-color);
+}
+
+.badge-warning {
+    background-color: rgba(233, 162, 59, 0.12);
+    color: var(--warning-color);
+}
+
+.badge-danger {
+    background-color: rgba(214, 69, 69, 0.12);
+    color: var(--danger-color);
+}
+
+
+/* =========================================================
+   15. IMAGE STYLES
+   ========================================================= */
+
+.img-rounded {
+    border-radius: var(--radius-md);
+}
+
+.img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   16. DIVIDER
+   ========================================================= */
+
+.divider {
+    width: 100%;
+    height: 1px;
+
+    background-color: var(--border-color);
+
+    margin: 30px 0;
+}
+
+
+/* =========================================================
+   17. TEXT UTILITIES
+   ========================================================= */
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.text-light {
+    color: var(--text-light);
+}
+
+
+/* =========================================================
+   18. SPACING UTILITIES
+   ========================================================= */
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.pt-20 {
+    padding-top: 20px;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
+}
+
+
+/* =========================================================
+   19. FLEX UTILITIES
+   ========================================================= */
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-between {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.gap-15 {
+    gap: 15px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.gap-30 {
+    gap: 30px;
+}
+
+
+/* =========================================================
+   20. GRID UTILITIES
+   ========================================================= */
+
+.grid {
+    display: grid;
+}
+
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+/* =========================================================
+   21. HIGHLIGHT TEXT
+   ========================================================= */
+
+.highlight {
+    color: var(--primary-color);
+}
+
+.highlight-secondary {
+    color: var(--secondary-color);
+}
+
+
+/* =========================================================
+   22. LOADING
+   ========================================================= */
+
+.loading {
+    width: 40px;
+    height: 40px;
+
+    border: 4px solid var(--border-color);
+    border-top-color: var(--primary-color);
+
+    border-radius: 50%;
+
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* =========================================================
+   23. SCROLLBAR
+   ========================================================= */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--secondary-color);
+}
+
+
+/* =========================================================
+   24. SELECTION
+   ========================================================= */
+
+::selection {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+
+/* =========================================================
+   25. RTL SUPPORT
+   ========================================================= */
+
+html[dir="rtl"] body {
+    direction: rtl;
+}
+
+html[dir="rtl"] .text-left {
+    text-align: right;
+}
+
+html[dir="rtl"] .text-right {
+    text-align: left;
+}
+
+html[dir="rtl"] .btn-group {
+    flex-direction: row-reverse;
+}
+
+
+/* =========================================================
+   26. RESPONSIVE - LARGE TABLETS
+   ========================================================= */
+
+@media (max-width: 992px) {
+
+    :root {
+        --section-padding: 70px;
+    }
+
+    h1 {
+        font-size: 44px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =========================================================
+   27. RESPONSIVE - TABLETS
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    :root {
+        --section-padding: 60px;
+    }
+
+    .container {
+        width: 92%;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    .section-heading {
+        margin-bottom: 40px;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .btn {
+        min-width: 150px;
+        height: 48px;
+    }
+}
+
+
+/* =========================================================
+   28. RESPONSIVE - MOBILE
+   ========================================================= */
+
+@media (max-width: 576px) {
+
+    :root {
+        --section-padding: 50px;
+    }
+
+    html {
+        font-size: 15px;
+    }
+
+    .container {
+        width: 92%;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 27px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .section-heading h2 {
+        font-size: 27px;
+    }
+
+    .section-heading p {
+        font-size: 14px;
+    }
+
+    .btn {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .btn-group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card {
+        padding: 22px;
+    }
+
+    .icon-box {
+        width: 55px;
+        height: 55px;
+        font-size: 22px;
+    }
+}
+
+
+/* =========================================================
+   29. REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
