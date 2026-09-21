@@ -186,34 +186,41 @@
 .nav-link:hover {
     color: var(--primary-color);
 }
+/* ================================
+   NAV LINKS
+================================ */
 
+.nav-link,
+.nav-dropdown-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    height: 80px;
+}
 
-/* Active */
-
-.nav-link.active {
+/* Active link */
+.nav-link.active,
+.nav-dropdown-btn.active {
     color: var(--primary-color);
 }
 
-
-/* Active Underline */
-
-.nav-link.active::after {
+/* Active underline */
+.nav-link.active::after,
+.nav-dropdown-btn.active::after {
     content: "";
 
     position: absolute;
 
-    left: 13px;
-    right: 13px;
-    bottom: 0;
+    left: 10px;
+    right: 10px;
+    bottom: 20px;
 
-    height: 3px;
+    height: 2px;
 
     background-color: var(--primary-color);
 
-    border-radius: 3px 3px 0 0;
+    border-radius: 2px;
 }
-
-
 /* =========================================================
    DROPDOWN ICON
    ========================================================= */
@@ -340,7 +347,7 @@ html.dark-mode .home-dropdown .dropdown-menu a:hover {
 
     background-color: transparent;
 
-    border: 1px solid var(--border-color);
+    border: 2px solid var(--border-color);
 
     border-radius: 50%;
 
@@ -390,7 +397,7 @@ body.dark-mode .moon-icon {
    ========================================================= */
 
 .header-cta {
-    min-width: 145px;
+    min-width: 90px;
 
     height: 44px;
 
@@ -2840,6 +2847,66 @@ html.dark-mode .cta-secondary-btn:hover {
     line-height: 1.7;
 }
 
+
+/* ================================
+   FOOTER SOCIAL ICONS
+================================ */
+
+.footer-social h4 {
+    color: var(--white-color);
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.social-icons a {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--secondary-color);
+    border-radius: 50%;
+
+    color: var(--secondary-color);
+    background-color: transparent;
+
+    transition:
+        background-color var(--transition),
+        color var(--transition),
+        border-color var(--transition),
+        transform var(--transition);
+}
+
+.social-icons svg {
+    width: 19px;
+    height: 19px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.social-icons a:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: var(--primary-color);
+
+    transform: translateY(-3px);
+}
+
+
+
+
 /* =========================
    FOOTER COLUMNS
 ========================= */
@@ -2946,3 +3013,4 @@ html.dark-mode .cta-secondary-btn:hover {
 .footer-contact-item span {
     line-height: 1.5;
 }
+

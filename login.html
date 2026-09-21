@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="image/logo-2.png">
+    <title>Login | ClearPoint Services</title>
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Login CSS -->
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         LOGIN PAGE
+    ====================================================== -->
+
+    <main class="login-page">
+
+        <!-- =================================================
+             TOP CONTROLS
+        ================================================== -->
+
+        <div class="login-controls">
+
+            <!-- RTL -->
+            <button
+                type="button"
+                class="control-btn"
+                id="directionBtn"
+                title="Change Direction"
+                aria-label="Change Direction"
+            >
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </button>
+
+            <!-- Dark Mode -->
+            <button
+                type="button"
+                class="control-btn"
+                id="themeBtn"
+                title="Toggle Dark Mode"
+                aria-label="Toggle Dark Mode"
+            >
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+        </div>
+
+
+        <!-- =================================================
+             LOGIN CARD
+        ================================================== -->
+
+        <section class="login-card">
+
+            <!-- =================================================
+                 LOGO
+            ================================================== -->
+
+            <a href="index.html" class="login-logo">
+
+                <div class="logo-icon">
+                    <img
+                        src="image/logo-2.png"
+                        alt="ClearPoint Services Logo"
+                    >
+                </div>
+
+                <div class="logo-text">
+                    <span class="logo-main">ClearPoint</span>
+                    <span class="logo-sub">Services</span>
+                </div>
+
+            </a>
+
+
+            <!-- =================================================
+                 HEADING
+            ================================================== -->
+
+            <div class="login-heading">
+
+                <span class="login-label">
+                    CUSTOMER PORTAL
+                </span>
+
+                <h1>
+                    Welcome Back
+                </h1>
+
+                <p>
+                    Sign in to manage your cleaning services.
+                </p>
+
+            </div>
+
+
+            <!-- =================================================
+                 LOGIN FORM
+            ================================================== -->
+
+            <form id="loginForm" class="login-form">
+
+                <!-- Email -->
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <div class="input-box">
+
+                        <i class="fa-regular fa-envelope"></i>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email address"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- Password -->
+
+                <div class="form-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Enter your password"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="password-toggle"
+                            id="passwordToggle"
+                            aria-label="Show password"
+                            title="Show password"
+                        >
+                            <i class="fa-regular fa-eye"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Remember + Forgot -->
+
+                <div class="login-options">
+
+                    <label class="remember-me">
+
+                        <input
+                            type="checkbox"
+                            id="rememberMe"
+                        >
+
+                        <span class="custom-check"></span>
+
+                        <span>
+                            Remember Me
+                        </span>
+
+                    </label>
+
+
+                    <a
+                        href="forgot-password.html"
+                        class="forgot-password"
+                    >
+                        Forgot Password?
+                    </a>
+
+                </div>
+
+
+                <!-- Login Button -->
+
+                <button
+                    type="submit"
+                    class="login-btn"
+                >
+
+                    <span>Sign In</span>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+
+                <!-- Login Message -->
+
+                <div
+                    id="loginMessage"
+                    class="login-message"
+                    aria-live="polite"
+                ></div>
+
+            </form>
+
+
+            <!-- =================================================
+                 DIVIDER
+            ================================================== -->
+
+            <div class="divider">
+
+                <span></span>
+
+                <p>OR</p>
+
+                <span></span>
+
+            </div>
+
+
+            <!-- =================================================
+                 SOCIAL LOGIN
+            ================================================== -->
+
+            <div class="social-login">
+
+                <!-- Google -->
+
+                <button
+                    type="button"
+                    class="social-btn"
+                    id="googleLogin"
+                >
+
+                    <i class="fa-brands fa-google"></i>
+
+                    <span>
+                        Continue with Google
+                    </span>
+
+                </button>
+
+
+                <!-- Apple -->
+
+                <button
+                    type="button"
+                    class="social-btn"
+                    id="appleLogin"
+                >
+
+                    <i class="fa-brands fa-apple"></i>
+
+                    <span>
+                        Continue with Apple
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <!-- =================================================
+                 SIGN UP
+            ================================================== -->
+
+            <div class="signup-text">
+
+                <span>
+                    Don't have an account?
+                </span>
+
+                <a href="signup.html">
+                    Create Account
+                </a>
+
+            </div>
+
+
+            <!-- =================================================
+                 BACK TO WEBSITE
+            ================================================== -->
+
+            <a
+                href="index.html"
+                class="back-home"
+            >
+                <i class="fa-solid fa-arrow-left"></i>
+
+                <span>
+                    Back to website
+                </span>
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- Login JavaScript -->
+    <script>
+/* =========================================================
+   CLEARPOINT SERVICES
+   LOGIN JAVASCRIPT
+========================================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+
+    /* =====================================================
+       ELEMENTS
+    ===================================================== */
+
+    const loginForm =
+        document.getElementById("loginForm");
+
+    const emailInput =
+        document.getElementById("email");
+
+    const passwordInput =
+        document.getElementById("password");
+
+    const passwordToggle =
+        document.getElementById("passwordToggle");
+
+    const loginMessage =
+        document.getElementById("loginMessage");
+
+    const themeBtn =
+        document.getElementById("themeBtn");
+
+    const directionBtn =
+        document.getElementById("directionBtn");
+
+    const googleLogin =
+        document.getElementById("googleLogin");
+
+    const appleLogin =
+        document.getElementById("appleLogin");
+
+    const rememberMe =
+        document.getElementById("rememberMe");
+
+
+    /* =====================================================
+       LOAD SAVED THEME
+    ===================================================== */
+
+    const savedTheme =
+        localStorage.getItem("clearPointTheme");
+
+    if (savedTheme === "dark") {
+
+        document.documentElement.classList.add(
+            "dark-mode"
+        );
+
+    }
+
+
+    /* =====================================================
+       UPDATE THEME ICON
+    ===================================================== */
+
+    function updateThemeIcon() {
+
+        if (!themeBtn) return;
+
+        const icon =
+            themeBtn.querySelector("i");
+
+        const isDark =
+            document.documentElement.classList.contains(
+                "dark-mode"
+            );
+
+        if (isDark) {
+
+            icon.classList.remove("fa-moon");
+
+            icon.classList.add("fa-sun");
+
+            themeBtn.setAttribute(
+                "title",
+                "Light Mode"
+            );
+
+        } else {
+
+            icon.classList.remove("fa-sun");
+
+            icon.classList.add("fa-moon");
+
+            themeBtn.setAttribute(
+                "title",
+                "Dark Mode"
+            );
+        }
+    }
+
+
+    updateThemeIcon();
+
+
+    /* =====================================================
+       DARK MODE
+    ===================================================== */
+
+    if (themeBtn) {
+
+        themeBtn.addEventListener("click", () => {
+
+            document.documentElement.classList.toggle(
+                "dark-mode"
+            );
+
+            const isDark =
+                document.documentElement.classList.contains(
+                    "dark-mode"
+                );
+
+            localStorage.setItem(
+                "clearPointTheme",
+                isDark ? "dark" : "light"
+            );
+
+            updateThemeIcon();
+
+        });
+
+    }
+
+
+    /* =====================================================
+       LOAD DIRECTION
+    ===================================================== */
+
+    const savedDirection =
+        localStorage.getItem("clearPointDirection");
+
+    if (savedDirection === "rtl") {
+
+        document.documentElement.dir = "rtl";
+
+    } else {
+
+        document.documentElement.dir = "ltr";
+
+    }
+
+
+    /* =====================================================
+       RTL / LTR
+    ===================================================== */
+
+    if (directionBtn) {
+
+        directionBtn.addEventListener("click", () => {
+
+            const currentDirection =
+                document.documentElement.dir;
+
+            const newDirection =
+                currentDirection === "rtl"
+                    ? "ltr"
+                    : "rtl";
+
+            document.documentElement.dir =
+                newDirection;
+
+            localStorage.setItem(
+                "clearPointDirection",
+                newDirection
+            );
+
+        });
+
+    }
+
+
+    /* =====================================================
+       PASSWORD VISIBILITY
+    ===================================================== */
+
+    if (passwordToggle && passwordInput) {
+
+        passwordToggle.addEventListener("click", () => {
+
+            const icon =
+                passwordToggle.querySelector("i");
+
+            if (passwordInput.type === "password") {
+
+                passwordInput.type = "text";
+
+                icon.classList.remove("fa-eye");
+
+                icon.classList.add("fa-eye-slash");
+
+                passwordToggle.setAttribute(
+                    "aria-label",
+                    "Hide password"
+                );
+
+                passwordToggle.setAttribute(
+                    "title",
+                    "Hide password"
+                );
+
+            } else {
+
+                passwordInput.type = "password";
+
+                icon.classList.remove("fa-eye-slash");
+
+                icon.classList.add("fa-eye");
+
+                passwordToggle.setAttribute(
+                    "aria-label",
+                    "Show password"
+                );
+
+                passwordToggle.setAttribute(
+                    "title",
+                    "Show password"
+                );
+
+            }
+
+        });
+
+    }
+
+
+    /* =====================================================
+       REMEMBER ME
+    ===================================================== */
+
+    const savedEmail =
+        localStorage.getItem("clearPointRememberedEmail");
+
+    if (savedEmail) {
+
+        emailInput.value = savedEmail;
+
+        rememberMe.checked = true;
+
+    }
+
+
+    /* =====================================================
+       LOGIN FORM
+    ===================================================== */
+
+    if (loginForm) {
+
+        loginForm.addEventListener("submit", (event) => {
+
+            event.preventDefault();
+
+
+            const email =
+                emailInput.value.trim();
+
+            const password =
+                passwordInput.value.trim();
+
+
+            /* Clear previous message */
+
+            loginMessage.textContent = "";
+
+            loginMessage.style.color =
+                "var(--danger-color)";
+
+
+            /* Validation */
+
+            if (!email) {
+
+                loginMessage.textContent =
+                    "Please enter your email address.";
+
+                emailInput.focus();
+
+                return;
+            }
+
+
+            if (!password) {
+
+                loginMessage.textContent =
+                    "Please enter your password.";
+
+                passwordInput.focus();
+
+                return;
+            }
+
+
+            /* Remember email */
+
+            if (rememberMe.checked) {
+
+                localStorage.setItem(
+                    "clearPointRememberedEmail",
+                    email
+                );
+
+            } else {
+
+                localStorage.removeItem(
+                    "clearPointRememberedEmail"
+                );
+
+            }
+
+
+            /*
+             * -------------------------------------------------
+             * DEMO FRONT-END LOGIN
+             * -------------------------------------------------
+             *
+             * Replace this section with your real
+             * authentication/backend later.
+             */
+
+            loginMessage.style.color =
+                "var(--success-color)";
+
+            loginMessage.textContent =
+                "Login successful. Redirecting...";
+
+
+            setTimeout(() => {
+
+                window.location.href =
+                    "dashboard.html";
+
+            }, 700);
+
+        });
+
+    }
+
+
+    /* =====================================================
+       GOOGLE LOGIN
+    ===================================================== */
+
+    if (googleLogin) {
+
+        googleLogin.addEventListener("click", () => {
+
+            /*
+             * Connect Google OAuth here later.
+             */
+
+            loginMessage.style.color =
+                "var(--text-light)";
+
+            loginMessage.textContent =
+                "Google sign-in will be connected here.";
+
+        });
+
+    }
+
+
+    /* =====================================================
+       APPLE LOGIN
+    ===================================================== */
+
+    if (appleLogin) {
+
+        appleLogin.addEventListener("click", () => {
+
+            /*
+             * Connect Apple Sign In here later.
+             */
+
+            loginMessage.style.color =
+                "var(--text-light)";
+
+            loginMessage.textContent =
+                "Apple sign-in will be connected here.";
+
+        });
+
+    }
+
+
+});
+
+
+
+
+    </script>
+
+</body>
+
+</html>

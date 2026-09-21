@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="image/logo-2.png">
+    <title>ClearPoint Services</title>
+
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="services.css">
+
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <!-- =========================================================
+     HEADER
+     ========================================================= -->
+
+<header class="site-header" id="siteHeader">
+
+    <div class="container header-container">
+
+        <!-- Logo -->
+        <a href="index.html" class="site-logo">
+
+           <div class="logo-icon">
+    <img src="image/logo-2.png" alt="logo-1">
+</div>
+            <div class="logo-text">
+                <span class="logo-main">ClearPoint</span>
+                <span class="logo-sub">Services</span>
+            </div>
+
+        </a>
+
+
+        <!-- Desktop Navigation -->
+        <nav class="main-nav" id="mainNav">
+
+            <ul class="nav-list">
+
+                <!-- Home Dropdown -->
+                <li class="nav-item home-dropdown">
+
+                    <button
+                        type="button"
+                        class="nav-link dropdown-toggle"
+                        id="homeDropdownBtn"
+                        aria-expanded="false">
+
+                        <span>Home</span>
+
+                        <svg
+                            class="dropdown-icon"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round">
+
+                            <path d="m6 9 6 6 6-6"></path>
+
+                        </svg>
+
+                    </button>
+
+
+                    <!-- Home Dropdown -->
+                    <ul class="dropdown-menu" id="homeDropdown">
+
+                        <li>
+                            <a href="index.html" data-page="home-1">
+                                Home 1
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="home-2.html" data-page="home-2">
+                                Home 2
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+
+                <!-- About -->
+                <li class="nav-item">
+
+                    <a
+                        href="About-us.html"
+                        class="nav-link"
+                        data-page="about">
+
+                        About Us
+
+                    </a>
+
+                </li>
+
+
+                <!-- Services -->
+                <li class="nav-item">
+
+                    <a
+                        href="services.html"
+                        class="nav-link"
+                        data-page="services">
+
+                        Services
+
+                    </a>
+
+                </li>
+
+
+                <!-- Blog -->
+                <li class="nav-item">
+
+                    <a
+                        href="blog.html"
+                        class="nav-link"
+                        data-page="blog">
+
+                        Blog
+
+                    </a>
+
+                </li>
+
+
+                <!-- Pricing -->
+                <li class="nav-item">
+
+                    <a
+                        href="pricing.html"
+                        class="nav-link"
+                        data-page="pricing">
+
+                        Pricing
+
+                    </a>
+
+                </li>
+
+
+                <!-- Contact -->
+                <li class="nav-item">
+
+                    <a
+                        href="contact-us.html"
+                        class="nav-link"
+                        data-page="contact">
+
+                        Contact Us
+
+                    </a>
+
+                </li>
+
+
+    <li class="nav-item"> 
+                    <a href="dashboard.html" class="nav-link" data-page="dashboard"> 
+                        Dashboard </a> 
+                </li>
+
+
+
+            </ul>
+
+        </nav>
+
+
+        <!-- Header Actions -->
+        <div class="header-actions">
+
+            <!-- Dark Mode -->
+            <button
+                type="button"
+                class="header-icon-btn"
+                id="themeBtn"
+                aria-label="Toggle dark mode">
+
+                <!-- Sun -->
+                <svg
+                    class="theme-icon sun-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2">
+
+                    <circle cx="12" cy="12" r="4"></circle>
+
+                    <path d="M12 2v2"></path>
+                    <path d="M12 20v2"></path>
+                    <path d="m4.93 4.93 1.41 1.41"></path>
+                    <path d="m17.66 17.66 1.41 1.41"></path>
+                    <path d="M2 12h2"></path>
+                    <path d="M20 12h2"></path>
+                    <path d="m6.34 17.66-1.41 1.41"></path>
+                    <path d="m19.07 4.93-1.41 1.41"></path>
+
+                </svg>
+
+
+                <!-- Moon -->
+                <svg
+                    class="theme-icon moon-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2">
+
+                    <path
+                        d="M21 12.79A9 9 0 1 1 11.21 3
+                        7 7 0 0 0 21 12.79z">
+                    </path>
+
+                </svg>
+
+            </button>
+
+
+            <!-- RTL -->
+          <button 
+    type="button" 
+    class="header-icon-btn" 
+    id="directionBtn" 
+    aria-label="Toggle text direction">
+
+    <svg 
+        viewBox="0 0 24 24" 
+        fill="none" 
+        stroke="currentColor" 
+        stroke-width="1.8" 
+        stroke-linecap="round" 
+        stroke-linejoin="round">
+
+        <path d="M7 7h10"></path>
+        <path d="m14 4 3 3-3 3"></path>
+
+        <path d="M17 17H7"></path>
+        <path d="m10 14-3 3 3 3"></path>
+
+    </svg>
+
+</button>
+
+
+            <!-- CTA -->
+            <a
+                href="login.html"
+                class="btn btn-primary header-cta">
+
+                Login
+
+            </a>
+
+
+            <!-- Mobile Menu -->
+            <button
+                type="button"
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open menu"
+                aria-expanded="false">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<section class="services-hero">
+
+
+<div class="services-hero-bg">
+    <img
+        src="image/image-16.jpg"
+        alt="Professional window cleaning services">
+</div>
+
+<div class="services-hero-overlay"></div>
+
+<div class="container">
+    <div class="services-hero-content">
+
+        <span class="services-hero-label">
+            PROFESSIONAL WINDOW CLEANING
+        </span>
+
+        <h1>
+            Services Designed For
+            <span>A Clearer View.</span>
+        </h1>
+
+        <p>
+            From residential windows to large commercial properties,
+            ClearPoint Services provides professional cleaning solutions
+            designed around your property and your needs.
+        </p>
+
+        <div class="services-hero-buttons">
+
+            <a href="#our-services" class="btn btn-primary">
+                <i class="fa-solid fa-broom"></i>
+                Explore Our Services
+            </a>
+
+            <a href="contact.html" class="btn btn-light">
+                <i class="fa-solid fa-file-invoice"></i>
+                Get a Free Quote
+            </a>
+
+        </div>
+
+        <div class="services-hero-points">
+
+            <div class="services-hero-point">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Professional Team</span>
+            </div>
+
+            <div class="services-hero-point">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Reliable Scheduling</span>
+            </div>
+
+            <div class="services-hero-point">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Quality Results</span>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+</section>
+
+
+<section class="services-list" id="our-services">
+    <div class="container">
+
+    <div class="section-heading services-list-heading">
+        <span class="services-section-label">OUR SERVICES</span>
+
+        <h2>
+            Professional Cleaning For
+            <span>Every Property.</span>
+        </h2>
+
+        <p>
+            From homes to commercial buildings, our professional cleaning
+            services are designed to keep your windows and property looking
+            their best.
+        </p>
+    </div>
+
+    <div class="services-list-grid">
+
+        <!-- Card 01 -->
+        <div class="service-card">
+
+            <div class="service-card-image">
+                <img
+                    src="image/image-17.jpg"
+                    alt="Residential window cleaning">
+
+                <span class="service-card-number">01</span>
+            </div>
+
+            <div class="service-card-content">
+
+                <div class="service-card-icon">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+
+                <h3>Residential Window Cleaning</h3>
+
+                <p>
+                    Professional window cleaning for homes, apartments,
+                    and residential properties.
+                </p>
+
+                <a href="residential-window.html" class="service-btn">
+    View Service
+    <i class="fa-solid fa-arrow-right"></i>
+</a>
+
+            </div>
+
+        </div>
+
+        <!-- Card 02 -->
+        <div class="service-card">
+
+            <div class="service-card-image">
+                <img
+                    src="image/image-18.jpg"
+                    alt="Commercial window cleaning">
+
+                <span class="service-card-number">02</span>
+            </div>
+
+            <div class="service-card-content">
+
+                <div class="service-card-icon">
+                    <i class="fa-solid fa-building"></i>
+                </div>
+
+                <h3>Commercial Window Cleaning</h3>
+
+                <p>
+                    Reliable window cleaning solutions for offices,
+                    retail spaces, and commercial properties.
+                </p>
+
+                <!-- Commercial Window Cleaning -->
+<a href="commercial-window.html" class="service-btn">
+    View Service
+    <i class="fa-solid fa-arrow-right"></i>
+</a>
+
+            </div>
+
+        </div>
+
+        <!-- Card 03 -->
+        <div class="service-card">
+
+            <div class="service-card-image">
+                <img
+                    src="image/image-20.webp"
+                    alt="High-rise window cleaning">
+
+                <span class="service-card-number">03</span>
+            </div>
+
+            <div class="service-card-content">
+
+                <div class="service-card-icon">
+                    <i class="fa-solid fa-city"></i>
+                </div>
+
+                <h3>High-Rise Window Cleaning</h3>
+
+                <p>
+                    Professional exterior glass cleaning for multi-story
+                    and high-rise properties.
+                </p>
+
+                <!-- High-Rise Window Cleaning -->
+<a href="high-rise-window.html" class="service-btn">
+    View Service
+    <i class="fa-solid fa-arrow-right"></i>
+</a>
+
+            </div>
+
+        </div>
+
+        <!-- Card 04 -->
+        <div class="service-card">
+
+            <div class="service-card-image">
+                <img
+                    src="image/image-21.jpg"
+                    alt="Gutter cleaning service">
+
+                <span class="service-card-number">04</span>
+            </div>
+
+            <div class="service-card-content">
+
+                <div class="service-card-icon">
+                    <i class="fa-solid fa-water"></i>
+                </div>
+
+                <h3>Gutter Cleaning</h3>
+
+                <p>
+                    Keep your gutters clear of leaves and debris with
+                    professional and reliable cleaning.
+                </p>
+
+               <!-- Gutter Cleaning -->
+<a href="gutter-cleaning.html" class="service-btn">
+    View Service
+    <i class="fa-solid fa-arrow-right"></i>
+</a>
+
+            </div>
+
+        </div>
+
+        <!-- Card 05 -->
+        <div class="service-card">
+
+            <div class="service-card-image">
+                <img
+                    src="image/image-22.jpg"
+                    alt="Window screen cleaning">
+
+                <span class="service-card-number">05</span>
+            </div>
+
+            <div class="service-card-content">
+
+                <div class="service-card-icon">
+                    <i class="fa-solid fa-border-all"></i>
+                </div>
+
+                <h3>Screen Cleaning</h3>
+
+                <p>
+                    Remove dust and buildup from window screens for a
+                    cleaner and fresher finish.
+                </p>
+
+             <!-- Screen Cleaning -->
+<a href="screen-cleaning.html" class="service-btn">
+    View Service
+    <i class="fa-solid fa-arrow-right"></i>
+</a>
+
+            </div>
+
+        </div>
+
+        <!-- Card 06 -->
+        <div class="service-card">
+
+            <div class="service-card-image">
+                <img
+                    src="image/image-23.webp"
+                    alt="Glass door cleaning">
+
+                <span class="service-card-number">06</span>
+            </div>
+
+            <div class="service-card-content">
+
+                <div class="service-card-icon">
+                    <i class="fa-solid fa-door-open"></i>
+                </div>
+
+                <h3>Glass Door Cleaning</h3>
+
+                <p>
+                    Get crystal-clear glass doors with detailed cleaning
+                    for homes, offices, and commercial spaces.
+                </p>
+
+                <!-- Glass Door Cleaning -->
+<a href="glass-door.html" class="service-btn">
+    View Service
+    <i class="fa-solid fa-arrow-right"></i>
+</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</section>
+
+
+<section class="services-why">
+    <div class="container">
+
+
+    <div class="section-heading services-why-heading">
+        <span class="services-section-label">WHY CLEARPOINT?</span>
+
+        <h2>
+            Service You Can
+            <span>Count On.</span>
+        </h2>
+
+        <p>
+            We combine professional cleaning, reliable scheduling,
+            and attention to detail to deliver a better experience
+            from start to finish.
+        </p>
+    </div>
+
+    <div class="services-why-grid">
+
+        <!-- Card 01 -->
+        <div class="why-service-card">
+            <div class="why-service-number">01</div>
+
+            <div class="why-service-icon">
+                <i class="fa-solid fa-user-shield"></i>
+            </div>
+
+            <h3>Trusted Professionals</h3>
+
+            <p>
+                Our team focuses on respectful, professional service
+                at every residential and commercial property.
+            </p>
+
+            <div class="why-service-line"></div>
+        </div>
+
+        <!-- Card 02 -->
+        <div class="why-service-card">
+            <div class="why-service-number">02</div>
+
+            <div class="why-service-icon">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+
+            <h3>Quality Results</h3>
+
+            <p>
+                We pay attention to the details that help your glass,
+                frames, and accessible areas look their best.
+            </p>
+
+            <div class="why-service-line"></div>
+        </div>
+
+        <!-- Card 03 -->
+        <div class="why-service-card">
+            <div class="why-service-number">03</div>
+
+            <div class="why-service-icon">
+                <i class="fa-solid fa-calendar-check"></i>
+            </div>
+
+            <h3>Reliable Scheduling</h3>
+
+            <p>
+                Flexible appointment options make it easier to fit
+                professional cleaning into your schedule.
+            </p>
+
+            <div class="why-service-line"></div>
+        </div>
+
+        <!-- Card 04 -->
+        <div class="why-service-card">
+            <div class="why-service-number">04</div>
+
+            <div class="why-service-icon">
+                <i class="fa-solid fa-headset"></i>
+            </div>
+
+            <h3>Customer Support</h3>
+
+            <p>
+                From your first inquiry to your completed service,
+                our team is here to answer your questions.
+            </p>
+
+            <div class="why-service-line"></div>
+        </div>
+
+    </div>
+
+</div>
+
+
+</section>
+
+
+<section class="services-process">
+    <div class="container">
+
+
+    <div class="section-heading services-process-heading">
+        <span class="services-section-label">OUR PROCESS</span>
+
+        <h2>
+            Simple Steps.
+            <span>Clear Results.</span>
+        </h2>
+
+        <p>
+            From your first request to the final inspection, our process
+            is designed to keep your service simple and hassle-free.
+        </p>
+    </div>
+
+    <div class="services-process-timeline">
+
+        <!-- Step 01 -->
+        <div class="service-process-step">
+
+            <div class="service-process-number">
+                01
+            </div>
+
+            <div class="service-process-icon">
+                <i class="fa-solid fa-calendar-check"></i>
+            </div>
+
+            <div class="service-process-content">
+                <h3>Book Your Service</h3>
+
+                <p>
+                    Choose the service you need and request a convenient
+                    appointment time.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Step 02 -->
+        <div class="service-process-step">
+
+            <div class="service-process-number">
+                02
+            </div>
+
+            <div class="service-process-icon">
+                <i class="fa-solid fa-clipboard-check"></i>
+            </div>
+
+            <div class="service-process-content">
+                <h3>We Prepare</h3>
+
+                <p>
+                    Our team reviews your service requirements and arrives
+                    prepared with the right equipment.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Step 03 -->
+        <div class="service-process-step">
+
+            <div class="service-process-number">
+                03
+            </div>
+
+            <div class="service-process-icon">
+                <i class="fa-solid fa-broom"></i>
+            </div>
+
+            <div class="service-process-content">
+                <h3>We Clean</h3>
+
+                <p>
+                    Our professionals carefully clean your windows and
+                    selected service areas.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Step 04 -->
+        <div class="service-process-step">
+
+            <div class="service-process-number">
+                04
+            </div>
+
+            <div class="service-process-icon">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+
+            <div class="service-process-content">
+                <h3>Final Check</h3>
+
+                <p>
+                    We review the completed work to make sure everything
+                    meets our service standards.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</section>
+
+
+<section class="services-team">
+    <div class="container">
+
+
+    <div class="section-heading services-team-heading">
+        <span class="services-section-label">MEET OUR TEAM</span>
+
+        <h2>
+            The People Behind
+            <span>Clear Results.</span>
+        </h2>
+
+        <p>
+            Our experienced team is committed to providing professional,
+            reliable, and friendly service at every property.
+        </p>
+    </div>
+
+    <div class="services-team-grid">
+
+        <!-- Team Member 01 -->
+        <div class="team-card">
+
+            <div class="team-card-image">
+                <img
+                    src="image/image-24.jpg"
+                    alt="Michael Carter - Founder and Service Director">
+
+                <div class="team-social">
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="team-card-content">
+                <span>FOUNDER & SERVICE DIRECTOR</span>
+                <h3>Michael Carter</h3>
+                <p>
+                    Focused on quality service, customer satisfaction,
+                    and professional standards.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Team Member 02 -->
+        <div class="team-card">
+
+            <div class="team-card-image">
+                <img
+                    src="image/image-25.avif"
+                    alt="Sarah Williams - Operations Manager">
+
+                <div class="team-social">
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="team-card-content">
+                <span>OPERATIONS MANAGER</span>
+                <h3>Sarah Williams</h3>
+                <p>
+                    Keeps scheduling, service coordination, and customer
+                    communication running smoothly.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Team Member 03 -->
+        <div class="team-card">
+
+            <div class="team-card-image">
+                <img
+                    src="image/image-26.jpg"
+                    alt="David Morgan - Senior Cleaning Specialist">
+
+                <div class="team-social">
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="team-card-content">
+                <span>SENIOR CLEANING SPECIALIST</span>
+                <h3>David Morgan</h3>
+                <p>
+                    Brings hands-on experience and attention to detail
+                    to every cleaning project.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Team Member 04 -->
+        <div class="team-card">
+
+            <div class="team-card-image">
+                <img
+                    src="image/image-27.jpg"
+                    alt="Emily Johnson - Customer Care Specialist">
+
+                <div class="team-social">
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="team-card-content">
+                <span>CUSTOMER CARE SPECIALIST</span>
+                <h3>Emily Johnson</h3>
+                <p>
+                    Helps customers with questions, appointments,
+                    and service requests.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</section>
+
+
+<!-- ================================
+     SERVICES FINAL CTA
+================================= -->
+<section class="services-final-cta">
+
+    <div class="services-cta-shape services-cta-shape-one"></div>
+    <div class="services-cta-shape services-cta-shape-two"></div>
+
+    <div class="container">
+
+        <div class="services-cta-wrapper">
+
+            <!-- CTA CONTENT -->
+            <div class="services-cta-content">
+
+                <span class="services-cta-label">
+                    READY FOR A CLEARER VIEW?
+                </span>
+
+                <h2>
+                    Give Your Windows
+                    <span>The ClearPoint Treatment.</span>
+                </h2>
+
+                <p>
+                    From homes to commercial properties, our professional
+                    team is ready to deliver cleaner glass, reliable service,
+                    and a better view.
+                </p>
+
+                <div class="services-cta-buttons">
+
+                    <a href="contact.html" class="btn btn-light">
+                        <i class="fa-solid fa-file-invoice"></i>
+                        Get a Free Quote
+                    </a>
+
+                    <a href="tel:+10000000000" class="btn btn-cta-outline">
+                        <i class="fa-solid fa-phone"></i>
+                        Call Us Today
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CTA INFO CARD -->
+            <div class="services-cta-card">
+
+                <div class="services-cta-card-icon">
+                    <i class="fa-solid fa-calendar-check"></i>
+                </div>
+
+                <div class="services-cta-card-content">
+
+                    <span>BOOK YOUR SERVICE</span>
+
+                    <h3>
+                        Flexible Scheduling
+                    </h3>
+
+                    <p>
+                        Choose a convenient time and let our team
+                        take care of the rest.
+                    </p>
+
+                </div>
+
+                <a href="contact.html" class="services-cta-card-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Footer Logo -->
+        <div class="footer-brand">
+            <a href="index.html" class="footer-logo">
+
+                <img src="image/logo-2.png"
+                     alt="ApexGlass Services Logo">
+
+                <div class="footer-logo-text">
+                    <span class="apex-text">ClearPoint</span>
+                    <span class="glass-text">Services</span>
+                </div>
+
+            </a>
+
+            <p>
+                Professional window cleaning and glass services
+                for homes and businesses.
+            </p>
+
+            <!-- Social Links -->
+<div class="footer-social">
+   
+
+    <div class="social-icons">
+
+        <!-- Facebook -->
+        <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24">
+                <path d="M14 8h3V4h-3c-3.3 0-5 1.7-5 5v3H6v4h3v4h4v-4h3l1-4h-4V9c0-.7.3-1 1-1z"/>
+            </svg>
+        </a>
+
+        <!-- Instagram -->
+       <a href="#" aria-label="Instagram" class="instagram-icon">
+    <svg viewBox="0 0 24 24">
+        <rect x="3" y="3" width="18" height="18" rx="5"/>
+        <circle cx="12" cy="12" r="4"/>
+        <circle cx="17.5" cy="6.5" r="1"/>
+    </svg>
+</a>
+
+        <!-- LinkedIn -->
+        <a href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24">
+                <path d="M5 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM3 8h4v13H3V8zm6 0h4v2c.8-1.4 2.2-2.5 4.5-2.5 4 0 4.5 2.6 4.5 6V21h-4v-6.5c0-1.6 0-3.5-2.1-3.5s-2.4 1.7-2.4 3.4V21H9V8z"/>
+            </svg>
+        </a>
+
+        <!-- YouTube -->
+        <a href="#" aria-label="YouTube">
+            <svg viewBox="0 0 24 24">
+                <path d="M21.6 7.2a2.8 2.8 0 0 0-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.6.5a2.8 2.8 0 0 0-2 2C2 9 2 12 2 12s0 3 .4 4.8a2.8 2.8 0 0 0 2 2c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.8 2.8 0 0 0 2-2c.4-1.8.4-4.8.4-4.8s0-3-.4-4.8zM10 15.5v-7l6 3.5-6 3.5z"/>
+            </svg>
+        </a>
+
+    </div>
+</div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-column">
+            <h3>Services</h3>
+
+            <a href="services.html">Residential Cleaning</a>
+            <a href="services.html">Commercial Cleaning</a>
+            <a href="services.html">Window Cleaning</a>
+            <a href="services.html">Glass Cleaning</a>
+        </div>
+
+        <div class="footer-column">
+    <h3>Contact Us</h3>
+
+    <div class="footer-contact-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 21s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12Z"/>
+            <circle cx="12" cy="9" r="2.5"/>
+        </svg>
+        <span>Hyderabad India</span>
+    </div>
+
+    <div class="footer-contact-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2
+                     19.79 19.79 0 0 1-8.63-3.07
+                     19.5 19.5 0 0 1-6-6
+                     19.79 19.79 0 0 1-3.07-8.67
+                     A2 2 0 0 1 4.11 2h3
+                     a2 2 0 0 1 2 1.72
+                     12.84 12.84 0 0 0 .7 2.81
+                     2 2 0 0 1-.45 2.11L8.09 9.91
+                     a16 16 0 0 0 6 6l1.27-1.27
+                     a2 2 0 0 1 2.11-.45
+                     12.84 12.84 0 0 0 2.81.7
+                     A2 2 0 0 1 22 16.92Z"/>
+        </svg>
+
+        <span>+91 00000 00000</span>
+    </div>
+
+    <div class="footer-contact-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="5" width="18" height="14" rx="2"/>
+            <path d="m3 7 9 6 9-6"/>
+        </svg>
+
+        <span>info@clearpointservices.com</span>
+    </div>
+</div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Clearpoint Services. All Rights Reserved.</p>
+
+        <div>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+        </div>
+    </div>
+
+</footer>
+
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+
+    /* =====================================================
+       ELEMENTS
+    ===================================================== */
+
+    const menuToggle = document.getElementById("menuToggle");
+    const mainNav = document.getElementById("mainNav");
+
+    const homeDropdownBtn = document.getElementById("homeDropdownBtn");
+
+    const homeDropdown =
+        document.querySelector(".home-dropdown");
+
+    const themeBtn =
+        document.getElementById("themeBtn");
+
+    const directionBtn =
+        document.getElementById("directionBtn");
+
+
+    /* =====================================================
+       MOBILE MENU
+    ===================================================== */
+
+    if (menuToggle && mainNav) {
+
+        menuToggle.addEventListener("click", function () {
+
+            mainNav.classList.toggle("active");
+
+            menuToggle.classList.toggle("active");
+
+        });
+
+    }
+
+
+ 
+
+    /* =====================================================
+       ACTIVE PAGE
+    ===================================================== */
+
+    const currentPage =
+        window.location.pathname.split("/").pop() || "index.html";
+
+    const navLinks =
+        document.querySelectorAll(".main-nav a");
+
+    navLinks.forEach(function (link) {
+
+        const linkPage =
+            link.getAttribute("href");
+
+        if (
+            linkPage === currentPage &&
+            linkPage !== "#"
+        ) {
+
+            link.classList.add("active");
+
+        }
+
+    });
+
+
+    /* =====================================================
+       DARK MODE
+    ===================================================== */
+
+    const savedTheme =
+        localStorage.getItem("windowCleaningTheme");
+
+
+    /* Load saved theme */
+
+    if (savedTheme === "dark") {
+
+        document.documentElement.classList.add("dark-mode");
+
+    } else {
+
+        document.documentElement.classList.remove("dark-mode");
+
+    }
+
+
+    /* Theme button */
+
+    if (themeBtn) {
+
+        themeBtn.addEventListener("click", function () {
+
+            document.documentElement.classList.toggle("dark-mode");
+
+
+            const isDark =
+                document.documentElement.classList.contains(
+                    "dark-mode"
+                );
+
+
+            localStorage.setItem(
+                "windowCleaningTheme",
+                isDark ? "dark" : "light"
+            );
+
+
+            /* Change icon if using Font Awesome */
+
+            const icon =
+                themeBtn.querySelector("i");
+
+            if (icon) {
+
+                if (isDark) {
+
+                    icon.classList.remove("fa-moon");
+                    icon.classList.add("fa-sun");
+
+                } else {
+
+                    icon.classList.remove("fa-sun");
+                    icon.classList.add("fa-moon");
+
+                }
+
+            }
+
+        });
+
+    }
+
+
+    /* =====================================================
+       RTL / LTR
+    ===================================================== */
+
+    const savedDirection =
+        localStorage.getItem("windowCleaningDirection");
+
+
+    if (savedDirection === "rtl") {
+
+        document.documentElement.setAttribute(
+            "dir",
+            "rtl"
+        );
+
+    } else {
+
+        document.documentElement.setAttribute(
+            "dir",
+            "ltr"
+        );
+
+    }
+
+
+    /* Direction button */
+
+    if (directionBtn) {
+
+        directionBtn.addEventListener("click", function () {
+
+            const currentDirection =
+                document.documentElement.getAttribute("dir");
+
+
+            if (currentDirection === "rtl") {
+
+                document.documentElement.setAttribute(
+                    "dir",
+                    "ltr"
+                );
+
+                localStorage.setItem(
+                    "windowCleaningDirection",
+                    "ltr"
+                );
+
+            } else {
+
+                document.documentElement.setAttribute(
+                    "dir",
+                    "rtl"
+                );
+
+                localStorage.setItem(
+                    "windowCleaningDirection",
+                    "rtl"
+                );
+
+            }
+
+        });
+
+    }
+
+
+    /* =====================================================
+       CLOSE MOBILE MENU AFTER CLICKING LINK
+    ===================================================== */
+
+    const mobileLinks =
+        document.querySelectorAll(".main-nav a");
+
+    mobileLinks.forEach(function (link) {
+
+        link.addEventListener("click", function () {
+
+            if (mainNav) {
+
+                mainNav.classList.remove("active");
+
+            }
+
+            if (menuToggle) {
+
+                menuToggle.classList.remove("active");
+
+            }
+
+        });
+
+    });
+
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const button = document.getElementById("homeDropdownBtn");
+    const dropdown = document.querySelector(".home-dropdown");
+
+    if (!button || !dropdown) {
+        console.log("Home dropdown elements not found");
+        return;
+    }
+
+    button.addEventListener("click", function (e) {
+
+        e.preventDefault();
+        e.stopPropagation();
+
+        dropdown.classList.toggle("open");
+
+    });
+
+    document.addEventListener("click", function (e) {
+
+        if (!dropdown.contains(e.target)) {
+            dropdown.classList.remove("open");
+        }
+
+    });
+
+});
+
+/* ==========================================
+   ACTIVE NAVIGATION LINK
+========================================== */
+
+const currentPath = window.location.pathname;
+const currentFile = currentPath.split("/").pop().toLowerCase();
+
+const navLinks = document.querySelectorAll(
+    ".nav-link, .dropdown-link"
+);
+
+navLinks.forEach(link => {
+    const href = link.getAttribute("href");
+
+    if (!href || href === "#") return;
+
+    const linkFile = href.split("/").pop().toLowerCase();
+
+    // Home 1
+    if (
+        (currentFile === "" || currentFile === "index.html") &&
+        linkFile === "index.html"
+    ) {
+        link.classList.add("active");
+    }
+
+    // Home 2
+    else if (
+        currentFile === "home-2.html" &&
+        linkFile === "home-2.html"
+    ) {
+        link.classList.add("active");
+    }
+
+    // Other pages
+    else if (
+        currentFile === linkFile
+    ) {
+        link.classList.add("active");
+    }
+});
+
+/* Make Home button active for both Home pages */
+
+if (
+    currentFile === "" ||
+    currentFile === "index.html" ||
+    currentFile === "home-2.html"
+) {
+    const homeButton = document.getElementById("homeDropdownBtn");
+
+    if (homeButton) {
+        homeButton.classList.add("active");
+    }
+}
+</script>
+</body>
+</html>

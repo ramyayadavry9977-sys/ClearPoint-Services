@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="image/logo-2.png">
+    <title>ClearPoint Services</title>
+
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="blog.css">
+
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <!-- =========================================================
+     HEADER
+     ========================================================= -->
+
+<header class="site-header" id="siteHeader">
+
+    <div class="container header-container">
+
+        <!-- Logo -->
+        <a href="index.html" class="site-logo">
+
+           <div class="logo-icon">
+    <img src="image/logo-2.png" alt="logo-1">
+</div>
+            <div class="logo-text">
+                <span class="logo-main">ClearPoint</span>
+                <span class="logo-sub">Services</span>
+            </div>
+
+        </a>
+
+
+        <!-- Desktop Navigation -->
+        <nav class="main-nav" id="mainNav">
+
+            <ul class="nav-list">
+
+                <!-- Home Dropdown -->
+                <li class="nav-item home-dropdown">
+
+                    <button
+                        type="button"
+                        class="nav-link dropdown-toggle"
+                        id="homeDropdownBtn"
+                        aria-expanded="false">
+
+                        <span>Home</span>
+
+                        <svg
+                            class="dropdown-icon"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round">
+
+                            <path d="m6 9 6 6 6-6"></path>
+
+                        </svg>
+
+                    </button>
+
+
+                    <!-- Home Dropdown -->
+                    <ul class="dropdown-menu" id="homeDropdown">
+
+                        <li>
+                            <a href="index.html" data-page="home-1">
+                                Home 1
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="home-2.html" data-page="home-2">
+                                Home 2
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+
+                <!-- About -->
+                <li class="nav-item">
+
+                    <a
+                        href="About-us.html"
+                        class="nav-link"
+                        data-page="about">
+
+                        About Us
+
+                    </a>
+
+                </li>
+
+
+                <!-- Services -->
+                <li class="nav-item">
+
+                    <a
+                        href="services.html"
+                        class="nav-link"
+                        data-page="services">
+
+                        Services
+
+                    </a>
+
+                </li>
+
+
+                <!-- Blog -->
+                <li class="nav-item">
+
+                    <a
+                        href="blog.html"
+                        class="nav-link"
+                        data-page="blog">
+
+                        Blog
+
+                    </a>
+
+                </li>
+
+
+                <!-- Pricing -->
+                <li class="nav-item">
+
+                    <a
+                        href="pricing.html"
+                        class="nav-link"
+                        data-page="pricing">
+
+                        Pricing
+
+                    </a>
+
+                </li>
+
+
+                <!-- Contact -->
+                <li class="nav-item">
+
+                    <a
+                        href="contact-us.html"
+                        class="nav-link"
+                        data-page="contact">
+
+                        Contact Us
+
+                    </a>
+
+                </li>
+
+
+    <li class="nav-item"> 
+                    <a href="dashboard.html" class="nav-link" data-page="dashboard"> 
+                        Dashboard </a> 
+                </li>
+
+
+
+            </ul>
+
+        </nav>
+
+
+        <!-- Header Actions -->
+        <div class="header-actions">
+
+            <!-- Dark Mode -->
+            <button
+                type="button"
+                class="header-icon-btn"
+                id="themeBtn"
+                aria-label="Toggle dark mode">
+
+                <!-- Sun -->
+                <svg
+                    class="theme-icon sun-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2">
+
+                    <circle cx="12" cy="12" r="4"></circle>
+
+                    <path d="M12 2v2"></path>
+                    <path d="M12 20v2"></path>
+                    <path d="m4.93 4.93 1.41 1.41"></path>
+                    <path d="m17.66 17.66 1.41 1.41"></path>
+                    <path d="M2 12h2"></path>
+                    <path d="M20 12h2"></path>
+                    <path d="m6.34 17.66-1.41 1.41"></path>
+                    <path d="m19.07 4.93-1.41 1.41"></path>
+
+                </svg>
+
+
+                <!-- Moon -->
+                <svg
+                    class="theme-icon moon-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2">
+
+                    <path
+                        d="M21 12.79A9 9 0 1 1 11.21 3
+                        7 7 0 0 0 21 12.79z">
+                    </path>
+
+                </svg>
+
+            </button>
+
+
+            <!-- RTL -->
+          <button 
+    type="button" 
+    class="header-icon-btn" 
+    id="directionBtn" 
+    aria-label="Toggle text direction">
+
+    <svg 
+        viewBox="0 0 24 24" 
+        fill="none" 
+        stroke="currentColor" 
+        stroke-width="1.8" 
+        stroke-linecap="round" 
+        stroke-linejoin="round">
+
+        <path d="M7 7h10"></path>
+        <path d="m14 4 3 3-3 3"></path>
+
+        <path d="M17 17H7"></path>
+        <path d="m10 14-3 3 3 3"></path>
+
+    </svg>
+
+</button>
+
+
+            <!-- CTA -->
+            <a
+                href="login.html"
+                class="btn btn-primary header-cta">
+
+                Login
+
+            </a>
+
+
+            <!-- Mobile Menu -->
+            <button
+                type="button"
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open menu"
+                aria-expanded="false">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- =========================================
+     BLOG HERO SECTION
+========================================= -->
+
+<section class="blog-hero">
+
+    <div class="blog-hero-overlay"></div>
+
+    <div class="container">
+
+        <div class="blog-hero-content">
+
+            <span class="blog-hero-tag">
+                Our Blog
+            </span>
+
+            <h1>
+                Clear Views.<br>
+                <span>Better Insights.</span>
+            </h1>
+
+            <p>
+                Expert window cleaning tips, maintenance guides,
+                and helpful advice for keeping your property
+                looking fresh and clear.
+            </p>
+
+            <div class="blog-hero-buttons">
+
+                <a href="#latest-articles" class="btn btn-primary">
+                    Explore Articles
+                </a>
+
+                <a href="contact.html" class="btn btn-secondary">
+                    Get a Free Quote
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+     FEATURED ARTICLE SECTION
+========================================= -->
+
+<section class="featured-blog-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-tag">
+                Featured Article
+            </span>
+
+            <h2>
+                Expert Tips for Crystal Clear Windows
+            </h2>
+
+            <p>
+                Simple professional tips to keep your windows
+                cleaner, brighter, and looking their best.
+            </p>
+
+        </div>
+
+
+        <div class="featured-blog-wrapper">
+
+            <!-- IMAGE -->
+
+            <div class="featured-blog-image">
+
+                <img
+                    src="image/image-13.jpg"
+                    alt="Professional window cleaning"
+                >
+
+                <span class="featured-blog-category">
+                    Window Cleaning Tips
+                </span>
+
+            </div>
+
+
+            <!-- CONTENT -->
+
+            <div class="featured-blog-content">
+
+                <h3>
+                    How to Keep Your Windows
+                    Crystal Clear All Year
+                </h3>
+
+                <p>
+                    Clean windows can make your home or business
+                    feel brighter and more welcoming. With the
+                    right cleaning techniques and regular
+                    maintenance, you can keep your glass looking
+                    fresh throughout the year.
+                </p>
+
+                <p>
+                    Learn the simple steps professionals use to
+                    remove dust, marks, and buildup while
+                    protecting your windows.
+                </p>
+
+                <a href="#" class="featured-read-more">
+                    Read Full Article
+                    <span>→</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     LATEST ARTICLES SECTION
+========================================= -->
+
+<section class="latest-articles-section" id="latest-articles">
+
+    <div class="container">
+
+        <!-- SECTION HEADING -->
+
+        <div class="section-heading">
+
+            <span class="section-tag">
+                Latest Articles
+            </span>
+
+            <h2>
+                Tips, Guides & Cleaning Insights
+            </h2>
+
+            <p>
+                Explore useful tips and expert advice to help
+                you maintain cleaner windows and a brighter space.
+            </p>
+
+        </div>
+
+
+        <!-- BLOG GRID -->
+
+        <div class="blog-grid">
+
+
+            <!-- BLOG CARD 1 -->
+
+            <article class="blog-card">
+
+                <div class="blog-card-image">
+
+                    <img
+                        src="image/image-16.jpg"
+                        alt="Window cleaning tips"
+                    >
+
+                    <span class="blog-card-category">
+                        Cleaning Tips
+                    </span>
+
+                </div>
+
+                <div class="blog-card-content">
+
+
+                    <h3>
+                        7 Simple Ways to Keep Your Windows Clean
+                    </h3>
+
+                    <p>
+                        Discover easy cleaning habits that can
+                        help keep your windows clear and fresh
+                        between professional cleaning visits.
+                    </p>
+
+                    <a href="blog-clean-windows.html" class="service-btn">
+    View Service
+    <i class="fa-solid fa-arrow-right"></i>
+</a>
+
+                </div>
+
+            </article>
+
+
+            <!-- BLOG CARD 2 -->
+
+            <article class="blog-card">
+
+                <div class="blog-card-image">
+
+                    <img
+                        src="image/image-29.webp"
+                        alt="Residential window cleaning"
+                    >
+
+                    <span class="blog-card-category">
+                        Residential
+                    </span>
+
+                </div>
+
+                <div class="blog-card-content">
+
+
+                    <h3>
+                        Why Regular Window Cleaning Matters
+                    </h3>
+
+                    <p>
+                        Learn how regular window maintenance can
+                        improve the appearance of your home and
+                        help protect your glass.
+                    </p>
+
+                  <a href="blog-window-maintenance.html" class="service-btn">
+    View Service
+    <i class="fa-solid fa-arrow-right"></i>
+</a>
+
+                </div>
+
+            </article>
+
+
+            <!-- BLOG CARD 3 -->
+
+            <article class="blog-card">
+
+                <div class="blog-card-image">
+
+                    <img
+                        src="image/image-28.jpg"
+                        alt="Commercial window cleaning"
+                    >
+
+                    <span class="blog-card-category">
+                        Commercial
+                    </span>
+
+                </div>
+
+                <div class="blog-card-content">
+
+                    <h3>
+                        Window Cleaning Tips for Businesses
+                    </h3>
+
+                    <p>
+                        Find out how clean windows can help create
+                        a professional and welcoming environment
+                        for your customers and team.
+                    </p>
+
+                        <!-- Glass Door Cleaning -->
+<a href="blog-professional-cleaning.html" class="service-btn">
+    View Service
+    <i class="fa-solid fa-arrow-right"></i>
+</a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     CLEANING TIPS SECTION
+========================================= -->
+
+<section class="cleaning-tips-section">
+
+    <div class="container">
+
+        <div class="cleaning-tips-wrapper">
+
+            <!-- LEFT CONTENT -->
+
+            <div class="cleaning-tips-content">
+
+                <span class="section-tag">
+                    Cleaning Tips
+                </span>
+
+                <h2>
+                    Simple Ways to Keep Your Windows Looking Their Best
+                </h2>
+
+                <p class="cleaning-tips-intro">
+                    Small maintenance habits can make a big difference.
+                    Follow these professional tips to keep your windows
+                    cleaner and brighter between service visits.
+                </p>
+
+
+                <!-- TIP 1 -->
+
+                <div class="cleaning-tip">
+
+                    <div class="cleaning-tip-icon">
+                        <i class="fa-solid fa-spray-can-sparkles"></i>
+                    </div>
+
+                    <div class="cleaning-tip-text">
+
+                        <h3>
+                            Clean Regularly
+                        </h3>
+
+                        <p>
+                            Regular cleaning helps prevent dust,
+                            dirt, and buildup from collecting on
+                            your glass.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TIP 2 -->
+
+                <div class="cleaning-tip">
+
+                    <div class="cleaning-tip-icon">
+                        <i class="fa-solid fa-sun"></i>
+                    </div>
+
+                    <div class="cleaning-tip-text">
+
+                        <h3>
+                            Choose the Right Time
+                        </h3>
+
+                        <p>
+                            Cleaning during suitable weather
+                            conditions can help prevent streaks
+                            and water marks.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TIP 3 -->
+
+                <div class="cleaning-tip">
+
+                    <div class="cleaning-tip-icon">
+                        <i class="fa-solid fa-droplet"></i>
+                    </div>
+
+                    <div class="cleaning-tip-text">
+
+                        <h3>
+                            Use Clean Water
+                        </h3>
+
+                        <p>
+                            Clean water and proper cleaning tools
+                            help achieve a clearer and brighter
+                            glass surface.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TIP 4 -->
+
+                <div class="cleaning-tip">
+
+                    <div class="cleaning-tip-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+
+                    <div class="cleaning-tip-text">
+
+                        <h3>
+                            Protect Your Glass
+                        </h3>
+
+                        <p>
+                            Use suitable cleaning methods to help
+                            protect glass surfaces and window frames.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT IMAGE -->
+
+            <div class="cleaning-tips-image">
+
+                <img
+                    src="image/image-30.jpg"
+                    alt="Professional window cleaning">
+
+                <div class="cleaning-tips-badge">
+
+                    <strong>Clear Glass</strong>
+
+                    <span>
+                        Better Views
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     COMMERCIAL INSIGHTS SECTION
+========================================= -->
+
+<section class="commercial-insights-section">
+
+    <div class="container">
+
+        <div class="commercial-insights-wrapper">
+
+            <!-- LEFT IMAGE -->
+
+            <div class="commercial-insights-image">
+
+                <img
+                    src="image/image-14.jpg"
+                    alt="Commercial window cleaning">
+
+                <div class="commercial-image-label">
+
+                    <i class="fa-solid fa-building"></i>
+
+                    <span>
+                        Commercial Cleaning
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT CONTENT -->
+
+            <div class="commercial-insights-content">
+
+                <span class="section-tag">
+                    Commercial Insights
+                </span>
+
+                <h2>
+                    Clean Windows Create a Stronger First Impression
+                </h2>
+
+                <p class="commercial-intro">
+                    For offices, retail spaces, and commercial
+                    buildings, clean windows can help create a
+                    bright, professional, and welcoming environment.
+                </p>
+
+
+                <!-- POINT 1 -->
+
+                <div class="commercial-point">
+
+                    <div class="commercial-point-icon">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+
+                    <div>
+                        <h3>
+                            Professional Appearance
+                        </h3>
+
+                        <p>
+                            Keep your property looking clean,
+                            polished, and ready for customers
+                            and visitors.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- POINT 2 -->
+
+                <div class="commercial-point">
+
+                    <div class="commercial-point-icon">
+                        <i class="fa-solid fa-sun"></i>
+                    </div>
+
+                    <div>
+                        <h3>
+                            Brighter Workspaces
+                        </h3>
+
+                        <p>
+                            Clean glass allows more natural light
+                            to enter your workspace and creates
+                            a brighter atmosphere.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- POINT 3 -->
+
+                <div class="commercial-point">
+
+                    <div class="commercial-point-icon">
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </div>
+
+                    <div>
+                        <h3>
+                            Regular Maintenance
+                        </h3>
+
+                        <p>
+                            A regular cleaning schedule helps
+                            businesses maintain their property
+                            throughout the year.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <a href="services.html" class="commercial-insights-btn">
+                    Explore Commercial Services
+                    <span>→</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     NEWSLETTER CTA SECTION
+========================================= -->
+
+<section class="blog-newsletter-section">
+
+    <div class="container">
+
+        <div class="blog-newsletter-wrapper">
+
+            <!-- LEFT CONTENT -->
+
+            <div class="blog-newsletter-content">
+
+                <span class="section-tag">
+                    Stay Updated
+                </span>
+
+                <h2>
+                    Get Helpful Cleaning Tips in Your Inbox
+                </h2>
+
+                <p>
+                    Subscribe to receive practical window cleaning
+                    tips, maintenance advice, and helpful updates
+                    from our team.
+                </p>
+
+            </div>
+
+
+            <!-- RIGHT FORM -->
+
+            <form class="blog-newsletter-form">
+
+                <div class="newsletter-input-wrapper">
+
+                    <i class="fa-regular fa-envelope"></i>
+
+                    <input
+                        type="email"
+                        placeholder="Enter your email address"
+                        aria-label="Email address"
+                        required
+                    >
+
+                </div>
+
+                <button type="submit" class="newsletter-btn">
+                    Subscribe
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Footer Logo -->
+        <div class="footer-brand">
+            <a href="index.html" class="footer-logo">
+
+                <img src="image/logo-2.png"
+                     alt="ApexGlass Services Logo">
+
+                <div class="footer-logo-text">
+                    <span class="apex-text">ClearPoint</span>
+                    <span class="glass-text">Services</span>
+                </div>
+
+            </a>
+
+            <p>
+                Professional window cleaning and glass services
+                for homes and businesses.
+            </p>
+
+            <!-- Social Links -->
+<div class="footer-social">
+   
+
+    <div class="social-icons">
+
+        <!-- Facebook -->
+        <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24">
+                <path d="M14 8h3V4h-3c-3.3 0-5 1.7-5 5v3H6v4h3v4h4v-4h3l1-4h-4V9c0-.7.3-1 1-1z"/>
+            </svg>
+        </a>
+
+        <!-- Instagram -->
+       <a href="#" aria-label="Instagram" class="instagram-icon">
+    <svg viewBox="0 0 24 24">
+        <rect x="3" y="3" width="18" height="18" rx="5"/>
+        <circle cx="12" cy="12" r="4"/>
+        <circle cx="17.5" cy="6.5" r="1"/>
+    </svg>
+</a>
+
+        <!-- LinkedIn -->
+        <a href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24">
+                <path d="M5 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM3 8h4v13H3V8zm6 0h4v2c.8-1.4 2.2-2.5 4.5-2.5 4 0 4.5 2.6 4.5 6V21h-4v-6.5c0-1.6 0-3.5-2.1-3.5s-2.4 1.7-2.4 3.4V21H9V8z"/>
+            </svg>
+        </a>
+
+        <!-- YouTube -->
+        <a href="#" aria-label="YouTube">
+            <svg viewBox="0 0 24 24">
+                <path d="M21.6 7.2a2.8 2.8 0 0 0-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.6.5a2.8 2.8 0 0 0-2 2C2 9 2 12 2 12s0 3 .4 4.8a2.8 2.8 0 0 0 2 2c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.8 2.8 0 0 0 2-2c.4-1.8.4-4.8.4-4.8s0-3-.4-4.8zM10 15.5v-7l6 3.5-6 3.5z"/>
+            </svg>
+        </a>
+
+    </div>
+</div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-column">
+            <h3>Services</h3>
+
+            <a href="services.html">Residential Cleaning</a>
+            <a href="services.html">Commercial Cleaning</a>
+            <a href="services.html">Window Cleaning</a>
+            <a href="services.html">Glass Cleaning</a>
+        </div>
+
+        <div class="footer-column">
+    <h3>Contact Us</h3>
+
+    <div class="footer-contact-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 21s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12Z"/>
+            <circle cx="12" cy="9" r="2.5"/>
+        </svg>
+        <span>Hyderabad India</span>
+    </div>
+
+    <div class="footer-contact-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2
+                     19.79 19.79 0 0 1-8.63-3.07
+                     19.5 19.5 0 0 1-6-6
+                     19.79 19.79 0 0 1-3.07-8.67
+                     A2 2 0 0 1 4.11 2h3
+                     a2 2 0 0 1 2 1.72
+                     12.84 12.84 0 0 0 .7 2.81
+                     2 2 0 0 1-.45 2.11L8.09 9.91
+                     a16 16 0 0 0 6 6l1.27-1.27
+                     a2 2 0 0 1 2.11-.45
+                     12.84 12.84 0 0 0 2.81.7
+                     A2 2 0 0 1 22 16.92Z"/>
+        </svg>
+
+        <span>+91 00000 00000</span>
+    </div>
+
+    <div class="footer-contact-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="5" width="18" height="14" rx="2"/>
+            <path d="m3 7 9 6 9-6"/>
+        </svg>
+
+        <span>info@clearpointservices.com</span>
+    </div>
+</div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Clearpoint Services. All Rights Reserved.</p>
+
+        <div>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+        </div>
+    </div>
+
+</footer>
+
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+
+    /* =====================================================
+       ELEMENTS
+    ===================================================== */
+
+    const menuToggle = document.getElementById("menuToggle");
+    const mainNav = document.getElementById("mainNav");
+
+    const homeDropdownBtn = document.getElementById("homeDropdownBtn");
+
+    const homeDropdown =
+        document.querySelector(".home-dropdown");
+
+    const themeBtn =
+        document.getElementById("themeBtn");
+
+    const directionBtn =
+        document.getElementById("directionBtn");
+
+
+    /* =====================================================
+       MOBILE MENU
+    ===================================================== */
+
+    if (menuToggle && mainNav) {
+
+        menuToggle.addEventListener("click", function () {
+
+            mainNav.classList.toggle("active");
+
+            menuToggle.classList.toggle("active");
+
+        });
+
+    }
+
+
+ 
+
+    /* =====================================================
+       ACTIVE PAGE
+    ===================================================== */
+
+    const currentPage =
+        window.location.pathname.split("/").pop() || "index.html";
+
+    const navLinks =
+        document.querySelectorAll(".main-nav a");
+
+    navLinks.forEach(function (link) {
+
+        const linkPage =
+            link.getAttribute("href");
+
+        if (
+            linkPage === currentPage &&
+            linkPage !== "#"
+        ) {
+
+            link.classList.add("active");
+
+        }
+
+    });
+
+
+    /* =====================================================
+       DARK MODE
+    ===================================================== */
+
+    const savedTheme =
+        localStorage.getItem("windowCleaningTheme");
+
+
+    /* Load saved theme */
+
+    if (savedTheme === "dark") {
+
+        document.documentElement.classList.add("dark-mode");
+
+    } else {
+
+        document.documentElement.classList.remove("dark-mode");
+
+    }
+
+
+    /* Theme button */
+
+    if (themeBtn) {
+
+        themeBtn.addEventListener("click", function () {
+
+            document.documentElement.classList.toggle("dark-mode");
+
+
+            const isDark =
+                document.documentElement.classList.contains(
+                    "dark-mode"
+                );
+
+
+            localStorage.setItem(
+                "windowCleaningTheme",
+                isDark ? "dark" : "light"
+            );
+
+
+            /* Change icon if using Font Awesome */
+
+            const icon =
+                themeBtn.querySelector("i");
+
+            if (icon) {
+
+                if (isDark) {
+
+                    icon.classList.remove("fa-moon");
+                    icon.classList.add("fa-sun");
+
+                } else {
+
+                    icon.classList.remove("fa-sun");
+                    icon.classList.add("fa-moon");
+
+                }
+
+            }
+
+        });
+
+    }
+
+
+    /* =====================================================
+       RTL / LTR
+    ===================================================== */
+
+    const savedDirection =
+        localStorage.getItem("windowCleaningDirection");
+
+
+    if (savedDirection === "rtl") {
+
+        document.documentElement.setAttribute(
+            "dir",
+            "rtl"
+        );
+
+    } else {
+
+        document.documentElement.setAttribute(
+            "dir",
+            "ltr"
+        );
+
+    }
+
+
+    /* Direction button */
+
+    if (directionBtn) {
+
+        directionBtn.addEventListener("click", function () {
+
+            const currentDirection =
+                document.documentElement.getAttribute("dir");
+
+
+            if (currentDirection === "rtl") {
+
+                document.documentElement.setAttribute(
+                    "dir",
+                    "ltr"
+                );
+
+                localStorage.setItem(
+                    "windowCleaningDirection",
+                    "ltr"
+                );
+
+            } else {
+
+                document.documentElement.setAttribute(
+                    "dir",
+                    "rtl"
+                );
+
+                localStorage.setItem(
+                    "windowCleaningDirection",
+                    "rtl"
+                );
+
+            }
+
+        });
+
+    }
+
+
+    /* =====================================================
+       CLOSE MOBILE MENU AFTER CLICKING LINK
+    ===================================================== */
+
+    const mobileLinks =
+        document.querySelectorAll(".main-nav a");
+
+    mobileLinks.forEach(function (link) {
+
+        link.addEventListener("click", function () {
+
+            if (mainNav) {
+
+                mainNav.classList.remove("active");
+
+            }
+
+            if (menuToggle) {
+
+                menuToggle.classList.remove("active");
+
+            }
+
+        });
+
+    });
+
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const button = document.getElementById("homeDropdownBtn");
+    const dropdown = document.querySelector(".home-dropdown");
+
+    if (!button || !dropdown) {
+        console.log("Home dropdown elements not found");
+        return;
+    }
+
+    button.addEventListener("click", function (e) {
+
+        e.preventDefault();
+        e.stopPropagation();
+
+        dropdown.classList.toggle("open");
+
+    });
+
+    document.addEventListener("click", function (e) {
+
+        if (!dropdown.contains(e.target)) {
+            dropdown.classList.remove("open");
+        }
+
+    });
+
+});
+
+/* ==========================================
+   ACTIVE NAVIGATION LINK
+========================================== */
+
+const currentPath = window.location.pathname;
+const currentFile = currentPath.split("/").pop().toLowerCase();
+
+const navLinks = document.querySelectorAll(
+    ".nav-link, .dropdown-link"
+);
+
+navLinks.forEach(link => {
+    const href = link.getAttribute("href");
+
+    if (!href || href === "#") return;
+
+    const linkFile = href.split("/").pop().toLowerCase();
+
+    // Home 1
+    if (
+        (currentFile === "" || currentFile === "index.html") &&
+        linkFile === "index.html"
+    ) {
+        link.classList.add("active");
+    }
+
+    // Home 2
+    else if (
+        currentFile === "home-2.html" &&
+        linkFile === "home-2.html"
+    ) {
+        link.classList.add("active");
+    }
+
+    // Other pages
+    else if (
+        currentFile === linkFile
+    ) {
+        link.classList.add("active");
+    }
+});
+
+/* Make Home button active for both Home pages */
+
+if (
+    currentFile === "" ||
+    currentFile === "index.html" ||
+    currentFile === "home-2.html"
+) {
+    const homeButton = document.getElementById("homeDropdownBtn");
+
+    if (homeButton) {
+        homeButton.classList.add("active");
+    }
+}
+</script>
+</body>
+</html>

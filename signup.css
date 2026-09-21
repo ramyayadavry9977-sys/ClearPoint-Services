@@ -1,0 +1,910 @@
+/* =========================================================
+   CLEARPOINT SERVICES — SIGN UP PAGE
+========================================================= */
+
+
+/* =========================================================
+   1. BASIC COLORS
+========================================================= */
+
+:root {
+    --primary-color: #1677B8;
+    --secondary-color: #67C7E8;
+
+    --bg-color: #F7FBFD;
+    --card-color: #FFFFFF;
+
+    --text-color: #172B3A;
+    --text-light: #6B7C89;
+
+    --border-color: #DCEEF5;
+    --input-bg: #FFFFFF;
+
+    --hover-bg: #F2FAFD;
+
+    --danger-color: #D64545;
+    --success-color: #22A06B;
+
+    --shadow: 0 20px 55px rgba(23, 43, 58, 0.10);
+
+    --transition: all 0.25s ease;
+}
+
+
+/* =========================================================
+   2. DARK MODE COLORS
+========================================================= */
+
+html.dark-mode {
+    --bg-color: #101820;
+    --card-color: #18242D;
+
+    --text-color: #F4FAFD;
+    --text-light: #A8BAC5;
+
+    --border-color: #2C414D;
+    --input-bg: #111B22;
+
+    --hover-bg: #1D303B;
+
+    --shadow: 0 20px 55px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================================================
+   3. RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+
+    overflow: hidden;
+
+    transition: var(--transition);
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   4. SIGN UP PAGE
+========================================================= */
+
+.signup-page {
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 15px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(103, 199, 232, 0.12),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(22, 119, 184, 0.10),
+            transparent 30%
+        ),
+        var(--bg-color);
+}
+
+
+/* =========================================================
+   5. TOP RIGHT CONTROLS
+========================================================= */
+
+.signup-controls {
+    position: fixed;
+
+    top: 18px;
+    right: 22px;
+
+    display: flex;
+    gap: 8px;
+
+    z-index: 100;
+}
+
+.control-btn {
+    width: 36px;
+    height: 36px;
+
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+
+    background: var(--card-color);
+    color: var(--text-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 14px;
+
+    transition: var(--transition);
+}
+
+.control-btn:hover {
+    background: var(--primary-color);
+    color: #FFFFFF;
+    border-color: var(--primary-color);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   6. SIGN UP CARD
+========================================================= */
+
+.signup-card {
+    width: 100%;
+    max-width: 460px;
+
+    background: var(--card-color);
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 18px;
+
+    padding: 20px 28px;
+
+    box-shadow: var(--shadow);
+
+    position: relative;
+
+    transition: var(--transition);
+
+    /* Important for no unnecessary scrolling */
+    max-height: calc(100vh - 30px);
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   7. LOGO
+========================================================= */
+
+.signup-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    margin-bottom: 8px;
+
+    color: var(--text-color);
+}
+
+.signup-logo .logo-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-logo .logo-icon img {
+    width: 42px;
+    height: 42px;
+
+    object-fit: contain;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-main {
+    font-size: 19px;
+    font-weight: 700;
+
+    color: var(--primary-color);
+
+    line-height: 1;
+}
+
+.logo-sub {
+    font-size: 9px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    color: var(--text-light);
+
+    margin-top: 3px;
+}
+
+
+/* =========================================================
+   8. HEADING
+========================================================= */
+
+.signup-heading {
+    text-align: center;
+
+    margin-bottom: 12px;
+}
+
+.signup-label {
+    display: block;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: var(--primary-color);
+
+    margin-bottom: 4px;
+}
+
+.signup-heading h1 {
+    font-size: 25px;
+
+    line-height: 1.2;
+
+    color: var(--text-color);
+
+    margin-bottom: 4px;
+}
+
+.signup-heading p {
+    font-size: 12px;
+
+    color: var(--text-light);
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   9. FORM
+========================================================= */
+
+.signup-form {
+    width: 100%;
+}
+
+
+/* =========================================================
+   10. FORM GROUP
+========================================================= */
+
+.form-group {
+    width: 100%;
+
+    margin-bottom: 7px;
+}
+
+.form-group label {
+    display: block;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    color: var(--text-color);
+
+    margin-bottom: 3px;
+}
+
+
+/* =========================================================
+   11. INPUT BOX
+========================================================= */
+
+.input-box {
+    width: 100%;
+    height: 37px;
+
+    display: flex;
+    align-items: center;
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 8px;
+
+    background: var(--input-bg);
+
+    transition: var(--transition);
+}
+
+.input-box:focus-within {
+    border-color: var(--primary-color);
+
+    box-shadow: 0 0 0 3px rgba(22, 119, 184, 0.10);
+}
+
+
+/* =========================================================
+   12. INPUT ICON
+========================================================= */
+
+.input-box > i {
+    width: 40px;
+
+    text-align: center;
+
+    color: var(--text-light);
+
+    font-size: 13px;
+}
+/* =========================================================
+   FIRST NAME + LAST NAME
+========================================================= */
+
+.name-row {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+}
+
+.name-row .form-group {
+    margin-bottom: 7px;
+}
+
+/* =========================================================
+   13. INPUT FIELD
+========================================================= */
+
+.input-box input {
+    flex: 1;
+
+    width: 100%;
+    height: 35px;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: var(--text-color);
+
+    font-size: 13px;
+}
+
+.input-box input::placeholder {
+    color: var(--text-light);
+}
+
+
+/* =========================================================
+   14. PASSWORD TOGGLE
+========================================================= */
+
+.password-toggle {
+    width: 38px;
+    height: 35px;
+
+    border: none;
+    background: transparent;
+
+    color: var(--text-light);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 13px;
+}
+
+.password-toggle:hover {
+    color: var(--primary-color);
+}
+
+/* =========================================================
+   TERMS & CONDITIONS
+========================================================= */
+
+.terms-group {
+    width: 100%;
+
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+.terms-label {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 8px;
+
+    font-size: 11px;
+    line-height: 1.5;
+
+    color: var(--text-light);
+
+    cursor: pointer;
+}
+
+.terms-label input {
+    width: 14px;
+    height: 14px;
+
+    margin: 2px 0 0;
+
+    flex-shrink: 0;
+
+    accent-color: var(--primary-color);
+
+    cursor: pointer;
+}
+
+.terms-label span {
+    display: block;
+}
+
+.terms-label a {
+    color: var(--primary-color);
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+.terms-label a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   CREATE ACCOUNT BUTTON
+========================================================= */
+
+.signup-btn {
+    width: 100%;
+    height: 40px;
+
+    margin-top: 2px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: var(--primary-color);
+    color: #FFFFFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: var(--transition);
+}
+
+
+/* =========================================================
+   16. CREATE ACCOUNT BUTTON
+========================================================= */
+
+.signup-btn {
+    width: 100%;
+    height: 40px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: var(--primary-color);
+
+    color: #FFFFFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: var(--transition);
+}
+
+.signup-btn:hover {
+    background: #12669D;
+
+    transform: translateY(-1px);
+
+    box-shadow: 0 8px 18px rgba(22, 119, 184, 0.20);
+}
+
+.signup-btn i {
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   17. FORM MESSAGE
+========================================================= */
+
+.signup-message {
+    min-height: 16px;
+
+    margin-top: 5px;
+
+    text-align: center;
+
+    font-size: 11px;
+
+    color: var(--danger-color);
+}
+
+.signup-message.success {
+    color: var(--success-color);
+}
+
+
+/* =========================================================
+   18. DIVIDER
+========================================================= */
+
+.divider {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin: 8px 0;
+}
+
+.divider span {
+    flex: 1;
+
+    height: 1px;
+
+    background: var(--border-color);
+}
+
+.divider p {
+    font-size: 10px;
+    font-weight: 600;
+
+    color: var(--text-light);
+}
+
+/* =========================================================
+   SOCIAL LOGIN BUTTONS
+========================================================= */
+
+.social-login {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+}
+
+.social-btn {
+    width: 100%;
+    height: 38px;
+
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+
+    background: var(--input-bg);
+    color: var(--text-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 0 12px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    transition: var(--transition);
+}
+
+.social-btn i {
+    width: 16px;
+    min-width: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 14px;
+}
+
+.social-btn span {
+    display: block;
+
+    text-align: center;
+
+    line-height: 1;
+}
+
+.social-btn:hover {
+    background: var(--hover-bg);
+
+    border-color: var(--primary-color);
+
+    transform: translateY(-1px);
+}
+/* =========================================================
+   20. LOGIN LINK
+========================================================= */
+
+.login-text {
+    text-align: center;
+
+    margin-top: 8px;
+
+    font-size: 11px;
+
+    color: var(--text-light);
+}
+
+.login-text a {
+    color: var(--primary-color);
+
+    font-weight: 600;
+}
+
+.login-text a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   21. BACK TO WEBSITE
+========================================================= */
+
+.back-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    margin-top: 6px;
+
+    font-size: 10px;
+
+    color: var(--text-light);
+
+    transition: var(--transition);
+}
+
+.back-home:hover {
+    color: var(--primary-color);
+}
+
+.back-home i {
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   22. SMALL DESKTOP SCREEN
+========================================================= */
+
+@media (max-height: 800px) and (min-width: 601px) {
+
+    .signup-page {
+        padding: 10px;
+    }
+
+    .signup-card {
+        padding: 14px 25px;
+
+        max-height: calc(100vh - 20px);
+    }
+
+    .signup-logo {
+        margin-bottom: 5px;
+    }
+
+    .signup-logo .logo-icon,
+    .signup-logo .logo-icon img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .logo-main {
+        font-size: 17px;
+    }
+
+    .signup-heading {
+        margin-bottom: 8px;
+    }
+
+    .signup-heading h1 {
+        font-size: 22px;
+    }
+
+    .signup-heading p {
+        font-size: 11px;
+    }
+
+    .form-group {
+        margin-bottom: 5px;
+    }
+
+    .form-group label {
+        font-size: 11px;
+        margin-bottom: 2px;
+    }
+
+    .input-box {
+        height: 34px;
+    }
+
+    .input-box input {
+        height: 32px;
+        font-size: 12px;
+    }
+
+    .signup-btn {
+        height: 37px;
+    }
+
+    .social-btn {
+        height: 33px;
+    }
+
+    .divider {
+        margin: 6px 0;
+    }
+}
+
+
+/* =========================================================
+   23. MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    html,
+    body {
+        height: auto;
+
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .signup-page {
+        height: auto;
+        min-height: 100vh;
+
+        padding: 60px 15px 20px;
+
+        overflow: visible;
+    }
+
+    .signup-controls {
+        top: 15px;
+        right: 15px;
+    }
+
+    .signup-card {
+        max-width: 460px;
+
+        max-height: none;
+
+        padding: 20px;
+
+        overflow: visible;
+    }
+
+    .signup-heading h1 {
+        font-size: 24px;
+    }
+
+    .social-login {
+        flex-direction: column;
+    }
+
+    .social-btn {
+        width: 100%;
+    }
+}
+@media (max-width: 600px) {
+
+    .social-login {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .social-btn {
+        height: 38px;
+    }
+
+}
+
+/* =========================================================
+   24. RTL SUPPORT
+========================================================= */
+
+html[dir="rtl"] .signup-controls {
+    right: auto;
+    left: 22px;
+}
+
+html[dir="rtl"] .input-box {
+    direction: rtl;
+}
+
+html[dir="rtl"] .input-box > i {
+    order: 3;
+}
+
+html[dir="rtl"] .password-toggle {
+    order: 1;
+}
+
+html[dir="rtl"] .input-box input {
+    text-align: right;
+}
+
+html[dir="rtl"] .back-home i {
+    transform: rotate(180deg);
+}
+
+
+/* =========================================================
+   25. RTL MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    html[dir="rtl"] .signup-controls {
+        right: auto;
+        left: 15px;
+    }
+}

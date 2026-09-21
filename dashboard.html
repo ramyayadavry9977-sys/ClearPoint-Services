@@ -1,0 +1,1833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ClearPoint Services | Dashboard</title>
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Dashboard CSS -->
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+<div class="dashboard-layout">
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside class="dashboard-sidebar" id="dashboardSidebar">
+
+        <!-- Logo -->
+        <div class="sidebar-logo">
+
+            <a href="dashboard.html" class="dashboard-logo">
+
+                <div class="logo-icon">
+                    <img src="image/logo-2.png" alt="ClearPoint Services">
+                </div>
+
+                <div class="logo-text">
+                    <span class="logo-main">ClearPoint</span>
+                    <span class="logo-sub">Services</span>
+                </div>
+
+            </a>
+
+            <button class="sidebar-close" id="sidebarClose">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+
+        <!-- Navigation -->
+        <nav class="dashboard-navigation">
+
+            <p class="nav-heading">MAIN MENU</p>
+
+            <button
+                class="dashboard-nav-link active"
+                data-section="dashboard">
+
+                <i class="fa-solid fa-chart-pie"></i>
+                <span>Dashboard</span>
+
+            </button>
+
+
+            <button
+                class="dashboard-nav-link"
+                data-section="appointments">
+
+                <i class="fa-regular fa-calendar-check"></i>
+                <span>My Appointments</span>
+
+            </button>
+
+
+            <button
+                class="dashboard-nav-link"
+                data-section="schedule">
+
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>Cleaning Schedule</span>
+
+            </button>
+
+
+            <button
+                class="dashboard-nav-link"
+                data-section="crew">
+
+                <i class="fa-solid fa-users"></i>
+                <span>Crew Tracking</span>
+
+            </button>
+
+
+            <button
+                class="dashboard-nav-link"
+                data-section="photos">
+
+                <i class="fa-regular fa-images"></i>
+                <span>Before & After</span>
+
+            </button>
+
+
+            <p class="nav-heading">ACCOUNT</p>
+
+
+            <button
+                class="dashboard-nav-link"
+                data-section="subscription">
+
+                <i class="fa-solid fa-repeat"></i>
+                <span>Subscription Plans</span>
+
+            </button>
+
+
+            <button
+                class="dashboard-nav-link"
+                data-section="payments">
+
+                <i class="fa-solid fa-credit-card"></i>
+                <span>Payment History</span>
+
+            </button>
+
+
+            <button
+                class="dashboard-nav-link"
+                data-section="notifications">
+
+                <i class="fa-regular fa-bell"></i>
+                <span>Notifications</span>
+
+                <span class="nav-badge">3</span>
+
+            </button>
+
+
+            <button
+                class="dashboard-nav-link"
+                data-section="profile">
+
+                <i class="fa-regular fa-user"></i>
+                <span>My Profile</span>
+
+            </button>
+
+        </nav>
+
+
+        <!-- Sidebar Bottom -->
+        <div class="sidebar-bottom">
+
+            
+
+
+            <button class="logout-btn" id="logoutBtn">
+
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+                <span>Logout</span>
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main class="dashboard-main">
+
+        <!-- =================================================
+             TOP BAR
+        ================================================== -->
+
+        <header class="dashboard-topbar">
+
+            <div class="topbar-left">
+
+                <button
+                    class="sidebar-toggle"
+                    id="sidebarToggle"
+                    aria-label="Open sidebar">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+
+                <div class="topbar-title">
+
+                    <h1 id="dashboardPageTitle">
+                        Dashboard
+                    </h1>
+
+                    <p id="dashboardPageSubtitle">
+                        Manage your ClearPoint Services account
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="topbar-right">
+
+                <!-- RTL -->
+                <button
+                    class="topbar-icon-btn"
+                    id="directionBtn"
+                    title="Switch Direction"
+                    aria-label="Switch Direction">
+
+                    <i class="fa-solid fa-right-left"></i>
+
+                </button>
+
+
+                <!-- Dark Mode -->
+                <button
+                    class="topbar-icon-btn"
+                    id="themeBtn"
+                    title="Toggle Dark Mode"
+                    aria-label="Toggle Dark Mode">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+
+                <!-- Notifications -->
+                <button
+                    class="topbar-icon-btn notification-btn"
+                    id="notificationBtn"
+                    title="Notifications"
+                    aria-label="Notifications">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-count">3</span>
+
+                </button>
+
+
+                <!-- Profile -->
+                <div class="dashboard-profile">
+
+                    <button
+                        class="profile-btn"
+                        id="profileBtn">
+
+                        <span class="profile-avatar">
+                            <i class="fa-solid fa-user"></i>
+                        </span>
+
+                        <span class="profile-info">
+
+                            <strong>John Doe</strong>
+
+                            <small>Customer</small>
+
+                        </span>
+
+                        <i class="fa-solid fa-chevron-down profile-arrow"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =================================================
+             PAGE CONTENT
+        ================================================== -->
+
+        <div class="dashboard-content">
+
+
+            <!-- =================================================
+                 DASHBOARD
+            ================================================== -->
+
+            <section
+                class="dashboard-section active"
+                id="dashboard">
+
+                <div class="welcome-section">
+
+                    <div>
+
+                        <span class="section-label">
+                            CUSTOMER DASHBOARD
+                        </span>
+
+                        <h2>
+                            Welcome back, John!
+                        </h2>
+
+                        <p>
+                            Keep track of your window cleaning services,
+                            upcoming appointments and service history.
+                        </p>
+
+                    </div>
+
+                    <button
+                        class="primary-btn"
+                        data-section="appointments">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                        Book a Cleaning
+
+                    </button>
+
+                </div>
+
+
+                <!-- Metrics -->
+
+                <div class="metrics-grid">
+
+                    <div class="metric-card">
+
+                        <div class="metric-icon blue">
+                            <i class="fa-regular fa-calendar-check"></i>
+                        </div>
+
+                        <div class="metric-content">
+
+                            <span>Total Visits</span>
+
+                            <strong>24</strong>
+
+                            <small>
+                                Completed services
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="metric-card">
+
+                        <div class="metric-icon cyan">
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+
+                        <div class="metric-content">
+
+                            <span>Upcoming</span>
+
+                            <strong>02</strong>
+
+                            <small>
+                                Scheduled visits
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="metric-card">
+
+                        <div class="metric-icon green">
+                            <i class="fa-solid fa-repeat"></i>
+                        </div>
+
+                        <div class="metric-content">
+
+                            <span>Current Plan</span>
+
+                            <strong>Premium</strong>
+
+                            <small>
+                                Monthly subscription
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="metric-card">
+
+                        <div class="metric-icon purple">
+                            <i class="fa-solid fa-wallet"></i>
+                        </div>
+
+                        <div class="metric-content">
+
+                            <span>Total Paid</span>
+
+                            <strong>$450</strong>
+
+                            <small>
+                                This year
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Dashboard Grid -->
+
+                <div class="dashboard-grid">
+
+
+                    <!-- Upcoming Appointment -->
+
+                    <div class="dashboard-card appointment-card">
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <span class="card-label">
+                                    NEXT SERVICE
+                                </span>
+
+                                <h3>
+                                    Upcoming Appointment
+                                </h3>
+
+                            </div>
+
+                            <button class="card-more">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </button>
+
+                        </div>
+
+
+                        <div class="appointment-main">
+
+                            <div class="appointment-date">
+
+                                <span>SEP</span>
+
+                                <strong>24</strong>
+
+                                <small>2026</small>
+
+                            </div>
+
+
+                            <div class="appointment-details">
+
+                                <h4>
+                                    Residential Window Cleaning
+                                </h4>
+
+                                <p>
+                                    <i class="fa-regular fa-clock"></i>
+                                    10:00 AM - 12:00 PM
+                                </p>
+
+                                <p>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    24 Green Valley Road
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="appointment-footer">
+
+                            <span class="status-badge upcoming">
+                                <i class="fa-solid fa-circle"></i>
+                                Confirmed
+                            </span>
+
+                            <button
+                                class="text-btn"
+                                data-section="appointments">
+
+                                View Details
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Subscription -->
+
+                    <div class="dashboard-card subscription-card">
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <span class="card-label">
+                                    YOUR PLAN
+                                </span>
+
+                                <h3>
+                                    Premium Plan
+                                </h3>
+
+                            </div>
+
+                            <i class="fa-solid fa-crown card-header-icon"></i>
+
+                        </div>
+
+
+                        <div class="plan-price">
+
+                            <strong>$75</strong>
+
+                            <span>/ month</span>
+
+                        </div>
+
+
+                        <div class="progress-wrapper">
+
+                            <div class="progress-info">
+
+                                <span>Monthly visits</span>
+
+                                <span>2 / 4</span>
+
+                            </div>
+
+                            <div class="progress-bar">
+
+                                <span style="width:50%;"></span>
+
+                            </div>
+
+                        </div>
+
+
+                        <button
+                            class="secondary-btn full-btn"
+                            data-section="subscription">
+
+                            Manage Subscription
+
+                        </button>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- Bottom Dashboard Grid -->
+
+                <div class="dashboard-grid bottom-grid">
+
+
+                    <!-- Crew Status -->
+
+                    <div class="dashboard-card">
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <span class="card-label">
+                                    LIVE STATUS
+                                </span>
+
+                                <h3>
+                                    Crew Tracking
+                                </h3>
+
+                            </div>
+
+                            <span class="live-status">
+                                <i class="fa-solid fa-circle"></i>
+                                Live
+                            </span>
+
+                        </div>
+
+
+                        <div class="crew-status">
+
+                            <div class="crew-avatar">
+
+                                <i class="fa-solid fa-user-group"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h4>
+                                    Cleaning Team A
+                                </h4>
+
+                                <p>
+                                    Your crew is on the way
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="arrival-box">
+
+                            <span>
+                                Estimated arrival
+                            </span>
+
+                            <strong>
+                                15 min
+                            </strong>
+
+                        </div>
+
+
+                        <button
+                            class="text-btn"
+                            data-section="crew">
+
+                            Track Crew
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- Notifications -->
+
+                    <div class="dashboard-card">
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <span class="card-label">
+                                    UPDATES
+                                </span>
+
+                                <h3>
+                                    Recent Notifications
+                                </h3>
+
+                            </div>
+
+                            <button
+                                class="card-more"
+                                data-section="notifications">
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="notification-list">
+
+                            <div class="notification-item">
+
+                                <span class="notification-icon blue">
+                                    <i class="fa-regular fa-calendar-check"></i>
+                                </span>
+
+                                <div>
+
+                                    <strong>
+                                        Appointment confirmed
+                                    </strong>
+
+                                    <p>
+                                        Your September 24 appointment is confirmed.
+                                    </p>
+
+                                    <small>
+                                        2 hours ago
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="notification-item">
+
+                                <span class="notification-icon cyan">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                </span>
+
+                                <div>
+
+                                    <strong>
+                                        Payment received
+                                    </strong>
+
+                                    <p>
+                                        Your monthly payment was processed.
+                                    </p>
+
+                                    <small>
+                                        Yesterday
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 APPOINTMENTS
+            ================================================== -->
+
+            <section
+                class="dashboard-section"
+                id="appointments">
+
+                <div class="section-page-header">
+
+                    <div>
+
+                        <span class="section-label">
+                            SERVICES
+                        </span>
+
+                        <h2>
+                            My Appointments
+                        </h2>
+
+                        <p>
+                            Manage your upcoming and previous cleaning appointments.
+                        </p>
+
+                    </div>
+
+                    <button class="primary-btn">
+                        <i class="fa-solid fa-plus"></i>
+                        Book Appointment
+                    </button>
+
+                </div>
+
+
+                <div class="appointment-list-card">
+
+                    <div class="list-header">
+
+                        <h3>Upcoming Appointments</h3>
+
+                        <button class="filter-btn">
+                            <i class="fa-solid fa-filter"></i>
+                            Filter
+                        </button>
+
+                    </div>
+
+
+                    <div class="appointment-row">
+
+                        <div class="row-date">
+                            <strong>24</strong>
+                            <span>SEP</span>
+                        </div>
+
+                        <div class="row-info">
+
+                            <h4>Residential Window Cleaning</h4>
+
+                            <p>
+                                <i class="fa-regular fa-clock"></i>
+                                10:00 AM - 12:00 PM
+                            </p>
+
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>
+                                24 Green Valley Road
+                            </p>
+
+                        </div>
+
+                        <span class="status-badge upcoming">
+                            Confirmed
+                        </span>
+
+                        <button class="outline-btn">
+                            Details
+                        </button>
+
+                    </div>
+
+
+                    <div class="appointment-row">
+
+                        <div class="row-date">
+                            <strong>08</strong>
+                            <span>OCT</span>
+                        </div>
+
+                        <div class="row-info">
+
+                            <h4>Gutter Cleaning</h4>
+
+                            <p>
+                                <i class="fa-regular fa-clock"></i>
+                                09:00 AM - 11:00 AM
+                            </p>
+
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>
+                                24 Green Valley Road
+                            </p>
+
+                        </div>
+
+                        <span class="status-badge upcoming">
+                            Scheduled
+                        </span>
+
+                        <button class="outline-btn">
+                            Details
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 CLEANING SCHEDULE
+            ================================================== -->
+
+            <section
+                class="dashboard-section"
+                id="schedule">
+
+                <div class="section-page-header">
+
+                    <div>
+
+                        <span class="section-label">
+                            SCHEDULE
+                        </span>
+
+                        <h2>
+                            Cleaning Schedule
+                        </h2>
+
+                        <p>
+                            View your regular cleaning schedule and upcoming visits.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="schedule-grid">
+
+                    <div class="schedule-card active-schedule">
+
+                        <div class="schedule-icon">
+                            <i class="fa-solid fa-calendar-check"></i>
+                        </div>
+
+                        <span>Weekly</span>
+
+                        <h3>
+                            Every Monday
+                        </h3>
+
+                        <p>
+                            Next visit: September 24, 2026
+                        </p>
+
+                        <span class="schedule-status">
+                            Active
+                        </span>
+
+                    </div>
+
+
+                    <div class="schedule-card">
+
+                        <div class="schedule-icon">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+
+                        <span>Service Time</span>
+
+                        <h3>
+                            10:00 AM - 12:00 PM
+                        </h3>
+
+                        <p>
+                            Standard residential service window
+                        </p>
+
+                    </div>
+
+
+                    <div class="schedule-card">
+
+                        <div class="schedule-icon">
+                            <i class="fa-solid fa-repeat"></i>
+                        </div>
+
+                        <span>Frequency</span>
+
+                        <h3>
+                            4 Visits / Month
+                        </h3>
+
+                        <p>
+                            Included with Premium Plan
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 CREW TRACKING
+            ================================================== -->
+
+            <section
+                class="dashboard-section"
+                id="crew">
+
+                <div class="section-page-header">
+
+                    <div>
+
+                        <span class="section-label">
+                            LIVE SERVICE
+                        </span>
+
+                        <h2>
+                            Crew Tracking
+                        </h2>
+
+                        <p>
+                            Follow your assigned cleaning crew and arrival status.
+                        </p>
+
+                    </div>
+
+                    <span class="live-status large">
+                        <i class="fa-solid fa-circle"></i>
+                        Crew Active
+                    </span>
+
+                </div>
+
+
+                <div class="crew-dashboard-card">
+
+                    <div class="crew-map-placeholder">
+
+                        <div class="map-center">
+
+                            <span class="map-pulse">
+                                <i class="fa-solid fa-truck"></i>
+                            </span>
+
+                            <strong>
+                                Crew is on the way
+                            </strong>
+
+                            <small>
+                                Estimated arrival: 15 minutes
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="crew-information">
+
+                        <div class="crew-profile">
+
+                            <div class="large-crew-avatar">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    ASSIGNED TEAM
+                                </span>
+
+                                <h3>
+                                    Cleaning Team A
+                                </h3>
+
+                                <p>
+                                    Professional Window Cleaning Crew
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="crew-details">
+
+                            <div>
+                                <span>Current Status</span>
+                                <strong>On the way</strong>
+                            </div>
+
+                            <div>
+                                <span>Estimated Arrival</span>
+                                <strong>15 minutes</strong>
+                            </div>
+
+                            <div>
+                                <span>Service</span>
+                                <strong>Residential Cleaning</strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 BEFORE & AFTER
+            ================================================== -->
+
+            <section
+                class="dashboard-section"
+                id="photos">
+
+                <div class="section-page-header">
+
+                    <div>
+
+                        <span class="section-label">
+                            SERVICE RESULTS
+                        </span>
+
+                        <h2>
+                            Before & After Photos
+                        </h2>
+
+                        <p>
+                            View photos from your completed cleaning services.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="photo-grid">
+
+                    <div class="photo-card">
+
+                        <div class="photo-placeholder before-photo">
+
+                            <i class="fa-regular fa-image"></i>
+
+                            <span>Before</span>
+
+                        </div>
+
+                        <div class="photo-info">
+
+                            <h3>
+                                Living Room Windows
+                            </h3>
+
+                            <p>
+                                September 10, 2026
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="photo-card">
+
+                        <div class="photo-placeholder after-photo">
+
+                            <i class="fa-regular fa-image"></i>
+
+                            <span>After</span>
+
+                        </div>
+
+                        <div class="photo-info">
+
+                            <h3>
+                                Living Room Windows
+                            </h3>
+
+                            <p>
+                                September 10, 2026
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="photo-card">
+
+                        <div class="photo-placeholder before-photo">
+
+                            <i class="fa-regular fa-image"></i>
+
+                            <span>Before</span>
+
+                        </div>
+
+                        <div class="photo-info">
+
+                            <h3>
+                                Kitchen Windows
+                            </h3>
+
+                            <p>
+                                August 22, 2026
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="photo-card">
+
+                        <div class="photo-placeholder after-photo">
+
+                            <i class="fa-regular fa-image"></i>
+
+                            <span>After</span>
+
+                        </div>
+
+                        <div class="photo-info">
+
+                            <h3>
+                                Kitchen Windows
+                            </h3>
+
+                            <p>
+                                August 22, 2026
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 SUBSCRIPTION
+            ================================================== -->
+
+            <section
+                class="dashboard-section"
+                id="subscription">
+
+                <div class="section-page-header">
+
+                    <div>
+
+                        <span class="section-label">
+                            MEMBERSHIP
+                        </span>
+
+                        <h2>
+                            Subscription Plans
+                        </h2>
+
+                        <p>
+                            Manage your recurring window cleaning services.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="plans-grid">
+
+                    <div class="plan-card">
+
+                        <span class="plan-name">
+                            BASIC
+                        </span>
+
+                        <h3>
+                            $45
+                            <small>/ month</small>
+                        </h3>
+
+                        <p>
+                            Perfect for smaller homes.
+                        </p>
+
+                        <ul>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                1 cleaning per month
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Residential windows
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Email reminders
+                            </li>
+
+                        </ul>
+
+                        <button class="outline-btn full-btn">
+                            Select Plan
+                        </button>
+
+                    </div>
+
+
+                    <div class="plan-card featured-plan">
+
+                        <span class="current-plan">
+                            CURRENT PLAN
+                        </span>
+
+                        <span class="plan-name">
+                            PREMIUM
+                        </span>
+
+                        <h3>
+                            $75
+                            <small>/ month</small>
+                        </h3>
+
+                        <p>
+                            Complete care for your home.
+                        </p>
+
+                        <ul>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                4 cleanings per month
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Priority scheduling
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Before & after photos
+                            </li>
+
+                        </ul>
+
+                        <button class="primary-btn full-btn">
+                            Current Plan
+                        </button>
+
+                    </div>
+
+
+                    <div class="plan-card">
+
+                        <span class="plan-name">
+                            BUSINESS
+                        </span>
+
+                        <h3>
+                            $150
+                            <small>/ month</small>
+                        </h3>
+
+                        <p>
+                            Designed for commercial properties.
+                        </p>
+
+                        <ul>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Weekly service
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Commercial windows
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Priority support
+                            </li>
+
+                        </ul>
+
+                        <button class="outline-btn full-btn">
+                            Select Plan
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 PAYMENT HISTORY
+            ================================================== -->
+
+            <section
+                class="dashboard-section"
+                id="payments">
+
+                <div class="section-page-header">
+
+                    <div>
+
+                        <span class="section-label">
+                            BILLING
+                        </span>
+
+                        <h2>
+                            Payment History
+                        </h2>
+
+                        <p>
+                            Review your ClearPoint Services payment records.
+                        </p>
+
+                    </div>
+
+                    <button class="outline-btn">
+                        <i class="fa-solid fa-download"></i>
+                        Download Statement
+                    </button>
+
+                </div>
+
+
+                <div class="table-card">
+
+                    <div class="table-wrapper">
+
+                        <table>
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Date</th>
+
+                                    <th>Service</th>
+
+                                    <th>Payment Method</th>
+
+                                    <th>Amount</th>
+
+                                    <th>Status</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td>Sep 01, 2026</td>
+
+                                    <td>Premium Plan</td>
+
+                                    <td>
+                                        <i class="fa-brands fa-cc-visa"></i>
+                                        Visa ending 4242
+                                    </td>
+
+                                    <td>$75.00</td>
+
+                                    <td>
+                                        <span class="payment-success">
+                                            Paid
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>Aug 01, 2026</td>
+
+                                    <td>Premium Plan</td>
+
+                                    <td>
+                                        <i class="fa-brands fa-cc-visa"></i>
+                                        Visa ending 4242
+                                    </td>
+
+                                    <td>$75.00</td>
+
+                                    <td>
+                                        <span class="payment-success">
+                                            Paid
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td>Jul 01, 2026</td>
+
+                                    <td>Premium Plan</td>
+
+                                    <td>
+                                        <i class="fa-brands fa-cc-visa"></i>
+                                        Visa ending 4242
+                                    </td>
+
+                                    <td>$75.00</td>
+
+                                    <td>
+                                        <span class="payment-success">
+                                            Paid
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 NOTIFICATIONS
+            ================================================== -->
+
+            <section
+                class="dashboard-section"
+                id="notifications">
+
+                <div class="section-page-header">
+
+                    <div>
+
+                        <span class="section-label">
+                            UPDATES
+                        </span>
+
+                        <h2>
+                            Notifications
+                        </h2>
+
+                        <p>
+                            Stay updated with your appointments and services.
+                        </p>
+
+                    </div>
+
+                    <button class="outline-btn">
+                        Mark All as Read
+                    </button>
+
+                </div>
+
+
+                <div class="notifications-page">
+
+                    <div class="notification-page-item unread">
+
+                        <span class="notification-page-icon blue">
+                            <i class="fa-regular fa-calendar-check"></i>
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Appointment Confirmed
+                            </h3>
+
+                            <p>
+                                Your residential window cleaning appointment
+                                has been confirmed for September 24.
+                            </p>
+
+                            <small>
+                                Today, 10:30 AM
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="notification-page-item unread">
+
+                        <span class="notification-page-icon cyan">
+                            <i class="fa-solid fa-credit-card"></i>
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Payment Successful
+                            </h3>
+
+                            <p>
+                                Your monthly Premium Plan payment of $75
+                                has been successfully processed.
+                            </p>
+
+                            <small>
+                                Yesterday
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="notification-page-item">
+
+                        <span class="notification-page-icon green">
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Service Completed
+                            </h3>
+
+                            <p>
+                                Your previous window cleaning service
+                                has been completed successfully.
+                            </p>
+
+                            <small>
+                                Sep 10, 2026
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 PROFILE
+            ================================================== -->
+
+            <section
+                class="dashboard-section"
+                id="profile">
+
+                <div class="section-page-header">
+
+                    <div>
+
+                        <span class="section-label">
+                            ACCOUNT
+                        </span>
+
+                        <h2>
+                            My Profile
+                        </h2>
+
+                        <p>
+                            Manage your personal information and preferences.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="profile-layout">
+
+
+                    <div class="profile-summary">
+
+                        <div class="profile-large-avatar">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+
+                        <h3>
+                            John Doe
+                        </h3>
+
+                        <p>
+                            Premium Customer
+                        </p>
+
+                        <span class="profile-status">
+                            Active Customer
+                        </span>
+
+                    </div>
+
+
+                    <div class="profile-form-card">
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <span class="card-label">
+                                    PERSONAL DETAILS
+                                </span>
+
+                                <h3>
+                                    Account Information
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+
+                        <form>
+
+                            <div class="form-grid">
+
+                                <div class="form-group">
+
+                                    <label>
+                                        First Name
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        value="John">
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label>
+                                        Last Name
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        value="Doe">
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label>
+                                        Email Address
+                                    </label>
+
+                                    <input
+                                        type="email"
+                                        value="john@example.com">
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label>
+                                        Phone Number
+                                    </label>
+
+                                    <input
+                                        type="tel"
+                                        value="+1 555 123 4567">
+
+                                </div>
+
+
+                                <div class="form-group full">
+
+                                    <label>
+                                        Address
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        value="24 Green Valley Road">
+
+                                </div>
+
+                            </div>
+
+
+                            <button
+                                type="button"
+                                class="primary-btn">
+
+                                <i class="fa-solid fa-check"></i>
+
+                                Save Changes
+
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<!-- Logout Modal -->
+
+<div class="modal-overlay" id="logoutModal">
+
+    <div class="logout-modal">
+
+        <div class="modal-icon">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        </div>
+
+        <h3>
+            Logout from Dashboard?
+        </h3>
+
+        <p>
+            Are you sure you want to logout from your ClearPoint Services account?
+        </p>
+
+        <div class="modal-actions">
+
+            <button
+                class="outline-btn"
+                id="cancelLogout">
+
+                Cancel
+
+            </button>
+
+            <button
+                class="danger-btn"
+                id="confirmLogout">
+
+                Logout
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Dashboard JavaScript -->
+<script src="dashboard.js"></script>
+
+</body>
+</html>

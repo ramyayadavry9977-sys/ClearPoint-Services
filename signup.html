@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="image/logo-2.png">
+    <title>Sign Up | ClearPoint Services</title>
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Sign Up CSS -->
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         SIGN UP PAGE
+    ====================================================== -->
+
+    <main class="signup-page">
+
+        <!-- =================================================
+             TOP CONTROLS
+        ================================================== -->
+
+        <div class="signup-controls">
+
+            <!-- RTL -->
+            <button
+                type="button"
+                class="control-btn"
+                id="directionBtn"
+                title="Change Direction"
+                aria-label="Change Direction"
+            >
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </button>
+
+
+            <!-- Dark Mode -->
+            <button
+                type="button"
+                class="control-btn"
+                id="themeBtn"
+                title="Toggle Dark Mode"
+                aria-label="Toggle Dark Mode"
+            >
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+        </div>
+
+
+        <!-- =================================================
+             SIGN UP CARD
+        ================================================== -->
+
+        <section class="signup-card">
+
+            <!-- =================================================
+                 LOGO
+            ================================================== -->
+
+            <a href="index.html" class="signup-logo">
+
+                <div class="logo-icon">
+
+                    <img
+                        src="image/logo-2.png"
+                        alt="ClearPoint Services Logo"
+                    >
+
+                </div>
+
+                <div class="logo-text">
+
+                    <span class="logo-main">
+                        ClearPoint
+                    </span>
+
+                    <span class="logo-sub">
+                        Services
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <!-- =================================================
+                 HEADING
+            ================================================== -->
+
+            <div class="signup-heading">
+
+                <h1>
+                    Create Your Account
+                </h1>
+
+                <p>
+                    Join ClearPoint Services and manage your cleaning visits.
+                </p>
+
+            </div>
+
+
+            <!-- =================================================
+                 SIGN UP FORM
+            ================================================== -->
+
+            <form
+                id="signupForm"
+                class="signup-form"
+            >
+
+                <!-- First Name -->
+<div class="name-row">
+
+    <div class="form-group">
+        <label for="firstName">First Name</label>
+
+        <div class="input-box">
+            <i class="fa-regular fa-user"></i>
+
+            <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                placeholder="First Name"
+                autocomplete="given-name"
+                required
+            >
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label for="lastName">Last Name</label>
+
+        <div class="input-box">
+            <i class="fa-regular fa-user"></i>
+
+            <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                placeholder="Last Name"
+                autocomplete="family-name"
+                required
+            >
+        </div>
+    </div>
+
+</div>
+
+
+                <!-- Email -->
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <div class="input-box">
+
+                        <i class="fa-regular fa-envelope"></i>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email address"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- Phone -->
+
+                <div class="form-group">
+
+                    <label for="phone">
+                        Phone Number
+                    </label>
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter your phone number"
+                            autocomplete="tel"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- Password -->
+
+                <div class="form-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Create a password"
+                            autocomplete="new-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="password-toggle"
+                            id="passwordToggle"
+                            title="Show password"
+                            aria-label="Show password"
+                        >
+                            <i class="fa-regular fa-eye"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Confirm Password -->
+
+                <div class="form-group">
+
+                    <label for="confirmPassword">
+                        Confirm Password
+                    </label>
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            name="confirmPassword"
+                            placeholder="Confirm your password"
+                            autocomplete="new-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="password-toggle"
+                            id="confirmPasswordToggle"
+                            title="Show password"
+                            aria-label="Show password"
+                        >
+                            <i class="fa-regular fa-eye"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Terms -->
+
+                <div class="terms-row">
+
+                    <label class="terms-label">
+
+                        <input
+                            type="checkbox"
+                            id="terms"
+                            required
+                        >
+
+                        <span class="custom-check"></span>
+
+                        <span>
+                            I agree to the
+                            <a href="terms.html">
+                                Terms & Conditions
+                            </a>
+                            and
+                            <a href="privacy.html">
+                                Privacy Policy
+                            </a>
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <!-- Sign Up Button -->
+
+                <button
+                    type="submit"
+                    class="signup-btn"
+                >
+
+                    <span>
+                        Create Account
+                    </span>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+
+                <!-- Message -->
+
+                <div
+                    id="signupMessage"
+                    class="signup-message"
+                    aria-live="polite"
+                ></div>
+
+            </form>
+
+
+            <!-- =================================================
+                 DIVIDER
+            ================================================== -->
+
+            <div class="divider">
+
+                <span></span>
+
+                <p>OR</p>
+
+                <span></span>
+
+            </div>
+
+
+            <!-- =================================================
+                 SOCIAL SIGN UP
+            ================================================== -->
+
+            <div class="social-signup">
+
+                <!-- Google -->
+
+                <button
+                    type="button"
+                    class="social-btn"
+                    id="googleSignup"
+                >
+
+                    <i class="fa-brands fa-google"></i>
+
+                    <span>
+                        Continue with Google
+                    </span>
+
+                </button>
+
+
+                <!-- Apple -->
+
+                <button
+                    type="button"
+                    class="social-btn"
+                    id="appleSignup"
+                >
+
+                    <i class="fa-brands fa-apple"></i>
+
+                    <span>
+                        Continue with Apple
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <!-- =================================================
+                 LOGIN LINK
+            ================================================== -->
+
+            <div class="login-text">
+
+                <span>
+                    Already have an account?
+                </span>
+
+                <a href="login.html">
+                    Sign In
+                </a>
+
+            </div>
+
+
+            <!-- =================================================
+                 BACK HOME
+            ================================================== -->
+
+            <a
+                href="index.html"
+                class="back-home"
+            >
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                <span>
+                    Back to website
+                </span>
+
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- Sign Up JavaScript -->
+    <script>
+/* =========================================================
+   CLEARPOINT SERVICES
+   SIGN UP JAVASCRIPT
+========================================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+
+    /* =====================================================
+       ELEMENTS
+    ===================================================== */
+
+    const signupForm =
+        document.getElementById("signupForm");
+
+    const passwordInput =
+        document.getElementById("password");
+
+    const confirmPasswordInput =
+        document.getElementById("confirmPassword");
+
+    const passwordToggle =
+        document.getElementById("passwordToggle");
+
+    const confirmPasswordToggle =
+        document.getElementById("confirmPasswordToggle");
+
+    const signupMessage =
+        document.getElementById("signupMessage");
+
+    const themeBtn =
+        document.getElementById("themeBtn");
+
+    const directionBtn =
+        document.getElementById("directionBtn");
+
+    const googleSignup =
+        document.getElementById("googleSignup");
+
+    const appleSignup =
+        document.getElementById("appleSignup");
+
+
+    /* =====================================================
+       THEME
+    ===================================================== */
+
+    const savedTheme =
+        localStorage.getItem("clearPointTheme");
+
+    if (savedTheme === "dark") {
+
+        document.documentElement.classList.add(
+            "dark-mode"
+        );
+
+    }
+
+
+    function updateThemeIcon() {
+
+        if (!themeBtn) return;
+
+        const icon =
+            themeBtn.querySelector("i");
+
+        const isDark =
+            document.documentElement.classList.contains(
+                "dark-mode"
+            );
+
+        if (isDark) {
+
+            icon.classList.remove("fa-moon");
+
+            icon.classList.add("fa-sun");
+
+            themeBtn.setAttribute(
+                "title",
+                "Light Mode"
+            );
+
+        } else {
+
+            icon.classList.remove("fa-sun");
+
+            icon.classList.add("fa-moon");
+
+            themeBtn.setAttribute(
+                "title",
+                "Dark Mode"
+            );
+
+        }
+    }
+
+
+    updateThemeIcon();
+
+
+    if (themeBtn) {
+
+        themeBtn.addEventListener("click", () => {
+
+            document.documentElement.classList.toggle(
+                "dark-mode"
+            );
+
+            const isDark =
+                document.documentElement.classList.contains(
+                    "dark-mode"
+                );
+
+            localStorage.setItem(
+                "clearPointTheme",
+                isDark ? "dark" : "light"
+            );
+
+            updateThemeIcon();
+
+        });
+
+    }
+
+
+    /* =====================================================
+       RTL / LTR
+    ===================================================== */
+
+    const savedDirection =
+        localStorage.getItem("clearPointDirection");
+
+    if (savedDirection === "rtl") {
+
+        document.documentElement.dir = "rtl";
+
+    } else {
+
+        document.documentElement.dir = "ltr";
+
+    }
+
+
+    if (directionBtn) {
+
+        directionBtn.addEventListener("click", () => {
+
+            const currentDirection =
+                document.documentElement.dir;
+
+            const newDirection =
+                currentDirection === "rtl"
+                    ? "ltr"
+                    : "rtl";
+
+            document.documentElement.dir =
+                newDirection;
+
+            localStorage.setItem(
+                "clearPointDirection",
+                newDirection
+            );
+
+        });
+
+    }
+
+
+    /* =====================================================
+       PASSWORD VISIBILITY FUNCTION
+    ===================================================== */
+
+    function setupPasswordToggle(
+        button,
+        input
+    ) {
+
+        if (!button || !input) return;
+
+        button.addEventListener("click", () => {
+
+            const icon =
+                button.querySelector("i");
+
+            if (input.type === "password") {
+
+                input.type = "text";
+
+                icon.classList.remove(
+                    "fa-eye"
+                );
+
+                icon.classList.add(
+                    "fa-eye-slash"
+                );
+
+                button.setAttribute(
+                    "aria-label",
+                    "Hide password"
+                );
+
+                button.setAttribute(
+                    "title",
+                    "Hide password"
+                );
+
+            } else {
+
+                input.type = "password";
+
+                icon.classList.remove(
+                    "fa-eye-slash"
+                );
+
+                icon.classList.add(
+                    "fa-eye"
+                );
+
+                button.setAttribute(
+                    "aria-label",
+                    "Show password"
+                );
+
+                button.setAttribute(
+                    "title",
+                    "Show password"
+                );
+
+            }
+
+        });
+
+    }
+
+
+    setupPasswordToggle(
+        passwordToggle,
+        passwordInput
+    );
+
+
+    setupPasswordToggle(
+        confirmPasswordToggle,
+        confirmPasswordInput
+    );
+
+
+    /* =====================================================
+       SIGN UP FORM
+    ===================================================== */
+
+    if (signupForm) {
+
+        signupForm.addEventListener(
+            "submit",
+            (event) => {
+
+                event.preventDefault();
+
+
+                const firstName =
+                    document
+                        .getElementById("firstName")
+                        .value
+                        .trim();
+
+                const lastName =
+                    document
+                        .getElementById("lastName")
+                        .value
+                        .trim();
+
+                const email =
+                    document
+                        .getElementById("email")
+                        .value
+                        .trim();
+
+                const phone =
+                    document
+                        .getElementById("phone")
+                        .value
+                        .trim();
+
+                const password =
+                    passwordInput.value;
+
+                const confirmPassword =
+                    confirmPasswordInput.value;
+
+                const terms =
+                    document.getElementById(
+                        "terms"
+                    ).checked;
+
+
+                signupMessage.textContent = "";
+
+                signupMessage.style.color =
+                    "var(--danger-color)";
+
+
+                /* Validation */
+
+                if (!firstName) {
+
+                    signupMessage.textContent =
+                        "Please enter your first name.";
+
+                    return;
+                }
+
+
+                if (!lastName) {
+
+                    signupMessage.textContent =
+                        "Please enter your last name.";
+
+                    return;
+                }
+
+
+                if (!email) {
+
+                    signupMessage.textContent =
+                        "Please enter your email address.";
+
+                    return;
+                }
+
+
+                if (!phone) {
+
+                    signupMessage.textContent =
+                        "Please enter your phone number.";
+
+                    return;
+                }
+
+
+                if (password.length < 8) {
+
+                    signupMessage.textContent =
+                        "Password must contain at least 8 characters.";
+
+                    return;
+                }
+
+
+                if (password !== confirmPassword) {
+
+                    signupMessage.textContent =
+                        "Passwords do not match.";
+
+                    return;
+                }
+
+
+                if (!terms) {
+
+                    signupMessage.textContent =
+                        "Please accept the Terms & Conditions.";
+
+                    return;
+                }
+
+
+                /*
+                 * Front-end validation completed.
+                 *
+                 * Connect your real authentication
+                 * backend here later.
+                 */
+
+                signupMessage.style.color =
+                    "var(--success-color)";
+
+                signupMessage.textContent =
+                    "Account details validated successfully.";
+
+
+                /*
+                 * Example:
+                 *
+                 * window.location.href = "dashboard.html";
+                 *
+                 * Do this only after connecting
+                 * your real authentication system.
+                 */
+
+            }
+        );
+
+    }
+
+
+    /* =====================================================
+       GOOGLE SIGN UP
+    ===================================================== */
+
+    if (googleSignup) {
+
+        googleSignup.addEventListener(
+            "click",
+            () => {
+
+                signupMessage.style.color =
+                    "var(--text-light)";
+
+                signupMessage.textContent =
+                    "Google sign-up will be connected here.";
+
+            }
+        );
+
+    }
+
+
+    /* =====================================================
+       APPLE SIGN UP
+    ===================================================== */
+
+    if (appleSignup) {
+
+        appleSignup.addEventListener(
+            "click",
+            () => {
+
+                signupMessage.style.color =
+                    "var(--text-light)";
+
+                signupMessage.textContent =
+                    "Apple sign-up will be connected here.";
+
+            }
+        );
+
+    }
+
+});
+
+    </script>
+
+</body>
+
+</html>
