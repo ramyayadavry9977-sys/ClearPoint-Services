@@ -349,7 +349,7 @@ html.dark-mode .home-dropdown .dropdown-menu a:hover {
 
     background-color: transparent;
 
-    border: 2px solid var(--border-color);
+    border: 2px solid var(--primary-color);
 
     border-radius: 50%;
 
@@ -372,9 +372,27 @@ html.dark-mode .home-dropdown .dropdown-menu a:hover {
 }
 
 .header-icon-btn svg {
-    width: 18px;
-    height: 18px;
+    width: 19px;
+    height: 19px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
+
+html.dark-mode .header-icon-btn {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+html.dark-mode .header-icon-btn:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border-color: var(--primary-color);
+}
+
 
 
 /* =========================================================
@@ -695,262 +713,410 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-
 /* =========================================
    ABOUT US HERO
 ========================================= */
 
 .about-hero {
-    position: relative;
-
-    min-height: 430px;
-
-    display: flex;
-    align-items: center;
-
-    background-image: url("image/image-7.webp");
-    background-size: cover;
-    background-position: center;
-
+    padding: 20px 0;
+    background-color: var(--bg-color);
     overflow: hidden;
 }
 
 
-/* Dark Overlay */
+/* =========================================
+   HERO WRAPPER
+========================================= */
 
-.about-hero-overlay {
-    position: absolute;
-    inset: 0;
-
-    background: rgba(10, 35, 50, 0.62);
-
-    z-index: 1;
+.about-hero-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 70px;
 }
 
 
-/* Hero Content */
+/* =========================================
+   LEFT CONTENT
+========================================= */
 
 .about-hero-content {
-    position: relative;
-
-    z-index: 2;
-
-    text-align: center;
-
-    padding: 40px 0;
+    max-width: 570px;
 }
-
-
-/* Small Label */
 
 .about-hero-label {
     display: inline-block;
 
     margin-bottom: 18px;
 
-    padding: 7px 16px;
+    color: var(--primary-color);
 
-    border: 1px solid rgba(103, 199, 232, 0.7);
-
-    border-radius: 30px;
-
-    background: rgba(103, 199, 232, 0.12);
-
-    color: var(--secondary-color);
-
-    font-size: 13px;
-    font-weight: 600;
-
-    letter-spacing: 1.5px;
-}
-
-
-/* Hero Heading */
-
-.about-hero h1 {
-    margin-bottom: 20px;
-
-    color: var(--white-color);
-
-    font-size: 52px;
-    line-height: 1.15;
+    font-size: 11px;
     font-weight: 700;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
+.about-hero-content h1 {
+    margin: 0 0 22px;
 
-/* Hero Paragraph */
+    font-size: 58px;
+    line-height: 1.08;
+    font-weight: 700;
 
-.about-hero p {
-    max-width: 650px;
+    color: var(--text-color);
+}
 
-    margin: 0 auto 28px;
+.about-hero-content h1 span {
+    display: block;
+    color: var(--primary-color);
+}
 
-    color: rgba(255, 255, 255, 0.88);
+.about-hero-content p {
+    max-width: 540px;
 
-    font-size: 16px;
+    margin: 0 0 30px;
+
+    font-size: 15px;
     line-height: 1.8;
-}
 
-
-/* Breadcrumb */
-
-.about-breadcrumb {
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    gap: 10px;
-
-    font-size: 14px;
-    font-weight: 500;
-}
-
-
-.about-breadcrumb a {
-    color: var(--secondary-color);
-
-    transition: color var(--transition);
-}
-
-
-.about-breadcrumb a:hover {
-    color: var(--white-color);
-}
-
-
-.about-breadcrumb i {
-    color: rgba(255, 255, 255, 0.7);
-
-    font-size: 12px;
-}
-
-
-.about-breadcrumb span {
-    color: var(--white-color);
+    color: var(--text-light);
 }
 
 
 /* =========================================
-   ABOUT HERO BUTTONS
+   BUTTONS
 ========================================= */
 
 .about-hero-buttons {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 15px;
-
-    margin-top: 30px;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
 .about-hero-buttons .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     gap: 9px;
 }
 
 
-/* Outline button on dark hero */
+/* =========================================
+   RIGHT IMAGE
+========================================= */
 
-.about-hero-buttons .btn-outline {
-    border-color: var(--white-color);
-    color: var(--white-color);
+.about-hero-visual {
+    position: relative;
+    padding: 15px 15px 35px 35px;
 }
 
-.about-hero-buttons .btn-outline:hover {
-    background-color: var(--white-color);
-    border-color: var(--white-color);
-    color: var(--primary-color);
+.about-hero-image {
+    position: relative;
+
+    width: 100%;
+    height: 470px;
+
+    overflow: hidden;
+
+    border-radius: 14px;
+
+    background-color: var(--card-color);
+
+    box-shadow: var(--shadow-lg);
 }
 
+.about-hero-image::after {
+    content: "";
 
-/* Mobile */
+    position: absolute;
 
-@media (max-width: 576px) {
+    inset: 0;
 
-    .about-hero-buttons {
-        flex-direction: column;
-        width: 100%;
-    }
+    background: linear-gradient(
+        135deg,
+        rgba(22, 119, 184, 0.08),
+        transparent 50%
+    );
 
-    .about-hero-buttons .btn {
-        width: 100%;
-        max-width: 260px;
-    }
+    pointer-events: none;
 }
 
+.about-hero-image img {
+    width: 100%;
+    height: 100%;
 
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+.about-hero-image:hover img {
+    transform: scale(1.04);
+}
 
 
 /* =========================================
-   ABOUT HERO - TABLET
+   IMAGE DECORATION
+========================================= */
+
+.about-hero-visual::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 150px;
+    height: 150px;
+
+    border-left: 3px solid var(--secondary-color);
+    border-bottom: 3px solid var(--secondary-color);
+
+    border-radius: 0 0 0 12px;
+
+    z-index: 0;
+}
+
+.about-hero-image {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =========================================
+   FLOATING BADGE
+========================================= */
+
+.about-hero-badge {
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    min-width: 220px;
+
+    padding: 15px 18px;
+
+    background-color: var(--card-color);
+
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+
+    box-shadow: var(--shadow-md);
+
+    z-index: 2;
+}
+
+.about-hero-badge > i {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background-color: var(--primary-color);
+    color: #ffffff;
+
+    font-size: 15px;
+}
+
+.about-hero-badge div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.about-hero-badge strong {
+    font-size: 13px;
+    color: var(--text-color);
+}
+
+.about-hero-badge span {
+    font-size: 11px;
+    color: var(--text-light);
+}
+
+
+/* =========================================
+   DARK MODE
+========================================= */
+
+html.dark-mode .about-hero {
+    background-color: var(--bg-color);
+}
+
+html.dark-mode .about-hero-content h1 {
+    color: #ffffff;
+}
+
+html.dark-mode .about-hero-content h1 span {
+    color: var(--primary-color);
+}
+
+html.dark-mode .about-hero-badge {
+    background-color: var(--card-color);
+    border-color: var(--border-color);
+}
+
+
+/* =========================================
+   RTL
+========================================= */
+
+html[dir="rtl"] .about-hero-wrapper {
+    direction: rtl;
+}
+
+html[dir="rtl"] .about-hero-content {
+    text-align: right;
+}
+
+html[dir="rtl"] .about-hero-buttons {
+    justify-content: flex-start;
+}
+
+html[dir="rtl"] .about-hero-visual {
+    padding: 15px 35px 35px 15px;
+}
+
+html[dir="rtl"] .about-hero-visual::before {
+    left: auto;
+    right: 0;
+
+    border-left: none;
+    border-right: 3px solid var(--secondary-color);
+
+    border-radius: 0 0 12px 0;
+}
+
+html[dir="rtl"] .about-hero-badge {
+    left: auto;
+    right: 0;
+}
+
+
+/* =========================================
+   TABLET
 ========================================= */
 
 @media (max-width: 992px) {
 
     .about-hero {
-        min-height: 400px;
+        padding: 75px 0;
     }
 
-    .about-hero h1 {
-        font-size: 44px;
+    .about-hero-wrapper {
+        grid-template-columns: 1fr;
+        gap: 50px;
     }
 
+    .about-hero-content {
+        max-width: 700px;
+    }
+
+    .about-hero-content h1 {
+        font-size: 50px;
+    }
+
+    .about-hero-visual {
+        max-width: 650px;
+    }
+
+    html[dir="rtl"] .about-hero-visual {
+        margin-right: auto;
+        margin-left: 0;
+    }
 }
 
 
 /* =========================================
-   ABOUT HERO - MOBILE
+   MOBILE
 ========================================= */
 
 @media (max-width: 768px) {
 
     .about-hero {
-        min-height: 380px;
+        padding: 60px 0;
     }
 
-    .about-hero-content {
-        padding: 70px 0;
+    .about-hero-wrapper {
+        gap: 40px;
     }
 
-    .about-hero h1 {
-        font-size: 38px;
+    .about-hero-content h1 {
+        font-size: 42px;
     }
 
-    .about-hero p {
-        max-width: 90%;
-        font-size: 15px;
+    .about-hero-content p {
+        font-size: 14px;
     }
 
+    .about-hero-image {
+        height: 400px;
+    }
 }
 
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
 
 @media (max-width: 576px) {
 
     .about-hero {
-        min-height: 350px;
+        padding: 50px 0;
     }
 
-    .about-hero-content {
-        padding: 60px 0;
+    .about-hero-content h1 {
+        font-size: 36px;
     }
 
-    .about-hero-label {
-        font-size: 11px;
-        letter-spacing: 1px;
+    .about-hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
     }
 
-    .about-hero h1 {
-        font-size: 32px;
+    .about-hero-buttons .btn {
+        width: 100%;
     }
 
-    .about-hero p {
-        font-size: 14px;
-        line-height: 1.7;
+    .about-hero-visual {
+        padding: 10px 10px 30px 25px;
     }
 
+    .about-hero-image {
+        height: 330px;
+    }
+
+    .about-hero-badge {
+        min-width: 190px;
+        padding: 12px 14px;
+    }
+
+    .about-hero-badge > i {
+        width: 36px;
+        height: 36px;
+    }
+
+    html[dir="rtl"] .about-hero-visual {
+        padding: 10px 25px 30px 10px;
+    }
 }
-
-
 /* =========================================
    WHO WE ARE
 ========================================= */
@@ -2659,10 +2825,11 @@ html[dir="rtl"] .about-promise-buttons {
 .footer-brand p {
     max-width: 320px;
     margin-top: 20px;
-
+    margin-bottom: 10px;
     color: var(--text-light);
     font-size: 14px;
     line-height: 1.7;
+    
 }
 
 
@@ -2672,7 +2839,7 @@ html[dir="rtl"] .about-promise-buttons {
 
 .footer-social h4 {
     color: var(--white-color);
-    font-size: 18px;
+    font-size: 15px;
     margin-bottom: 18px;
 }
 

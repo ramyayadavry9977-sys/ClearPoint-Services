@@ -347,7 +347,7 @@ html.dark-mode .home-dropdown .dropdown-menu a:hover {
 
     background-color: transparent;
 
-    border: 2px solid var(--border-color);
+    border: 2px solid var(--primary-color);
 
     border-radius: 50%;
 
@@ -369,12 +369,33 @@ html.dark-mode .home-dropdown .dropdown-menu a:hover {
     color: var(--primary-color);
 }
 
+
 .header-icon-btn svg {
-    width: 18px;
-    height: 18px;
+    width: 19px;
+    height: 19px;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
 
+/* =========================================
+   DARK MODE
+========================================= */
+
+html.dark-mode .header-icon-btn {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+html.dark-mode .header-icon-btn:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border-color: var(--primary-color);
+}
 /* =========================================================
    DARK MODE ICON
    ========================================================= */
@@ -2425,7 +2446,32 @@ html[dir="rtl"] .newsletter-btn:hover i {
 
 
 
+.service-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
 
+    color: var(--primary-color);
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: var(--transition);
+}
+
+.service-btn i {
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.service-btn:hover {
+    color: var(--primary-color);
+}
+
+.service-btn:hover i {
+    transform: translateX(4px);
+}
 
 
 
@@ -2555,7 +2601,7 @@ html[dir="rtl"] .newsletter-btn:hover i {
 .footer-brand p {
     max-width: 320px;
     margin-top: 20px;
-
+margin-bottom: 10px;
     color: var(--text-light);
     font-size: 14px;
     line-height: 1.7;
