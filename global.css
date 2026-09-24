@@ -914,3 +914,64 @@ html[dir="rtl"] .btn-group {
         transition-duration: 0.01ms !important;
     }
 }
+
+
+
+
+
+
+
+/* =========================================
+   GLOBAL SECTION LABEL
+========================================= */
+
+.section-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 18px;
+
+    color: var(--primary-color);
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1;
+
+    text-transform: uppercase;
+}
+
+
+/* LABEL LINE */
+
+.section-label .label-line {
+    width: 35px;
+    height: 2px;
+
+    flex-shrink: 0;
+
+    background-color: var(--primary-color);
+}
+
+
+/* =========================================
+   DARK MODE
+========================================= */
+
+html.dark-mode .section-label {
+    color: var(--primary-color);
+}
+
+html.dark-mode .section-label .label-line {
+    background-color: var(--primary-color);
+}
+
+
+/* =========================================
+   RTL
+========================================= */
+
+html[dir="rtl"] .section-label {
+    flex-direction: row-reverse;
+}

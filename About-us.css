@@ -1117,6 +1117,54 @@ html[dir="rtl"] .about-hero-badge {
         padding: 10px 25px 30px 10px;
     }
 }
+
+
+
+
+
+/* =========================================
+   ABOUT SECTION LABEL
+========================================= */
+
+.about-section-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 18px;
+
+    color: var(--primary-color);
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+
+/* Blue line */
+
+.about-section-label::before {
+    content: "";
+
+    width: 35px;
+    height: 2px;
+
+    flex-shrink: 0;
+
+    background-color: var(--primary-color);
+}
+
+
+/* =========================================
+   RTL
+========================================= */
+
+html[dir="rtl"] .about-section-label {
+    flex-direction: row-reverse;
+}
 /* =========================================
    WHO WE ARE
 ========================================= */
