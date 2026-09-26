@@ -1942,6 +1942,53 @@ html[dir="rtl"] .service-included-item:hover {
 
 
 /* =========================================
+   PROCESS ITEM HOVER
+========================================= */
+
+.service-process-item {
+    transition: transform 0.3s ease;
+}
+
+.service-process-item:hover {
+    transform: translateY(-6px);
+}
+
+
+/* =========================================
+   NUMBER HOVER
+========================================= */
+
+.service-process-item:hover .service-process-number {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #ffffff;
+
+    transform: scale(1.05);
+}
+
+
+/* =========================================
+   ICON HOVER
+========================================= */
+
+.service-process-item:hover .service-process-icon {
+    transform: scale(1.08);
+    box-shadow: 0 10px 25px rgba(22, 119, 184, 0.28);
+}
+
+
+/* Smooth transition */
+.service-process-number,
+.service-process-icon {
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* =========================================
    DARK MODE
 ========================================= */
 
