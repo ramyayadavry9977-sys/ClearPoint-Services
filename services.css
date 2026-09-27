@@ -1726,137 +1726,260 @@ right: auto;
 left: 10px;
 }
 
-/* ================================
-RESPONSIVE
-================================ */
+/* =========================================================
+   SERVICES PROCESS - RESPONSIVE
+========================================================= */
+
+/* =========================
+   TABLET
+========================= */
 
 @media (max-width: 992px) {
 
+    .services-process {
+        padding: 70px 0;
+    }
 
-.services-process {
-    padding: 70px 0;
+    .services-process-heading {
+        margin-bottom: 50px;
+    }
+
+    .services-process-heading h2 {
+        font-size: 38px;
+    }
+
+    .services-process-timeline {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 25px;
+    }
+
+    /* Remove desktop connecting line */
+    .services-process-timeline::before {
+        display: none;
+    }
+
+    .service-process-step {
+        text-align: center;
+    }
+
+    .service-process-number {
+        top: -5px;
+        right: 10px;
+    }
+
+    html[dir="rtl"] .service-process-number {
+        right: auto;
+        left: 10px;
+    }
 }
 
-.services-process-heading h2 {
-    font-size: 38px;
-}
 
-.services-process-timeline {
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 50px;
-}
-
-.services-process-timeline::before {
-    display: none;
-}
-
-
-}
+/* =========================
+   MOBILE / TABLET SMALL
+========================= */
 
 @media (max-width: 768px) {
 
+    .services-process {
+        padding: 60px 0;
+    }
 
-.services-process {
-    padding: 60px 0;
+    .services-process-heading {
+        margin-bottom: 45px;
+    }
+
+    .services-process-heading h2 {
+        font-size: 34px;
+    }
+
+    .services-process-heading p {
+        font-size: 14px;
+    }
+
+    .services-process-timeline {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    /*
+       Mobile process item:
+       icon on left
+       content on right
+    */
+    .service-process-step {
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: 70px minmax(0, 1fr);
+        grid-template-rows: auto 1fr;
+
+        column-gap: 18px;
+
+        text-align: left;
+    }
+
+    .service-process-icon {
+        width: 64px;
+        height: 64px;
+
+        grid-column: 1;
+        grid-row: 1 / 3;
+
+        margin: 0;
+
+        font-size: 19px;
+
+        box-shadow: 0 0 0 7px var(--bg-color);
+    }
+
+    .service-process-number {
+        position: static;
+
+        grid-column: 2;
+        grid-row: 1;
+
+        margin: 0 0 5px;
+
+        font-size: 10px;
+
+        text-align: left;
+    }
+
+    .service-process-content {
+        grid-column: 2;
+        grid-row: 2;
+
+        max-width: none;
+
+        margin: 0;
+    }
+
+    .service-process-content h3 {
+        margin-bottom: 6px;
+        font-size: 17px;
+    }
+
+    .service-process-content p {
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+    /* RTL mobile */
+    html[dir="rtl"] .service-process-step {
+        grid-template-columns: minmax(0, 1fr) 70px;
+        text-align: right;
+    }
+
+    html[dir="rtl"] .service-process-icon {
+        grid-column: 2;
+        grid-row: 1 / 3;
+    }
+
+    html[dir="rtl"] .service-process-number {
+        grid-column: 1;
+        grid-row: 1;
+
+        text-align: right;
+    }
+
+    html[dir="rtl"] .service-process-content {
+        grid-column: 1;
+        grid-row: 2;
+    }
 }
 
-.services-process-heading {
-    margin-bottom: 45px;
-}
 
-.services-process-heading h2 {
-    font-size: 34px;
-}
-
-.services-process-timeline {
-    grid-template-columns: 1fr;
-    gap: 35px;
-}
-
-.service-process-step {
-    display: grid;
-    grid-template-columns: 75px 1fr;
-    grid-template-rows: auto auto;
-    column-gap: 20px;
-    text-align: left;
-}
-
-.service-process-icon {
-    width: 68px;
-    height: 68px;
-    grid-row: span 2;
-    margin: 0;
-    font-size: 19px;
-}
-
-.service-process-number {
-    position: static;
-    margin-bottom: 5px;
-    font-size: 10px;
-}
-
-.service-process-content {
-    max-width: none;
-    margin: 0;
-}
-
-.service-process-content h3 {
-    margin-bottom: 6px;
-}
-
-}
+/* =========================
+   SMALL MOBILE
+========================= */
 
 @media (max-width: 576px) {
 
+    .services-process {
+        padding: 50px 0;
+    }
 
-.services-process {
-    padding: 50px 0;
+    .services-process-heading {
+        margin-bottom: 38px;
+    }
+
+    .services-process-heading h2 {
+        font-size: 30px;
+    }
+
+    .services-process-heading p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .services-process-timeline {
+        gap: 25px;
+    }
+
+    .service-process-step {
+        grid-template-columns: 58px minmax(0, 1fr);
+        column-gap: 15px;
+    }
+
+    .service-process-icon {
+        width: 54px;
+        height: 54px;
+
+        font-size: 17px;
+
+        box-shadow: 0 0 0 6px var(--bg-color);
+    }
+
+    .service-process-content h3 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .service-process-content p {
+        font-size: 11px;
+        line-height: 1.65;
+    }
+
+    html[dir="rtl"] .service-process-step {
+        grid-template-columns: minmax(0, 1fr) 58px;
+    }
 }
 
-.services-process-heading h2 {
-    font-size: 30px;
-}
 
-.services-process-heading p {
-    font-size: 13px;
-}
+/* =========================
+   VERY SMALL MOBILE
+========================= */
 
-.service-process-step {
-    grid-template-columns: 60px 1fr;
-    column-gap: 15px;
-}
+@media (max-width: 400px) {
 
-.service-process-icon {
-    width: 58px;
-    height: 58px;
-    box-shadow: 0 0 0 6px var(--bg-color);
-    font-size: 17px;
-}
+    .services-process {
+        padding: 45px 0;
+    }
 
-.service-process-content h3 {
-    font-size: 16px;
-}
+    .services-process-heading h2 {
+        font-size: 28px;
+    }
 
-.service-process-content p {
-    font-size: 11px;
-}
+    .service-process-step {
+        grid-template-columns: 52px minmax(0, 1fr);
+        column-gap: 12px;
+    }
 
+    .service-process-icon {
+        width: 48px;
+        height: 48px;
 
-}
+        font-size: 15px;
+    }
 
-/* RTL mobile alignment */
-
-@media (max-width: 768px) {
-
-
-html[dir="rtl"] .service-process-step {
-    text-align: right;
+    html[dir="rtl"] .service-process-step {
+        grid-template-columns: minmax(0, 1fr) 52px;
+    }
 }
 
 
 
-
-}
 
 .services-team {
 padding: 80px 0;
@@ -2890,4 +3013,140 @@ margin-bottom: 10px;
 .footer-contact-item span {
     line-height: 1.5;
 }
+
+
+
+
+
+/* =========================================================
+   FOOTER RESPONSIVE DESIGN
+========================================================= */
+
+/* ---------- TABLET ---------- */
+
+@media (max-width: 992px) {
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 30px;
+    }
+
+    .footer-column:first-child {
+        grid-column: 1 / -1;
+    }
+
+    .footer-social {
+        margin-top: 5px;
+    }
+
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 768px) {
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px 25px;
+    }
+
+    .footer-column:first-child {
+        grid-column: 1 / -1;
+    }
+
+    .footer-column h4 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .footer-column ul li {
+        margin-bottom: 9px;
+    }
+
+    .footer-social {
+        grid-column: 1 / -1;
+    }
+
+    .social-icons {
+        gap: 10px;
+    }
+
+    .social-icons a {
+        width: 40px;
+        height: 40px;
+    }
+
+}
+
+
+/* ---------- SMALL MOBILE ---------- */
+
+@media (max-width: 576px) {
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .footer-column:first-child {
+        grid-column: auto;
+    }
+
+    .footer-column {
+        text-align: left;
+    }
+
+    .footer-social {
+        grid-column: auto;
+    }
+
+    .social-icons {
+        justify-content: flex-start;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+}
+
+
+/* ---------- VERY SMALL DEVICES ---------- */
+
+@media (max-width: 400px) {
+
+    .footer-container {
+        gap: 24px;
+    }
+
+    .social-icons a {
+        width: 38px;
+        height: 38px;
+    }
+
+    .social-icons svg {
+        width: 17px;
+        height: 17px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
