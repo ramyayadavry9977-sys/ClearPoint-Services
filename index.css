@@ -1416,84 +1416,92 @@ html.dark-mode .about-feature-text p {
 }
 
 
-
-/* =========================
+/* =========================================================
    SERVICES SECTION
-========================= */
+========================================================= */
 
 .services-section {
-    width: 100%;
-    padding: 60px 0;
+    padding: 80px 20px;
+    background-color: var(--bg-color);
 }
 
 .services-container {
-    width: 90%;
-    max-width: 1200px;
+    width: 100%;
+    max-width: var(--container-width);
     margin: 0 auto;
 }
 
 
-/* =========================
-   SECTION HEADING
-========================= */
+/* =========================================================
+   SERVICES HEADING
+========================================================= */
 
 .services-heading {
-    max-width: 720px;
+    max-width: 760px;
     margin: 0 auto 50px;
     text-align: center;
 }
 
 .services-heading .section-label {
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
+    gap: 10px;
     margin-bottom: 18px;
+
+    color: var(--primary-color);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1;
+    text-transform: uppercase;
 }
 
+.services-heading .label-line {
+    width: 35px;
+    height: 2px;
+    flex-shrink: 0;
+    background-color: var(--primary-color);
+}
+
+
+/* =========================================================
+   SERVICES HEADING - H2
+========================================================= */
+
 .services-heading h2 {
+    margin: 0 0 18px;
+
+    color: var(--text-color);
     font-size: 44px;
     line-height: 1.15;
-    margin: 0 0 18px;
-    color: #172b3a;
+    font-weight: 700;
+    letter-spacing: -0.5px;
 }
 
 .services-heading h2 span {
+    display: block;
     color: var(--primary-color);
 }
+
+
+/* =========================================================
+   SERVICES INTRO TEXT
+========================================================= */
 
 .services-heading p {
-    margin: 0;
-    font-size: 16px;
+    max-width: 680px;
+    margin: 0 auto;
+
+    color: var(--text-light);
+    font-size: 15px;
     line-height: 1.8;
-    color: #667580;
 }
 
 
-.services-heading h2 {
-    font-size: 44px;
-    line-height: 1.15;
-    margin: 0 0 18px;
-    color: #172b3a;
-}
-
-.services-heading h2 span {
-    color: var(--primary-color);
-}
-
-
-/* =========================
-   DARK MODE
-========================= */
-
-html.dark-mode .services-heading h2 {
-    color: #ffffff;
-}
-
-html.dark-mode .services-heading h2 span {
-    color: var(--primary-color);
-}
-
-/* =========================
+/* =========================================================
    SERVICES GRID
-========================= */
+========================================================= */
 
 .services-grid {
     display: grid;
@@ -1502,97 +1510,156 @@ html.dark-mode .services-heading h2 span {
 }
 
 
-/* =========================
+/* =========================================================
    SERVICE CARD
-========================= */
+========================================================= */
 
 .service-card {
-    padding: 32px 25px;
-    border: 1px solid var(--primary-color);
-    border-radius: 10px;
-    transition: 0.3s ease;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+    overflow: hidden;
+
+    padding: 0 0 25px;
+
+    background-color: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-sm);
+
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition),
+        border-color var(--transition);
 }
 
 .service-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-6px);
+
     border-color: var(--secondary-color);
-    box-shadow: 0 15px 35px rgba(22, 119, 184, 0.10);
+    box-shadow: var(--shadow-md);
 }
 
 
-/* =========================
-   SERVICE ICON
-========================= */
+/* =========================================================
+   SERVICE IMAGE
+========================================================= */
 
-.service-icon {
-    width: 58px;
-    height: 58px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.service-image {
+    position: relative;
 
-    background: var(--secondary-color);
-    color: #ffffff;
+    width: 100%;
+    height: 210px;
 
-    border-radius: 8px;
-    margin-bottom: 22px;
+    overflow: hidden;
 
-    transition: 0.3s ease;
-}
-
-.service-icon i {
-    font-size: 23px;
-}
-
-.service-card:hover .service-icon {
-    background: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 
-/* =========================
-   SERVICE CONTENT
-========================= */
+/* Image overlay */
+
+.service-image::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(23, 43, 58, 0) 55%,
+        rgba(23, 43, 58, 0.18) 100%
+    );
+
+    pointer-events: none;
+}
+
+
+/* Image */
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.5s ease;
+}
+
+
+/* Image hover */
+
+.service-card:hover .service-image img {
+    transform: scale(1.06);
+}
+
+
+/* =========================================================
+   SERVICE CARD CONTENT
+========================================================= */
 
 .service-card h3 {
+    margin: 25px 25px 12px;
+
+    color: var(--text-color);
+
     font-size: 19px;
-    line-height: 1.4;
-    color: #263b49;
-    margin: 0 0 12px;
+    line-height: 1.35;
+    font-weight: 700;
 }
 
 .service-card p {
+    margin: 0 25px 20px;
+
+    color: var(--text-light);
+
     font-size: 14px;
     line-height: 1.7;
-    color: #7a8992;
-    margin: 0 0 22px;
 }
 
 
-/* =========================
+/* =========================================================
    SERVICE LINK
-========================= */
+========================================================= */
 
 .service-link {
     display: inline-flex;
     align-items: center;
     gap: 8px;
 
+    width: fit-content;
+
+    margin: auto 25px 0;
+
     color: var(--primary-color);
+
     text-decoration: none;
 
     font-size: 14px;
     font-weight: 600;
 
-    transition: 0.3s ease;
+    transition: color var(--transition);
 }
 
 .service-link i {
-    font-size: 12px;
-    transition: 0.3s ease;
+    color: var(--primary-color);
+
+    font-size: 13px;
+
+    transition:
+        transform var(--transition),
+        color var(--transition);
 }
 
 .service-link:hover {
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .service-link:hover i {
@@ -1600,9 +1667,13 @@ html.dark-mode .services-heading h2 span {
 }
 
 
-/* =========================
+/* =========================================================
    DARK MODE
-========================= */
+========================================================= */
+
+html.dark-mode .services-section {
+    background-color: var(--bg-color);
+}
 
 html.dark-mode .services-heading h2 {
     color: #ffffff;
@@ -1613,11 +1684,16 @@ html.dark-mode .services-heading h2 span {
 }
 
 html.dark-mode .services-heading p {
-    color: #c5d0d7;
+    color: var(--text-light);
 }
 
 html.dark-mode .service-card {
-    border-color: #34434c;
+    background-color: var(--card-color);
+    border-color: var(--border-color);
+}
+
+html.dark-mode .service-card:hover {
+    border-color: var(--primary-color);
 }
 
 html.dark-mode .service-card h3 {
@@ -1625,107 +1701,203 @@ html.dark-mode .service-card h3 {
 }
 
 html.dark-mode .service-card p {
-    color: #c5d0d7;
+    color: #B5C7D0;
 }
 
-html.dark-mode .service-card:hover {
-    border-color: var(--secondary-color);
+html.dark-mode .service-link,
+html.dark-mode .service-link i {
+    color: var(--primary-color);
 }
 
 
-/* =========================
+/* =========================================================
+   RTL
+========================================================= */
+
+html[dir="rtl"] .services-heading {
+    text-align: center;
+}
+
+html[dir="rtl"] .services-heading .section-label {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .service-link {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .service-link:hover i {
+    transform: translateX(-5px);
+}
+
+
+/* =========================================================
+   LARGE TABLET
+   1024px
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .service-image {
+        height: 220px;
+    }
+
+}
+
+
+/* =========================================================
    TABLET
-========================= */
+   768px
+========================================================= */
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
 
     .services-section {
-        padding: 70px 0;
+        padding: 70px 20px;
+    }
+
+    .services-heading {
+        margin-bottom: 40px;
+    }
+
+    .services-heading h2 {
+        font-size: 38px;
+    }
+
+    .services-heading p {
+        font-size: 14px;
     }
 
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
     }
 
-    .services-heading h2 {
-        font-size: 40px;
+    .service-image {
+        height: 190px;
+    }
+
+    .service-card h3 {
+        margin: 22px 20px 10px;
+        font-size: 18px;
+    }
+
+    .service-card p {
+        margin: 0 20px 18px;
+        font-size: 14px;
+    }
+
+    .service-link {
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
 }
 
 
-/* =========================
+/* =========================================================
    MOBILE
-========================= */
+   600px
+========================================================= */
 
 @media (max-width: 600px) {
 
     .services-section {
-        padding: 60px 0;
-    }
-
-    .services-container {
-        width: 92%;
+        padding: 60px 18px;
     }
 
     .services-heading {
         margin-bottom: 35px;
     }
 
+    .services-heading .section-label {
+        font-size: 11px;
+        letter-spacing: 1.7px;
+    }
+
     .services-heading h2 {
-        font-size: 34px;
+        font-size: 32px;
+        line-height: 1.2;
     }
 
     .services-heading p {
-        font-size: 15px;
+        font-size: 14px;
+        line-height: 1.7;
     }
 
     .services-grid {
         grid-template-columns: 1fr;
-        gap: 18px;
+        gap: 20px;
     }
 
-    .service-card {
-        padding: 28px 22px;
+    .service-image {
+        height: 220px;
+    }
+
+    .service-card h3 {
+        margin: 22px 22px 10px;
+        font-size: 19px;
+    }
+
+    .service-card p {
+        margin: 0 22px 18px;
+    }
+
+    .service-link {
+        margin-left: 22px;
+        margin-right: 22px;
     }
 
 }
-/* =========================
-   SERVICE ICON
-========================= */
 
-.service-icon {
-    width: 58px;
-    height: 58px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* =========================================================
+   SMALL MOBILE
+   480px
+========================================================= */
 
-    background: var(--secondary-color);
-    color: #ffffff;
+@media (max-width: 480px) {
 
-    border-radius: 8px;
-    margin-bottom: 22px;
+    .services-section {
+        padding: 55px 16px;
+    }
 
-    transition: 0.3s ease;
+    .services-heading h2 {
+        font-size: 29px;
+    }
+
+    .service-image {
+        height: 205px;
+    }
+
 }
 
-.service-icon svg {
-    width: 27px;
-    height: 27px;
 
-    fill: none;
-    stroke: currentColor;
-    stroke-width: 1.8;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+/* =========================================================
+   VERY SMALL MOBILE
+   360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .services-heading h2 {
+        font-size: 27px;
+    }
+
+    .service-image {
+        height: 190px;
+    }
+
+    .service-card h3 {
+        font-size: 18px;
+    }
+
 }
-
-.service-card:hover .service-icon {
-    background: var(--primary-color);
-}
-
 
 /* =====================================================
    WHY CHOOSE US SECTION
@@ -2245,84 +2417,107 @@ html.dark-mode .process-card p {
 
 }
 
-
 /* =====================================================
    TESTIMONIALS SECTION
 ===================================================== */
 
 .testimonials-section {
-    padding: var(--section-padding) 0;
+    width: 100%;
+    padding: 90px 0;
     background-color: var(--bg-color);
+    overflow: hidden;
 }
 
+
+/* =====================================================
+   TESTIMONIALS CONTAINER
+===================================================== */
+
 .testimonials-container {
-    width: min(100% - 40px, var(--container-width));
+    width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 
 /* =====================================================
-   HEADING
+   SECTION HEADING
 ===================================================== */
 
 .testimonials-heading {
-    max-width: 700px;
+    max-width: 720px;
     margin: 0 auto 55px;
     text-align: center;
 }
 
+
+/* Section Label */
+
 .testimonials-heading .section-label {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
     gap: 10px;
+    margin-bottom: 15px;
 
-    margin-bottom: 18px;
-
-    color: var(--primary-color);
-
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 700;
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
+    color: var(--primary-color);
+    text-transform: uppercase;
 }
 
+
+/* Label Line */
+
 .testimonials-heading .label-line {
-    width: 35px;
+    display: inline-block;
+    width: 32px;
     height: 2px;
     background-color: var(--secondary-color);
 }
 
+
+/* Heading */
+
 .testimonials-heading h2 {
-    margin: 0 0 18px;
-
-    color: #172b3a;
-
-    font-size: 44px;
+    margin: 0;
+    font-size: 42px;
     line-height: 1.15;
+    font-weight: 700;
+    color: var(--text-color);
+    letter-spacing: -0.5px;
 }
 
+
+/* Heading Highlight */
+
 .testimonials-heading h2 span {
+    display: inline;
     color: var(--primary-color);
 }
 
+
+/* Description */
+
 .testimonials-heading p {
-    margin: 0;
+    max-width: 620px;
+    margin: 18px auto 0;
 
-    color: var(--text-light);
-
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.8;
+    color: var(--text-light);
 }
 
 
 /* =====================================================
-   TESTIMONIAL GRID
+   TESTIMONIALS GRID
 ===================================================== */
 
 .testimonials-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    gap: 26px;
+    align-items: stretch;
 }
 
 
@@ -2331,24 +2526,40 @@ html.dark-mode .process-card p {
 ===================================================== */
 
 .testimonial-card {
-    padding: 32px 28px;
+    position: relative;
 
-    background-color: var(--card-color);
+    display: flex;
+    flex-direction: column;
 
+    min-height: 330px;
+    padding: 30px;
+
+    background-color: var(--card-bg);
     border: 1px solid var(--border-color);
-    border-radius: var(--radius-md);
+    border-radius: 18px;
 
-    transition: var(--transition);
+    box-shadow: 0 8px 28px rgba(22, 119, 184, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
 }
+
+
+/* Card Hover */
 
 .testimonial-card:hover {
     transform: translateY(-6px);
-    box-shadow: var(--shadow-md);
+    border-color: rgba(103, 199, 232, 0.65);
+
+    box-shadow:
+        0 16px 38px rgba(22, 119, 184, 0.12);
 }
 
 
 /* =====================================================
-   TOP
+   TESTIMONIAL TOP
 ===================================================== */
 
 .testimonial-top {
@@ -2359,110 +2570,146 @@ html.dark-mode .process-card p {
     margin-bottom: 22px;
 }
 
+
+/* =====================================================
+   QUOTE ICON
+===================================================== */
+
 .quote-icon {
-    width: 45px;
-    height: 45px;
+    width: 44px;
+    height: 44px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    background-color: var(--secondary-color);
-    color: #ffffff;
+    border-radius: 12px;
 
-    border-radius: 8px;
+    background-color: rgba(103, 199, 232, 0.13);
+    color: var(--primary-color);
 }
 
+
 .quote-icon svg {
-    width: 23px;
-    height: 23px;
+    width: 22px;
+    height: 22px;
 
     fill: none;
     stroke: currentColor;
-
-    stroke-width: 1.8;
+    stroke-width: 1.7;
     stroke-linecap: round;
     stroke-linejoin: round;
 }
 
 
 /* =====================================================
-   STARS
+   STAR RATING
 ===================================================== */
 
 .testimonial-stars {
     display: flex;
+    align-items: center;
     gap: 3px;
 }
+
 
 .testimonial-stars svg {
     width: 16px;
     height: 16px;
 
-    fill: var(--primary-color);
-    stroke: var(--primary-color);
+    fill: var(--secondary-color);
+    stroke: var(--secondary-color);
+    stroke-width: 1;
 }
 
 
 /* =====================================================
-   TEXT
+   TESTIMONIAL TEXT
 ===================================================== */
 
 .testimonial-text {
-    margin: 0 0 28px;
-
-    color: var(--text-light);
+    margin: 0;
 
     font-size: 15px;
     line-height: 1.8;
+    color: var(--text-color);
 }
 
 
 /* =====================================================
-   AUTHOR
+   TESTIMONIAL AUTHOR
 ===================================================== */
 
 .testimonial-author {
     display: flex;
     align-items: center;
-    gap: 13px;
+    gap: 14px;
 
-    padding-top: 20px;
-
-    border-top: 1px solid var(--border-color);
+    margin-top: auto;
+    padding-top: 28px;
 }
 
+
+/* =====================================================
+   AUTHOR PROFILE IMAGE
+===================================================== */
+
 .author-avatar {
-    width: 45px;
-    height: 45px;
+    width: 52px;
+    height: 52px;
+    min-width: 52px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    flex-shrink: 0;
-
-    background-color: var(--primary-color);
-    color: #ffffff;
+    display: block;
 
     border-radius: 50%;
 
-    font-size: 13px;
-    font-weight: 700;
+    object-fit: cover;
+
+    border: 2px solid var(--secondary-color);
+
+    background-color: var(--secondary-color);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
 }
+
+
+/* Profile Image Hover */
+
+.testimonial-card:hover .author-avatar {
+    transform: scale(1.05);
+    border-color: var(--primary-color);
+}
+
+
+/* =====================================================
+   AUTHOR DETAILS
+===================================================== */
+
+.testimonial-author > div {
+    min-width: 0;
+}
+
 
 .testimonial-author h3 {
-    margin: 0 0 3px;
+    margin: 0 0 5px;
+
+    font-size: 15px;
+    line-height: 1.3;
+    font-weight: 700;
 
     color: var(--text-color);
-
-    font-size: 16px;
 }
 
-.testimonial-author span {
-    color: var(--text-light);
 
-    font-size: 13px;
+.testimonial-author span {
+    display: block;
+
+    font-size: 12px;
+    line-height: 1.4;
+
+    color: var(--text-light);
 }
 
 
@@ -2474,67 +2721,305 @@ html.dark-mode .testimonials-section {
     background-color: var(--bg-color);
 }
 
-html.dark-mode .testimonials-heading h2 {
-    color: #ffffff;
-}
-
-html.dark-mode .testimonials-heading h2 span {
-    color: var(--primary-color);
-}
-
-html.dark-mode .testimonials-heading p {
-    color: var(--text-light);
-}
 
 html.dark-mode .testimonial-card {
-    background-color: var(--card-color);
+    background-color: var(--card-bg);
     border-color: var(--border-color);
+
+    box-shadow:
+        0 8px 28px rgba(0, 0, 0, 0.20);
 }
 
-html.dark-mode .testimonial-author {
-    border-color: var(--border-color);
+
+html.dark-mode .testimonial-card:hover {
+    border-color: rgba(103, 199, 232, 0.55);
+
+    box-shadow:
+        0 16px 38px rgba(0, 0, 0, 0.30);
 }
+
+
+html.dark-mode .quote-icon {
+    background-color: rgba(103, 199, 232, 0.10);
+}
+
+
+html.dark-mode .testimonial-text {
+    color: var(--text-color);
+}
+
 
 html.dark-mode .testimonial-author h3 {
-    color: #ffffff;
+    color: var(--text-color);
+}
+
+
+html.dark-mode .testimonial-author span {
+    color: var(--text-light);
 }
 
 
 /* =====================================================
-   RESPONSIVE
+   TABLET
+   1024px
 ===================================================== */
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
+
+    .testimonials-section {
+        padding: 80px 0;
+    }
+
+    .testimonials-container {
+        width: 90%;
+    }
+
+    .testimonials-heading {
+        margin-bottom: 45px;
+    }
+
+    .testimonials-heading h2 {
+        font-size: 36px;
+    }
 
     .testimonials-grid {
-        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .testimonial-card {
+        min-height: 320px;
+        padding: 25px;
+        border-radius: 16px;
+    }
+
+    .testimonial-text {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+    .testimonial-author {
+        padding-top: 24px;
     }
 
 }
 
-@media (max-width: 600px) {
+
+/* =====================================================
+   TABLET / SMALL LAPTOP
+   768px
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .testimonials-section {
+        padding: 70px 0;
+    }
+
+    .testimonials-container {
+        width: 90%;
+    }
+
+    .testimonials-heading {
+        max-width: 600px;
+        margin-bottom: 40px;
+    }
+
+    .testimonials-heading h2 {
+        font-size: 32px;
+    }
+
+    .testimonials-heading p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .testimonial-card {
+        min-height: auto;
+        padding: 26px;
+    }
+
+    .testimonial-text {
+        font-size: 15px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+   576px
+===================================================== */
+
+@media (max-width: 576px) {
 
     .testimonials-section {
         padding: 60px 0;
     }
 
     .testimonials-container {
-        width: min(100% - 30px, var(--container-width));
+        width: 92%;
     }
 
     .testimonials-heading {
-        margin-bottom: 40px;
+        margin-bottom: 35px;
+    }
+
+    .testimonials-heading .section-label {
+        gap: 8px;
+        margin-bottom: 12px;
+
+        font-size: 10px;
+        letter-spacing: 1.7px;
+    }
+
+    .testimonials-heading .label-line {
+        width: 25px;
     }
 
     .testimonials-heading h2 {
-        font-size: 34px;
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .testimonials-heading p {
+        margin-top: 14px;
+        font-size: 13px;
+        line-height: 1.7;
     }
 
     .testimonials-grid {
-        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .testimonial-card {
+        padding: 22px;
+        border-radius: 15px;
+    }
+
+    .testimonial-top {
+        margin-bottom: 18px;
+    }
+
+    .quote-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+    }
+
+    .quote-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .testimonial-stars {
+        gap: 2px;
+    }
+
+    .testimonial-stars svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    .testimonial-text {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+    .testimonial-author {
+        gap: 12px;
+        padding-top: 22px;
+    }
+
+    .author-avatar {
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+    }
+
+    .testimonial-author h3 {
+        font-size: 14px;
+        margin-bottom: 3px;
+    }
+
+    .testimonial-author span {
+        font-size: 11px;
     }
 
 }
+
+
+/* =====================================================
+   SMALL MOBILE
+   400px
+===================================================== */
+
+@media (max-width: 400px) {
+
+    .testimonials-section {
+        padding: 50px 0;
+    }
+
+    .testimonials-container {
+        width: 92%;
+    }
+
+    .testimonials-heading h2 {
+        font-size: 25px;
+    }
+
+    .testimonials-heading p {
+        font-size: 12.5px;
+    }
+
+    .testimonial-card {
+        padding: 20px;
+    }
+
+    .quote-icon {
+        width: 38px;
+        height: 38px;
+    }
+
+    .testimonial-stars svg {
+        width: 13px;
+        height: 13px;
+    }
+
+    .testimonial-text {
+        font-size: 13px;
+    }
+
+    .author-avatar {
+        width: 46px;
+        height: 46px;
+        min-width: 46px;
+    }
+
+}
+
+
+/* =====================================================
+   RTL SUPPORT
+===================================================== */
+
+html[dir="rtl"] .testimonial-author {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .testimonial-top {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .testimonial-heading {
+    direction: rtl;
+}
+
+
 
 
 /* =====================================================
