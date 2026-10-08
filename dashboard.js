@@ -1,14 +1,8 @@
-/* =========================================================
-   CLEARPOINT SERVICES
-   CUSTOMER DASHBOARD JAVASCRIPT
-========================================================= */
+
 
 document.addEventListener("DOMContentLoaded", () => {
 
 
-    /* =====================================================
-       ELEMENTS
-    ====================================================== */
 
     const navLinks =
         document.querySelectorAll(".dashboard-nav-link[data-section]");
@@ -59,9 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("profileBtn");
 
 
-    /* =====================================================
-       SECTION INFORMATION
-    ====================================================== */
+   
 
     const sectionData = {
 
@@ -149,9 +141,6 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
 
-    /* =====================================================
-       SHOW SECTION
-    ====================================================== */
 
     function showSection(sectionName) {
 
@@ -160,7 +149,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
 
-        /* Hide all sections */
+
 
         dashboardSections.forEach(section => {
 
@@ -169,7 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
 
-        /* Show selected section */
+
 
         const selectedSection =
             document.getElementById(sectionName);
@@ -181,7 +170,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
 
-        /* Update navigation */
+
 
         navLinks.forEach(link => {
 
@@ -198,7 +187,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
 
-        /* Update page title */
+        
 
         pageTitle.textContent =
             sectionData[sectionName].title;
@@ -207,12 +196,12 @@ document.addEventListener("DOMContentLoaded", () => {
             sectionData[sectionName].subtitle;
 
 
-        /* Close mobile sidebar */
+
 
         closeSidebar();
 
 
-        /* Scroll dashboard content to top */
+    
 
         window.scrollTo({
             top: 0,
@@ -220,7 +209,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
 
-        /* Store current section */
+  
 
         localStorage.setItem(
             "clearPointDashboardSection",
@@ -229,9 +218,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    /* =====================================================
-       SIDEBAR NAVIGATION
-    ====================================================== */
+   
 
     navLinks.forEach(link => {
 
@@ -247,9 +234,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-    /* =====================================================
-       INNER SECTION BUTTONS
-    ====================================================== */
+   
 
     document
         .querySelectorAll("[data-section]")
@@ -278,9 +263,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
 
-    /* =====================================================
-       MOBILE SIDEBAR
-    ====================================================== */
+   
 
     function openSidebar() {
 
@@ -318,9 +301,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
 
-    /* =====================================================
-       DARK MODE
-    ====================================================== */
+
 
     const savedTheme =
         localStorage.getItem(
@@ -403,9 +384,6 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
 
-    /* =====================================================
-       RTL / LTR
-    ====================================================== */
 
     const savedDirection =
         localStorage.getItem(
@@ -457,9 +435,6 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
 
-    /* =====================================================
-       NOTIFICATION BUTTON
-    ====================================================== */
 
     notificationBtn.addEventListener(
         "click",
@@ -471,9 +446,6 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
 
-    /* =====================================================
-       PROFILE BUTTON
-    ====================================================== */
 
     profileBtn.addEventListener(
         "click",
@@ -485,9 +457,6 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
 
-    /* =====================================================
-       LOGOUT MODAL
-    ====================================================== */
 
     logoutBtn.addEventListener(
         "click",
@@ -515,10 +484,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "click",
         () => {
 
-            /*
-             * Change this URL to your
-             * actual login page.
-             */
+          
 
             window.location.href =
                 "login.html";
@@ -527,9 +493,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
 
-    /* =====================================================
-       CLOSE MODAL WHEN CLICKING OUTSIDE
-    ====================================================== */
+
 
     logoutModal.addEventListener(
         "click",
@@ -549,9 +513,6 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
 
-    /* =====================================================
-       ESC KEY
-    ====================================================== */
 
     document.addEventListener(
         "keydown",
@@ -571,10 +532,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
 
-    /* =====================================================
-       LOAD SAVED SECTION
-    ====================================================== */
-
+ 
     const savedSection =
         localStorage.getItem(
             "clearPointDashboardSection"

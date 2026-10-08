@@ -13,16 +13,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-    <!-- =========================================================
-     HEADER
-     ========================================================= -->
+   
 
 <header class="site-header" id="siteHeader">
 
     <div class="container header-container">
 
-        <!-- Logo -->
-        <a href="index.html" class="site-logo">
+          <a href="index.html" class="site-logo">
 
            <div class="logo-icon">
     <img src="image/logo-2.png" alt="logo-1">
@@ -35,12 +32,11 @@
         </a>
 
 
-        <!-- Desktop Navigation -->
+       
         <nav class="main-nav" id="mainNav">
 
             <ul class="nav-list">
 
-                <!-- Home Dropdown -->
                 <li class="nav-item home-dropdown">
 
                     <button
@@ -67,7 +63,7 @@
                     </button>
 
 
-                    <!-- Home Dropdown -->
+                
                     <ul class="dropdown-menu" id="homeDropdown">
 
                         <li>
@@ -87,7 +83,7 @@
                 </li>
 
 
-                <!-- About -->
+         
                 <li class="nav-item">
 
                     <a
@@ -102,7 +98,7 @@
                 </li>
 
 
-                <!-- Services -->
+       
                 <li class="nav-item">
 
                     <a
@@ -117,7 +113,7 @@
                 </li>
 
 
-                <!-- Blog -->
+    
                 <li class="nav-item">
 
                     <a
@@ -132,7 +128,7 @@
                 </li>
 
 
-                <!-- Pricing -->
+        
                 <li class="nav-item">
 
                     <a
@@ -147,7 +143,6 @@
                 </li>
 
 
-                <!-- Contact -->
                 <li class="nav-item">
 
                     <a
@@ -174,17 +169,17 @@
         </nav>
 
 
-        <!-- Header Actions -->
+   
         <div class="header-actions">
 
-            <!-- Dark Mode -->
+   
             <button
                 type="button"
                 class="header-icon-btn"
                 id="themeBtn"
                 aria-label="Toggle dark mode">
 
-                <!-- Sun -->
+     
                 <svg
                     class="theme-icon sun-icon"
                     viewBox="0 0 24 24"
@@ -206,7 +201,7 @@
                 </svg>
 
 
-                <!-- Moon -->
+           
                 <svg
                     class="theme-icon moon-icon"
                     viewBox="0 0 24 24"
@@ -224,7 +219,7 @@
             </button>
 
 
-            <!-- RTL -->
+           
           <button 
     type="button" 
     class="header-icon-btn" 
@@ -250,7 +245,7 @@
 </button>
 
 
-            <!-- CTA -->
+       
             <a
                 href="login.html"
                 class="btn btn-primary header-cta">
@@ -260,7 +255,7 @@
             </a>
 
 
-            <!-- Mobile Menu -->
+        
             <button
                 type="button"
                 class="menu-toggle"
@@ -280,9 +275,6 @@
 
 </header>
 
- <!-- =========================================
-     HIGH-RISE WINDOW HERO
-========================================= -->
 
 <section class="service-details-hero high-rise-hero">
 
@@ -329,9 +321,7 @@
 </section>
 
 
-<!-- =========================================
-     SERVICE OVERVIEW
-========================================= -->
+
 
 <section class="service-overview-section" id="service-overview">
 
@@ -435,9 +425,6 @@
 </section>
 
 
-<!-- =========================================
-     SERVICE GALLERY
-========================================= -->
 
 <section class="service-gallery-section">
 
@@ -547,9 +534,7 @@
 </section>
 
 
-<!-- =========================================
-     WHAT'S INCLUDED
-========================================= -->
+
 
 <section class="service-included-section">
 
@@ -687,9 +672,6 @@
 </section>
 
 
-<!-- =========================================
-     CLEANING PROCESS
-========================================= -->
 
 <section class="service-process-section">
 
@@ -816,10 +798,6 @@
 </section>
 
 
-<!-- =========================================
-     BEFORE & AFTER
-========================================= -->
-
 <section class="service-before-after-section">
 
     <div class="container">
@@ -921,9 +899,6 @@
 </section>
 
 
-<!-- =========================================
-     FAQ SECTION
-========================================= -->
 
 <section class="service-faq-section">
 
@@ -1113,9 +1088,6 @@
 </section>
 
 
-<!-- =========================================
-     FINAL CTA
-========================================= -->
 
 <section class="service-final-cta-section">
 
@@ -1396,9 +1368,7 @@
 <script>
    document.addEventListener("DOMContentLoaded", function () {
 
-    /* =====================================================
-       ELEMENTS
-    ===================================================== */
+
 
     const menuToggle = document.getElementById("menuToggle");
     const mainNav = document.getElementById("mainNav");
@@ -1415,9 +1385,6 @@
         document.getElementById("directionBtn");
 
 
-    /* =====================================================
-       MOBILE MENU
-    ===================================================== */
 
     if (menuToggle && mainNav) {
 
@@ -1434,9 +1401,6 @@
 
  
 
-    /* =====================================================
-       ACTIVE PAGE
-    ===================================================== */
 
     const currentPage =
         window.location.pathname.split("/").pop() || "index.html";
@@ -1461,9 +1425,7 @@
     });
 
 
-    /* =====================================================
-       DARK MODE
-    ===================================================== */
+    
 
     const savedTheme =
         localStorage.getItem("windowCleaningTheme");
@@ -1529,10 +1491,7 @@
     }
 
 
-    /* =====================================================
-       RTL / LTR
-    ===================================================== */
-
+ 
     const savedDirection =
         localStorage.getItem("windowCleaningDirection");
 
@@ -1595,9 +1554,6 @@
     }
 
 
-    /* =====================================================
-       CLOSE MOBILE MENU AFTER CLICKING LINK
-    ===================================================== */
 
     const mobileLinks =
         document.querySelectorAll(".main-nav a");
@@ -1654,9 +1610,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-/* ==========================================
-   ACTIVE NAVIGATION LINK
-========================================== */
 
 const currentPath = window.location.pathname;
 const currentFile = currentPath.split("/").pop().toLowerCase();

@@ -1,13 +1,3 @@
-/* =========================================================
-   HEADER
-   WINDOW CLEANING SERVICE
-   FRESH GLASS DESIGN
-   ========================================================= */
-
-
-/* =========================================================
-   HEADER
-   ========================================================= */
 
 .site-header {
     width: 100%;
@@ -27,9 +17,6 @@
 }
 
 
-/* =========================================================
-   HEADER CONTAINER
-   ========================================================= */
 
 .header-container {
     height: 100%;
@@ -42,9 +29,6 @@
 }
 
 
-/* =========================================================
-   LOGO
-   ========================================================= */
 
 .site-logo {
     display: inline-flex;
@@ -72,7 +56,6 @@
 }
 
 
-/* Glass Lines */
 
 .logo-icon span {
     width: 5px;
@@ -94,7 +77,7 @@
 }
 
 
-/* Logo Text */
+
 
 .logo-text {
     display: flex;
@@ -121,9 +104,6 @@
 }
 
 
-/* =========================================================
-   NAVIGATION
-   ========================================================= */
 
 .main-nav {
     height: 100%;
@@ -151,7 +131,7 @@
 }
 
 
-/* Navigation Link */
+
 
 .nav-link {
     height: 100%;
@@ -181,14 +161,12 @@
 }
 
 
-/* Hover */
+
 
 .nav-link:hover {
     color: var(--primary-color);
 }
-/* ================================
-   NAV LINKS
-================================ */
+
 
 .nav-link,
 .nav-dropdown-btn {
@@ -198,13 +176,13 @@
     height: 80px;
 }
 
-/* Active link */
+
 .nav-link.active,
 .nav-dropdown-btn.active {
     color: var(--primary-color);
 }
 
-/* Active underline */
+
 .nav-link.active::after,
 .nav-dropdown-btn.active::after {
     content: "";
@@ -221,9 +199,7 @@
 
     border-radius: 2px;
 }
-/* =========================================================
-   DROPDOWN ICON
-   ========================================================= */
+
 
 .dropdown-icon {
     width: 16px;
@@ -237,9 +213,7 @@
 }
 
 
-/* =========================
-   HOME DROPDOWN FIX
-========================= */
+
 
 .home-dropdown {
     position: relative !important;
@@ -302,7 +276,7 @@
 }
 
 
-/* DARK MODE */
+
 
 html.dark-mode .home-dropdown .dropdown-menu {
     background: #172832;
@@ -317,9 +291,7 @@ html.dark-mode .home-dropdown .dropdown-menu a:hover {
     background: #1677B8;
     color: #ffffff;
 }
-/* =========================================================
-   HEADER ACTIONS
-   ========================================================= */
+
 
 .header-actions {
     display: flex;
@@ -331,9 +303,7 @@ html.dark-mode .home-dropdown .dropdown-menu a:hover {
 }
 
 
-/* =========================================================
-   HEADER ICON BUTTON
-   ========================================================= */
+
 
 .header-icon-btn {
     width: 40px;
@@ -361,7 +331,7 @@ html.dark-mode .home-dropdown .dropdown-menu a:hover {
         border-color var(--transition);
 }
 
-/* Hover */
+
 
 .header-icon-btn:hover {
     background-color: var(--primary-color);
@@ -390,9 +360,7 @@ html.dark-mode .header-icon-btn:hover {
     color: #ffffff;
     border-color: var(--primary-color);
 }
-/* =========================================================
-   DARK MODE ICON
-   ========================================================= */
+
 
 .moon-icon {
     display: none;
@@ -407,9 +375,6 @@ body.dark-mode .moon-icon {
 }
 
 
-/* =========================================================
-   HEADER CTA
-   ========================================================= */
 
 .header-cta {
     min-width: 90px;
@@ -422,9 +387,6 @@ body.dark-mode .moon-icon {
 }
 
 
-/* =========================================================
-   MOBILE MENU BUTTON
-   ========================================================= */
 
 .menu-toggle {
     width: 40px;
@@ -459,9 +421,7 @@ body.dark-mode .moon-icon {
 }
 
 
-/* =========================================================
-   MOBILE MENU ACTIVE
-   ========================================================= */
+
 
 .menu-toggle.active span:nth-child(1) {
     transform: translateY(7px) rotate(45deg);
@@ -476,9 +436,6 @@ body.dark-mode .moon-icon {
 }
 
 
-/* =========================================================
-   RTL
-   ========================================================= */
 
 html[dir="rtl"] .dropdown-menu {
     left: auto;
@@ -491,9 +448,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================================
-   RESPONSIVE - 1200px
-   ========================================================= */
 
 @media (max-width: 1020px) {
 
@@ -517,10 +471,6 @@ html[dir="rtl"] .nav-link.active::after {
 
 
 
-/* =========================================================
-   HEADER - TABLET / SMALL LAPTOP
-   1100px
-========================================================= */
 
 @media (max-width: 1100px) and (min-width: 993px) {
 
@@ -532,7 +482,7 @@ html[dir="rtl"] .nav-link.active::after {
         gap: 10px;
     }
 
-    /* LOGO */
+    
     .site-logo {
         flex-shrink: 0;
         display: flex;
@@ -552,7 +502,7 @@ html[dir="rtl"] .nav-link.active::after {
         font-size: 8px;
     }
 
-    /* NAV */
+    
     .main-nav {
         flex: 1;
         min-width: 0;
@@ -592,7 +542,7 @@ html[dir="rtl"] .nav-link.active::after {
         font-size: 8px;
     }
 
-    /* HEADER ACTIONS */
+   
     .header-actions {
         flex-shrink: 0;
         display: flex;
@@ -606,7 +556,7 @@ html[dir="rtl"] .nav-link.active::after {
         flex-shrink: 0;
     }
 
-    /* LOGIN */
+   
     .header-cta,
     .login-btn {
         width: 98px;
@@ -623,9 +573,7 @@ html[dir="rtl"] .nav-link.active::after {
     }
 }
 
-/* =========================================================
-   RESPONSIVE - 992px
-   ========================================================= */
+
 
 @media (max-width: 992px) {
 
@@ -710,7 +658,7 @@ html[dir="rtl"] .nav-link.active::after {
     }
 
 
-    /* Mobile Dropdown */
+   
 
     .dropdown-menu {
         position: static;
@@ -746,7 +694,7 @@ html[dir="rtl"] .nav-link.active::after {
     }
 
 
-    /* Mobile Menu */
+    
 
     .menu-toggle {
         display: flex;
@@ -759,9 +707,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================================
-   RESPONSIVE - 576px
-   ========================================================= */
 
 @media (max-width: 576px) {
 
@@ -816,9 +761,7 @@ html[dir="rtl"] .nav-link.active::after {
 
 
 
-/* =========================
-   HERO SECTION
-========================= */
+
 
 .hero {
     width: 100%;
@@ -838,9 +781,7 @@ html[dir="rtl"] .nav-link.active::after {
     gap: 70px;
 }
 
-/* =========================
-   HERO CONTENT
-========================= */
+
 
 .hero-content {
     position: relative;
@@ -885,9 +826,7 @@ html[dir="rtl"] .nav-link.active::after {
     margin-bottom: 32px;
 }
 
-/* =========================
-   HERO BUTTONS
-========================= */
+
 
 .hero-buttons {
     display: flex;
@@ -948,9 +887,7 @@ html[dir="rtl"] .nav-link.active::after {
     transform: translateX(5px);
 }
 
-/* =========================
-   HERO FEATURES
-========================= */
+
 
 .hero-features {
     display: flex;
@@ -997,9 +934,7 @@ html[dir="rtl"] .nav-link.active::after {
     color: #7a8992;
 }
 
-/* =========================
-   HERO IMAGE
-========================= */
+
 
 .hero-image-wrapper {
     position: relative;
@@ -1035,9 +970,7 @@ html[dir="rtl"] .nav-link.active::after {
     transform: scale(1.04);
 }
 
-/* =========================
-   FLOATING CARD
-========================= */
+
 
 .hero-card {
     position: absolute;
@@ -1093,9 +1026,7 @@ html[dir="rtl"] .nav-link.active::after {
     color: #7b8991;
 }
 
-/* =========================
-   DECORATIVE SHAPE
-========================= */
+
 
 .hero-shape {
     position: absolute;
@@ -1114,9 +1045,7 @@ html[dir="rtl"] .nav-link.active::after {
 
     z-index: 1;
 }
-/* =====================================================
-   HERO DARK MODE
-===================================================== */
+
 
 html.dark-mode .hero {
     background-color: var(--bg-color);
@@ -1145,9 +1074,7 @@ html.dark-mode .hero-content .hero-btn:hover {
 }
 
 
- /* =========================
-    ABOUT INTRO SECTION
- ========================= */
+ 
 
 .about-intro {
     width: 100%;
@@ -1166,9 +1093,6 @@ html.dark-mode .hero-content .hero-btn:hover {
 }
 
 
-/* =========================
-   IMAGE AREA
-========================= */
 
 .about-images {
     position: relative;
@@ -1200,9 +1124,6 @@ html.dark-mode .hero-content .hero-btn:hover {
 
 
 
-/* =========================
-   EXPERIENCE CARD
-========================= */
 
 .about-experience {
     position: absolute;
@@ -1238,16 +1159,14 @@ html.dark-mode .hero-content .hero-btn:hover {
 }
 
 
-/* =========================
-   CONTENT
-========================= */
+
 
 .about-content {
     max-width: 560px;
 }
 
 
-/* Section Label */
+
 
 .section-label {
     display: flex;
@@ -1272,7 +1191,7 @@ html.dark-mode .hero-content .hero-btn:hover {
 }
 
 
-/* Heading */
+
 
 .about-content h2 {
     font-size: 44px;
@@ -1288,7 +1207,7 @@ html.dark-mode .hero-content .hero-btn:hover {
 }
 
 
-/* Description */
+
 
 .about-description {
     font-size: 16px;
@@ -1300,9 +1219,6 @@ html.dark-mode .hero-content .hero-btn:hover {
 }
 
 
-/* =========================
-   FEATURES
-========================= */
 
 .about-features {
     display: flex;
@@ -1319,7 +1235,7 @@ html.dark-mode .hero-content .hero-btn:hover {
 }
 
 
-/* Feature Icon */
+
 
 .about-feature-icon {
     width: 38px;
@@ -1342,7 +1258,7 @@ html.dark-mode .hero-content .hero-btn:hover {
 }
 
 
-/* Feature Text */
+
 
 .about-feature-text h3 {
     font-size: 16px;
@@ -1362,9 +1278,7 @@ html.dark-mode .hero-content .hero-btn:hover {
 }
 
 
-/* =========================
-   BUTTON
-========================= */
+
 
 .about-btn {
     display: inline-flex;
@@ -1406,9 +1320,6 @@ html.dark-mode .hero-content .hero-btn:hover {
 }
 
 
-/* =========================================
-   SLIDE IN ANIMATION
-========================================= */
 
 .slide-in {
     animation: slideIn 0.8s ease-out both;
@@ -1426,38 +1337,34 @@ html.dark-mode .hero-content .hero-btn:hover {
     }
 }
 
-/* =========================
-   DARK MODE
-========================= */
+
 
 html.dark-mode .about-content h2 {
     color: #ffffff !important;
 }
 
-/* "Better Views." stays blue */
+
 html.dark-mode .about-content h2 span {
     color: var(--primary-color) !important;
 }
 
-/* Description */
+
 html.dark-mode .about-description {
     color: #c5d0d7 !important;
 }
 
-/* Feature headings */
+
 html.dark-mode .about-feature-text h3 {
     color: #ffffff !important;
 }
 
-/* Feature descriptions */
+
 html.dark-mode .about-feature-text p {
     color: #c5d0d7 !important;
 }
 
 
-/* =========================
-   TABLET
-========================= */
+
 
 @media (max-width: 992px) {
 
@@ -1480,9 +1387,6 @@ html.dark-mode .about-feature-text p {
 }
 
 
-/* =========================
-   MOBILE
-========================= */
 
 @media (max-width: 600px) {
 
@@ -1523,9 +1427,6 @@ html.dark-mode .about-feature-text p {
 }
 
 
-/* =========================================================
-   SERVICES SECTION
-========================================================= */
 
 .services-section {
     padding: 80px 20px;
@@ -1539,9 +1440,6 @@ html.dark-mode .about-feature-text p {
 }
 
 
-/* =========================================================
-   SERVICES HEADING
-========================================================= */
 
 .services-heading {
     max-width: 760px;
@@ -1572,9 +1470,6 @@ html.dark-mode .about-feature-text p {
 }
 
 
-/* =========================================================
-   SERVICES HEADING - H2
-========================================================= */
 
 .services-heading h2 {
     margin: 0 0 18px;
@@ -1592,9 +1487,7 @@ html.dark-mode .about-feature-text p {
 }
 
 
-/* =========================================================
-   SERVICES INTRO TEXT
-========================================================= */
+
 
 .services-heading p {
     max-width: 680px;
@@ -1606,9 +1499,6 @@ html.dark-mode .about-feature-text p {
 }
 
 
-/* =========================================================
-   SERVICES GRID
-========================================================= */
 
 .services-grid {
     display: grid;
@@ -1617,9 +1507,6 @@ html.dark-mode .about-feature-text p {
 }
 
 
-/* =========================================================
-   SERVICE CARD
-========================================================= */
 
 .service-card {
     position: relative;
@@ -1652,9 +1539,7 @@ html.dark-mode .about-feature-text p {
 }
 
 
-/* =========================================================
-   SERVICE IMAGE
-========================================================= */
+
 
 .service-image {
     position: relative;
@@ -1668,7 +1553,7 @@ html.dark-mode .about-feature-text p {
 }
 
 
-/* Image overlay */
+
 
 .service-image::after {
     content: "";
@@ -1686,7 +1571,7 @@ html.dark-mode .about-feature-text p {
 }
 
 
-/* Image */
+
 
 .service-image img {
     width: 100%;
@@ -1701,16 +1586,14 @@ html.dark-mode .about-feature-text p {
 }
 
 
-/* Image hover */
+
 
 .service-card:hover .service-image img {
     transform: scale(1.06);
 }
 
 
-/* =========================================================
-   SERVICE CARD CONTENT
-========================================================= */
+
 
 .service-card h3 {
     margin: 25px 25px 12px;
@@ -1732,9 +1615,6 @@ html.dark-mode .about-feature-text p {
 }
 
 
-/* =========================================================
-   SERVICE LINK
-========================================================= */
 
 .service-link {
     display: inline-flex;
@@ -1774,9 +1654,7 @@ html.dark-mode .about-feature-text p {
 }
 
 
-/* =========================================================
-   DARK MODE
-========================================================= */
+
 
 html.dark-mode .services-section {
     background-color: var(--bg-color);
@@ -1817,9 +1695,6 @@ html.dark-mode .service-link i {
 }
 
 
-/* =========================================================
-   RTL
-========================================================= */
 
 html[dir="rtl"] .services-heading {
     text-align: center;
@@ -1838,10 +1713,7 @@ html[dir="rtl"] .service-link:hover i {
 }
 
 
-/* =========================================================
-   LARGE TABLET
-   1024px
-========================================================= */
+
 
 @media (max-width: 1100px) {
 
@@ -1857,10 +1729,6 @@ html[dir="rtl"] .service-link:hover i {
 }
 
 
-/* =========================================================
-   TABLET
-   768px
-========================================================= */
 
 @media (max-width: 768px) {
 
@@ -1907,10 +1775,7 @@ html[dir="rtl"] .service-link:hover i {
 }
 
 
-/* =========================================================
-   MOBILE
-   600px
-========================================================= */
+
 
 @media (max-width: 600px) {
 
@@ -1963,10 +1828,6 @@ html[dir="rtl"] .service-link:hover i {
 }
 
 
-/* =========================================================
-   SMALL MOBILE
-   480px
-========================================================= */
 
 @media (max-width: 480px) {
 
@@ -1985,10 +1846,7 @@ html[dir="rtl"] .service-link:hover i {
 }
 
 
-/* =========================================================
-   VERY SMALL MOBILE
-   360px
-========================================================= */
+
 
 @media (max-width: 360px) {
 
@@ -2006,9 +1864,7 @@ html[dir="rtl"] .service-link:hover i {
 
 }
 
-/* =====================================================
-   WHY CHOOSE US SECTION
-===================================================== */
+
 
 .why-choose-section {
     padding: var(--section-padding) 0;
@@ -2025,9 +1881,7 @@ html[dir="rtl"] .service-link:hover i {
     align-items: center;
 }
 
-/* =====================================================
-   CONTENT
-===================================================== */
+
 
 .why-choose-content {
     max-width: 580px;
@@ -2070,9 +1924,7 @@ html[dir="rtl"] .service-link:hover i {
     margin: 0 0 35px;
 }
 
-/* =====================================================
-   FEATURES
-===================================================== */
+
 
 .why-choose-features {
     display: grid;
@@ -2136,9 +1988,7 @@ html[dir="rtl"] .service-link:hover i {
     color: var(--text-light);
 }
 
-/* =====================================================
-   IMAGE
-===================================================== */
+
 
 .why-choose-image {
     position: relative;
@@ -2156,9 +2006,7 @@ html[dir="rtl"] .service-link:hover i {
     border-radius: var(--radius-lg);
 }
 
-/* =====================================================
-   IMAGE BADGE
-===================================================== */
+
 
 .why-image-badge {
     position: absolute;
@@ -2192,9 +2040,7 @@ html[dir="rtl"] .service-link:hover i {
     font-weight: 600;
 }
 
-/* =====================================================
-   DARK MODE
-===================================================== */
+
 
 html.dark-mode .why-choose-section {
     background-color: var(--bg-color);
@@ -2220,9 +2066,7 @@ html.dark-mode .why-feature p {
     color: var(--text-light);
 }
 
-/* =====================================================
-   RESPONSIVE
-===================================================== */
+
 
 @media (max-width: 900px) {
 
@@ -2272,9 +2116,7 @@ html.dark-mode .why-feature p {
 }
 
 
-/* =====================================================
-   HOW IT WORKS SECTION
-===================================================== */
+
 
 .how-it-works-section {
     padding: var(--section-padding) 0;
@@ -2287,9 +2129,7 @@ html.dark-mode .why-feature p {
 }
 
 
-/* =====================================================
-   HEADING
-===================================================== */
+
 
 .how-it-works-heading {
     max-width: 700px;
@@ -2342,9 +2182,7 @@ html.dark-mode .why-feature p {
 }
 
 
-/* =====================================================
-   PROCESS GRID
-===================================================== */
+
 
 .process-grid {
     display: grid;
@@ -2353,9 +2191,7 @@ html.dark-mode .why-feature p {
 }
 
 
-/* =====================================================
-   PROCESS CARD
-===================================================== */
+
 
 .process-card {
     position: relative;
@@ -2376,9 +2212,6 @@ html.dark-mode .why-feature p {
 }
 
 
-/* =====================================================
-   NUMBER
-===================================================== */
 
 .process-number {
     position: absolute;
@@ -2392,9 +2225,7 @@ html.dark-mode .why-feature p {
 }
 
 
-/* =====================================================
-   ICON
-===================================================== */
+
 
 .process-icon {
     width: 58px;
@@ -2431,9 +2262,7 @@ html.dark-mode .why-feature p {
 }
 
 
-/* =====================================================
-   CONTENT
-===================================================== */
+
 
 .process-card h3 {
     margin: 0 0 10px;
@@ -2454,9 +2283,6 @@ html.dark-mode .why-feature p {
 }
 
 
-/* =====================================================
-   DARK MODE
-===================================================== */
 
 html.dark-mode .how-it-works-section {
     background-color: var(--bg-color);
@@ -2488,9 +2314,7 @@ html.dark-mode .process-card p {
 }
 
 
-/* =====================================================
-   RESPONSIVE
-===================================================== */
+
 
 @media (max-width: 1000px) {
 
@@ -2524,9 +2348,7 @@ html.dark-mode .process-card p {
 
 }
 
-/* =====================================================
-   TESTIMONIALS SECTION
-===================================================== */
+
 
 .testimonials-section {
     width: 100%;
@@ -2536,9 +2358,7 @@ html.dark-mode .process-card p {
 }
 
 
-/* =====================================================
-   TESTIMONIALS CONTAINER
-===================================================== */
+
 
 .testimonials-container {
     width: 90%;
@@ -2547,9 +2367,6 @@ html.dark-mode .process-card p {
 }
 
 
-/* =====================================================
-   SECTION HEADING
-===================================================== */
 
 .testimonials-heading {
     max-width: 720px;
@@ -2558,7 +2375,7 @@ html.dark-mode .process-card p {
 }
 
 
-/* Section Label */
+
 
 .testimonials-heading .section-label {
     display: inline-flex;
@@ -2574,7 +2391,7 @@ html.dark-mode .process-card p {
 }
 
 
-/* Label Line */
+
 
 .testimonials-heading .label-line {
     display: inline-block;
@@ -2584,7 +2401,7 @@ html.dark-mode .process-card p {
 }
 
 
-/* Heading */
+
 
 .testimonials-heading h2 {
     margin: 0;
@@ -2596,7 +2413,7 @@ html.dark-mode .process-card p {
 }
 
 
-/* Heading Highlight */
+
 
 .testimonials-heading h2 span {
     display: inline;
@@ -2604,7 +2421,7 @@ html.dark-mode .process-card p {
 }
 
 
-/* Description */
+
 
 .testimonials-heading p {
     max-width: 620px;
@@ -2616,9 +2433,7 @@ html.dark-mode .process-card p {
 }
 
 
-/* =====================================================
-   TESTIMONIALS GRID
-===================================================== */
+
 
 .testimonials-grid {
     display: grid;
@@ -2628,9 +2443,7 @@ html.dark-mode .process-card p {
 }
 
 
-/* =====================================================
-   TESTIMONIAL CARD
-===================================================== */
+
 
 .testimonial-card {
     position: relative;
@@ -2654,7 +2467,7 @@ html.dark-mode .process-card p {
 }
 
 
-/* Card Hover */
+
 
 .testimonial-card:hover {
     transform: translateY(-6px);
@@ -2665,9 +2478,7 @@ html.dark-mode .process-card p {
 }
 
 
-/* =====================================================
-   TESTIMONIAL TOP
-===================================================== */
+
 
 .testimonial-top {
     display: flex;
@@ -2678,9 +2489,7 @@ html.dark-mode .process-card p {
 }
 
 
-/* =====================================================
-   QUOTE ICON
-===================================================== */
+
 
 .quote-icon {
     width: 44px;
@@ -2709,9 +2518,7 @@ html.dark-mode .process-card p {
 }
 
 
-/* =====================================================
-   STAR RATING
-===================================================== */
+
 
 .testimonial-stars {
     display: flex;
@@ -2730,9 +2537,7 @@ html.dark-mode .process-card p {
 }
 
 
-/* =====================================================
-   TESTIMONIAL TEXT
-===================================================== */
+
 
 .testimonial-text {
     margin: 0;
@@ -2743,9 +2548,7 @@ html.dark-mode .process-card p {
 }
 
 
-/* =====================================================
-   TESTIMONIAL AUTHOR
-===================================================== */
+
 
 .testimonial-author {
     display: flex;
@@ -2757,9 +2560,7 @@ html.dark-mode .process-card p {
 }
 
 
-/* =====================================================
-   AUTHOR PROFILE IMAGE
-===================================================== */
+
 
 .author-avatar {
     width: 52px;
@@ -2782,7 +2583,7 @@ html.dark-mode .process-card p {
 }
 
 
-/* Profile Image Hover */
+
 
 .testimonial-card:hover .author-avatar {
     transform: scale(1.05);
@@ -2790,9 +2591,7 @@ html.dark-mode .process-card p {
 }
 
 
-/* =====================================================
-   AUTHOR DETAILS
-===================================================== */
+
 
 .testimonial-author > div {
     min-width: 0;
@@ -2820,9 +2619,7 @@ html.dark-mode .process-card p {
 }
 
 
-/* =====================================================
-   DARK MODE
-===================================================== */
+
 
 html.dark-mode .testimonials-section {
     background-color: var(--bg-color);
@@ -2866,10 +2663,7 @@ html.dark-mode .testimonial-author span {
 }
 
 
-/* =====================================================
-   TABLET
-   1024px
-===================================================== */
+
 
 @media (max-width: 1024px) {
 
@@ -2911,10 +2705,7 @@ html.dark-mode .testimonial-author span {
 }
 
 
-/* =====================================================
-   TABLET / SMALL LAPTOP
-   768px
-===================================================== */
+
 
 @media (max-width: 768px) {
 
@@ -2957,10 +2748,7 @@ html.dark-mode .testimonial-author span {
 }
 
 
-/* =====================================================
-   MOBILE
-   576px
-===================================================== */
+
 
 @media (max-width: 576px) {
 
@@ -3060,10 +2848,6 @@ html.dark-mode .testimonial-author span {
 }
 
 
-/* =====================================================
-   SMALL MOBILE
-   400px
-===================================================== */
 
 @media (max-width: 400px) {
 
@@ -3110,9 +2894,7 @@ html.dark-mode .testimonial-author span {
 }
 
 
-/* =====================================================
-   RTL SUPPORT
-===================================================== */
+
 
 html[dir="rtl"] .testimonial-author {
     flex-direction: row-reverse;
@@ -3129,9 +2911,7 @@ html[dir="rtl"] .testimonial-heading {
 
 
 
-/* =====================================================
-   FINAL CTA SECTION
-===================================================== */
+
 
 .final-cta-section {
     padding: 80px 0;
@@ -3144,9 +2924,7 @@ html[dir="rtl"] .testimonial-heading {
 }
 
 
-/* =====================================================
-   CTA CONTENT
-===================================================== */
+
 
 .final-cta-content {
     max-width: 800px;
@@ -3178,9 +2956,7 @@ html[dir="rtl"] .testimonial-heading {
 }
 
 
-/* =====================================================
-   HEADING
-===================================================== */
+
 
 .final-cta-content h2 {
     margin: 0 0 20px;
@@ -3208,9 +2984,7 @@ html[dir="rtl"] .testimonial-heading {
 }
 
 
-/* =====================================================
-   BUTTONS
-===================================================== */
+
 
 .final-cta-buttons {
     display: flex;
@@ -3267,9 +3041,6 @@ html[dir="rtl"] .testimonial-heading {
 }
 
 
-/* =====================================================
-   BUTTON ICONS
-===================================================== */
 
 .cta-primary-btn svg,
 .cta-secondary-btn svg {
@@ -3291,9 +3062,7 @@ html[dir="rtl"] .testimonial-heading {
 }
 
 
-/* =====================================================
-   DARK MODE
-===================================================== */
+
 
 html.dark-mode .final-cta-section {
     background-color: #0F1A21;
@@ -3333,9 +3102,7 @@ html.dark-mode .cta-secondary-btn:hover {
 }
 
 
-/* =====================================================
-   RESPONSIVE
-===================================================== */
+
 
 @media (max-width: 600px) {
 
@@ -3407,9 +3174,6 @@ html.dark-mode .hero-feature span {
 
 
 
-/* =========================
-   FOOTER
-========================= */
 
 .footer {
     background: var(--bg-color);
@@ -3429,9 +3193,7 @@ html.dark-mode .hero-feature span {
     gap: 50px;
 }
 
-/* =========================
-   FOOTER LOGO
-========================= */
+
 
 .footer-logo {
     display: flex;
@@ -3467,9 +3229,7 @@ html.dark-mode .hero-feature span {
     color: var(--text-light);
 }
 
-/* =========================
-   FOOTER ABOUT
-========================= */
+
 
 .footer-brand p {
     max-width: 320px;
@@ -3481,9 +3241,7 @@ margin-bottom: 10px;
 }
 
 
-/* ================================
-   FOOTER SOCIAL ICONS
-================================ */
+
 
 .footer-social h4 {
     color: var(--white-color);
@@ -3540,9 +3298,6 @@ margin-bottom: 10px;
 
 
 
-/* =========================
-   FOOTER COLUMNS
-========================= */
 
 .footer-column h3 {
     margin-bottom: 20px;
@@ -3575,9 +3330,7 @@ margin-bottom: 10px;
     margin-bottom: 12px;
 }
 
-/* =========================
-   FOOTER BOTTOM
-========================= */
+
 
 .footer-bottom {
     max-width: 1200px;
@@ -3652,11 +3405,9 @@ margin-bottom: 10px;
 
 
 
-/* =========================================================
-   FOOTER RESPONSIVE DESIGN
-========================================================= */
 
-/* ---------- TABLET ---------- */
+
+
 
 @media (max-width: 992px) {
 
@@ -3676,7 +3427,7 @@ margin-bottom: 10px;
 }
 
 
-/* ---------- MOBILE ---------- */
+
 
 @media (max-width: 768px) {
 
@@ -3714,7 +3465,7 @@ margin-bottom: 10px;
 }
 
 
-/* ---------- SMALL MOBILE ---------- */
+
 
 @media (max-width: 576px) {
 
@@ -3748,7 +3499,7 @@ margin-bottom: 10px;
 }
 
 
-/* ---------- VERY SMALL DEVICES ---------- */
+
 
 @media (max-width: 400px) {
 
@@ -3767,19 +3518,11 @@ margin-bottom: 10px;
     }
 
 }
-/* =========================================================
-   FINAL RESPONSIVE OVERRIDES
-   APEXGLASS SERVICES — HOME PAGE
-   Tablet + Mobile
-   ========================================================= */
 
-/* =========================================================
-   TABLET — 992px and below
-   ========================================================= */
 
 @media (max-width: 992px) {
 
-    /* ---------- Global ---------- */
+   
 
     .container,
     .hero-container,
@@ -3792,7 +3535,7 @@ margin-bottom: 10px;
         width: 92%;
     }
 
-    /* ---------- Hero ---------- */
+    
 
     .hero {
         padding: 55px 0 35px;
@@ -3835,7 +3578,7 @@ margin-bottom: 10px;
         right: -65px;
     }
 
-    /* ---------- About ---------- */
+    
 
     .about-intro {
         padding: 70px 0;
@@ -3859,7 +3602,7 @@ margin-bottom: 10px;
         font-size: 40px;
     }
 
-    /* ---------- Services ---------- */
+    
 
     .services-section {
         padding: 70px 0;
@@ -3870,7 +3613,7 @@ margin-bottom: 10px;
         gap: 20px;
     }
 
-    /* ---------- Why Choose Us ---------- */
+    
 
     .why-choose-container {
         gap: 45px;
@@ -3884,21 +3627,21 @@ margin-bottom: 10px;
         left: -10px;
     }
 
-    /* ---------- How It Works ---------- */
+   
 
     .process-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
 
-    /* ---------- Testimonials ---------- */
+    
 
     .testimonials-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
 
-    /* ---------- Final CTA ---------- */
+    
 
     .final-cta-section {
         padding: 70px 0;
@@ -3907,14 +3650,11 @@ margin-bottom: 10px;
 }
 
 
-/* =========================================================
-   MOBILE — 767px and below
-   ========================================================= */
+
 
 @media (max-width: 767px) {
 
-    /* ---------- Global ---------- */
-
+  
     body {
         overflow-x: hidden;
     }
@@ -3930,7 +3670,7 @@ margin-bottom: 10px;
         width: min(92%, 560px);
     }
 
-    /* ---------- Hero ---------- */
+    
 
     .hero {
         padding: 45px 0 30px;
@@ -4005,7 +3745,7 @@ margin-bottom: 10px;
         top: -30px;
     }
 
-    /* ---------- About ---------- */
+    
 
     .about-intro {
         padding: 60px 0;
@@ -4067,7 +3807,7 @@ margin-bottom: 10px;
         width: 100%;
     }
 
-    /* ---------- Services ---------- */
+    
 
     .services-section {
         padding: 60px 0;
@@ -4086,7 +3826,7 @@ margin-bottom: 10px;
         padding: 28px 22px;
     }
 
-    /* ---------- Why Choose Us ---------- */
+    
 
     .why-choose-section {
         padding: 60px 0;
@@ -4121,7 +3861,7 @@ margin-bottom: 10px;
         font-size: 27px;
     }
 
-    /* ---------- How It Works ---------- */
+    
 
     .how-it-works-section {
         padding: 60px 0;
@@ -4140,7 +3880,7 @@ margin-bottom: 10px;
         padding: 28px 22px;
     }
 
-    /* ---------- Testimonials ---------- */
+    
 
     .testimonials-section {
         padding: 60px 0;
@@ -4159,7 +3899,7 @@ margin-bottom: 10px;
         padding: 28px 22px;
     }
 
-    /* ---------- Final CTA ---------- */
+    
 
     .final-cta-section {
         padding: 60px 0;
@@ -4176,7 +3916,7 @@ margin-bottom: 10px;
         min-width: 0;
     }
 
-    /* ---------- Footer ---------- */
+    
 
     .footer-container {
         padding: 45px 20px 35px;
@@ -4189,9 +3929,7 @@ margin-bottom: 10px;
 }
 
 
-/* =========================================================
-   SMALL MOBILE — 480px and below
-   ========================================================= */
+
 
 @media (max-width: 480px) {
 

@@ -1,14 +1,3 @@
-/* =========================================================
-   HEADER
-   WINDOW CLEANING SERVICE
-   FRESH GLASS DESIGN
-   ========================================================= */
-
-
-/* =========================================================
-   HEADER
-   ========================================================= */
-
 .site-header {
     width: 100%;
     height: var(--header-height);
@@ -27,9 +16,7 @@
 }
 
 
-/* =========================================================
-   HEADER CONTAINER
-   ========================================================= */
+
 
 .header-container {
     height: 100%;
@@ -42,9 +29,6 @@
 }
 
 
-/* =========================================================
-   LOGO
-   ========================================================= */
 
 .site-logo {
     display: inline-flex;
@@ -72,7 +56,7 @@
 }
 
 
-/* Glass Lines */
+
 
 .logo-icon span {
     width: 5px;
@@ -94,7 +78,7 @@
 }
 
 
-/* Logo Text */
+
 
 .logo-text {
     display: flex;
@@ -121,9 +105,7 @@
 }
 
 
-/* =========================================================
-   NAVIGATION
-   ========================================================= */
+
 
 .main-nav {
     height: 100%;
@@ -151,7 +133,7 @@
 }
 
 
-/* Navigation Link */
+
 
 .nav-link {
     height: 100%;
@@ -181,14 +163,12 @@
 }
 
 
-/* Hover */
+
 
 .nav-link:hover {
     color: var(--primary-color);
 }
-/* ================================
-   NAV LINKS
-================================ */
+
 
 .nav-link,
 .nav-dropdown-btn {
@@ -198,13 +178,13 @@
     height: 80px;
 }
 
-/* Active link */
+
 .nav-link.active,
 .nav-dropdown-btn.active {
     color: var(--primary-color);
 }
 
-/* Active underline */
+
 .nav-link.active::after,
 .nav-dropdown-btn.active::after {
     content: "";
@@ -221,9 +201,7 @@
 
     border-radius: 2px;
 }
-/* =========================================================
-   DROPDOWN ICON
-   ========================================================= */
+
 
 .dropdown-icon {
     width: 16px;
@@ -237,9 +215,7 @@
 }
 
 
-/* =========================
-   HOME DROPDOWN FIX
-========================= */
+
 
 .home-dropdown {
     position: relative !important;
@@ -302,7 +278,6 @@
 }
 
 
-/* DARK MODE */
 
 html.dark-mode .home-dropdown .dropdown-menu {
     background: #172832;
@@ -317,9 +292,7 @@ html.dark-mode .home-dropdown .dropdown-menu a:hover {
     background: #1677B8;
     color: #ffffff;
 }
-/* =========================================================
-   HEADER ACTIONS
-   ========================================================= */
+
 
 .header-actions {
     display: flex;
@@ -331,9 +304,7 @@ html.dark-mode .home-dropdown .dropdown-menu a:hover {
 }
 
 
-/* =========================================================
-   HEADER ICON BUTTON
-   ========================================================= */
+
 
 .header-icon-btn {
     width: 40px;
@@ -382,9 +353,6 @@ html.dark-mode .home-dropdown .dropdown-menu a:hover {
 }
 
 
-/* =========================================
-   DARK MODE
-========================================= */
 
 html.dark-mode .header-icon-btn {
     border-color: var(--primary-color);
@@ -396,9 +364,7 @@ html.dark-mode .header-icon-btn:hover {
     color: #ffffff;
     border-color: var(--primary-color);
 }
-/* =========================================================
-   DARK MODE ICON
-   ========================================================= */
+
 
 .moon-icon {
     display: none;
@@ -413,9 +379,7 @@ body.dark-mode .moon-icon {
 }
 
 
-/* =========================================================
-   HEADER CTA
-   ========================================================= */
+
 
 .header-cta {
     min-width: 90px;
@@ -428,9 +392,6 @@ body.dark-mode .moon-icon {
 }
 
 
-/* =========================================================
-   MOBILE MENU BUTTON
-   ========================================================= */
 
 .menu-toggle {
     width: 40px;
@@ -465,9 +426,6 @@ body.dark-mode .moon-icon {
 }
 
 
-/* =========================================================
-   MOBILE MENU ACTIVE
-   ========================================================= */
 
 .menu-toggle.active span:nth-child(1) {
     transform: translateY(7px) rotate(45deg);
@@ -482,9 +440,6 @@ body.dark-mode .moon-icon {
 }
 
 
-/* =========================================================
-   RTL
-   ========================================================= */
 
 html[dir="rtl"] .dropdown-menu {
     left: auto;
@@ -497,9 +452,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================================
-   RESPONSIVE - 1200px
-   ========================================================= */
 
 @media (max-width: 1200px) {
 
@@ -521,10 +473,6 @@ html[dir="rtl"] .nav-link.active::after {
     }
 }
 
-/* =========================================================
-   HEADER - TABLET / SMALL LAPTOP
-   1100px
-========================================================= */
 
 @media (max-width: 1100px) and (min-width: 993px) {
 
@@ -536,7 +484,7 @@ html[dir="rtl"] .nav-link.active::after {
         gap: 10px;
     }
 
-    /* LOGO */
+    
     .site-logo {
         flex-shrink: 0;
         display: flex;
@@ -556,7 +504,7 @@ html[dir="rtl"] .nav-link.active::after {
         font-size: 8px;
     }
 
-    /* NAV */
+    
     .main-nav {
         flex: 1;
         min-width: 0;
@@ -596,7 +544,7 @@ html[dir="rtl"] .nav-link.active::after {
         font-size: 8px;
     }
 
-    /* HEADER ACTIONS */
+    
     .header-actions {
         flex-shrink: 0;
         display: flex;
@@ -610,7 +558,7 @@ html[dir="rtl"] .nav-link.active::after {
         flex-shrink: 0;
     }
 
-    /* LOGIN */
+    
     .header-cta,
     .login-btn {
         width: 98px;
@@ -629,9 +577,7 @@ html[dir="rtl"] .nav-link.active::after {
 
 
 
-/* =========================================================
-   RESPONSIVE - 992px
-   ========================================================= */
+
 
 @media (max-width: 992px) {
 
@@ -716,7 +662,7 @@ html[dir="rtl"] .nav-link.active::after {
     }
 
 
-    /* Mobile Dropdown */
+  
 
     .dropdown-menu {
         position: static;
@@ -752,8 +698,7 @@ html[dir="rtl"] .nav-link.active::after {
     }
 
 
-    /* Mobile Menu */
-
+  
     .menu-toggle {
         display: flex;
     }
@@ -765,9 +710,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================================
-   RESPONSIVE - 576px
-   ========================================================= */
 
 @media (max-width: 576px) {
 
@@ -821,9 +763,7 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================
-   BLOG HERO SECTION
-========================================= */
+
 
 .blog-hero {
     position: relative;
@@ -840,9 +780,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================
-   HERO OVERLAY
-========================================= */
 
 .blog-hero-overlay {
     position: absolute;
@@ -854,9 +791,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================
-   CONTAINER
-========================================= */
 
 .blog-hero .container {
     position: relative;
@@ -866,9 +800,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================
-   HERO CONTENT
-========================================= */
 
 .blog-hero-content {
     max-width: 760px;
@@ -878,9 +809,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================
-   HERO TAG
-========================================= */
 
 .blog-hero-tag {
     display: inline-block;
@@ -900,9 +828,7 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================
-   HERO HEADING
-========================================= */
+
 
 .blog-hero h1 {
     margin-bottom: 20px;
@@ -919,9 +845,7 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================
-   HERO DESCRIPTION
-========================================= */
+
 
 .blog-hero p {
     max-width: 650px;
@@ -934,9 +858,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================
-   HERO BUTTONS
-========================================= */
 
 .blog-hero-buttons {
     display: flex;
@@ -947,9 +868,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================
-   BUTTON
-========================================= */
 
 .blog-hero .btn {
     display: inline-flex;
@@ -971,10 +889,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================
-   PRIMARY BUTTON
-========================================= */
-
 .blog-hero .btn-primary {
     background: var(--primary-color);
     color: #ffffff;
@@ -985,9 +899,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================
-   SECONDARY BUTTON
-========================================= */
 
 .blog-hero .btn-secondary {
     background: transparent;
@@ -1002,27 +913,19 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================
-   DARK MODE
-========================================= */
 
 html.dark-mode .blog-hero-overlay {
     background: rgba(0, 0, 0, 0.72);
 }
 
 
-/* =========================================
-   RTL
-========================================= */
+
 
 html[dir="rtl"] .blog-hero {
     direction: rtl;
 }
 
 
-/* =========================================
-   RESPONSIVE
-========================================= */
 
 @media (max-width: 768px) {
 
@@ -1067,9 +970,6 @@ html[dir="rtl"] .blog-hero {
 }
 
 
-/* =========================================
-   FEATURED BLOG SECTION
-========================================= */
 
 .featured-blog-section {
     padding: 90px 0;
@@ -1077,9 +977,6 @@ html[dir="rtl"] .blog-hero {
 }
 
 
-/* =========================================
-   SECTION HEADING
-========================================= */
 
 .featured-blog-section .section-heading {
     max-width: 700px;
@@ -1118,10 +1015,6 @@ html[dir="rtl"] .blog-hero {
 }
 
 
-/* =========================================
-   FEATURED BLOG WRAPPER
-========================================= */
-
 .featured-blog-wrapper {
     display: grid;
 
@@ -1136,9 +1029,6 @@ html[dir="rtl"] .blog-hero {
 }
 
 
-/* =========================================
-   IMAGE
-========================================= */
 
 .featured-blog-image {
     position: relative;
@@ -1166,10 +1056,6 @@ html[dir="rtl"] .blog-hero {
 }
 
 
-/* =========================================
-   CATEGORY
-========================================= */
-
 .featured-blog-category {
     position: absolute;
 
@@ -1188,9 +1074,6 @@ html[dir="rtl"] .blog-hero {
 }
 
 
-/* =========================================
-   CONTENT
-========================================= */
 
 .featured-blog-content {
     padding: 10px 0;
@@ -1226,10 +1109,6 @@ html[dir="rtl"] .blog-hero {
 }
 
 
-/* =========================================
-   READ MORE
-========================================= */
-
 .featured-read-more {
     display: inline-flex;
     align-items: center;
@@ -1262,9 +1141,6 @@ html[dir="rtl"] .blog-hero {
 }
 
 
-/* =========================================
-   DARK MODE
-========================================= */
 
 html.dark-mode .featured-blog-section {
     background-color: var(--bg-color);
@@ -1276,9 +1152,6 @@ html.dark-mode .featured-blog-section .section-heading h2 {
 }
 
 
-/* =========================================
-   RTL
-========================================= */
 
 html[dir="rtl"] .featured-blog-section {
     direction: rtl;
@@ -1289,9 +1162,6 @@ html[dir="rtl"] .featured-read-more:hover span {
 }
 
 
-/* =========================================
-   RESPONSIVE
-========================================= */
 
 @media (max-width: 900px) {
 
@@ -1332,19 +1202,12 @@ html[dir="rtl"] .featured-read-more:hover span {
 }
 
 
-/* =========================================
-   LATEST ARTICLES SECTION
-========================================= */
-
 .latest-articles-section {
     padding: 90px 0;
     background-color: var(--bg-color);
 }
 
 
-/* =========================================
-   SECTION HEADING
-========================================= */
 
 .latest-articles-section .section-heading {
     max-width: 700px;
@@ -1385,9 +1248,6 @@ html[dir="rtl"] .featured-read-more:hover span {
 }
 
 
-/* =========================================
-   BLOG GRID
-========================================= */
 
 .blog-grid {
     display: grid;
@@ -1402,9 +1262,6 @@ html[dir="rtl"] .featured-read-more:hover span {
 }
 
 
-/* =========================================
-   BLOG CARD
-========================================= */
 
 .blog-card {
     overflow: hidden;
@@ -1426,10 +1283,6 @@ html[dir="rtl"] .featured-read-more:hover span {
     box-shadow: 0 15px 35px rgba(22, 119, 184, 0.12);
 }
 
-
-/* =========================================
-   CARD IMAGE
-========================================= */
 
 .blog-card-image {
     position: relative;
@@ -1455,9 +1308,6 @@ html[dir="rtl"] .featured-read-more:hover span {
 }
 
 
-/* =========================================
-   CATEGORY
-========================================= */
 
 .blog-card-category {
     position: absolute;
@@ -1478,18 +1328,12 @@ html[dir="rtl"] .featured-read-more:hover span {
 }
 
 
-/* =========================================
-   CARD CONTENT
-========================================= */
 
 .blog-card-content {
     padding: 25px;
 }
 
 
-/* =========================================
-   META
-========================================= */
 
 .blog-card-meta {
     display: flex;
@@ -1506,9 +1350,6 @@ html[dir="rtl"] .featured-read-more:hover span {
 }
 
 
-/* =========================================
-   CARD TITLE
-========================================= */
 
 .blog-card-content h3 {
     margin-bottom: 14px;
@@ -1520,9 +1361,6 @@ html[dir="rtl"] .featured-read-more:hover span {
 }
 
 
-/* =========================================
-   CARD DESCRIPTION
-========================================= */
 
 .blog-card-content p {
     margin-bottom: 18px;
@@ -1534,9 +1372,6 @@ html[dir="rtl"] .featured-read-more:hover span {
 }
 
 
-/* =========================================
-   READ MORE
-========================================= */
 
 .blog-read-more {
     display: inline-flex;
@@ -1570,9 +1405,6 @@ html[dir="rtl"] .featured-read-more:hover span {
 }
 
 
-/* =========================================
-   DARK MODE
-========================================= */
 
 html.dark-mode .latest-articles-section {
     background-color: var(--bg-color);
@@ -1590,9 +1422,6 @@ html.dark-mode .latest-articles-section .section-heading h2 {
 }
 
 
-/* =========================================
-   RTL
-========================================= */
 
 html[dir="rtl"] .latest-articles-section {
     direction: rtl;
@@ -1608,10 +1437,6 @@ html[dir="rtl"] .blog-read-more:hover span {
 }
 
 
-/* =========================================
-   TABLET
-========================================= */
-
 @media (max-width: 900px) {
 
     .blog-grid {
@@ -1623,9 +1448,6 @@ html[dir="rtl"] .blog-read-more:hover span {
 }
 
 
-/* =========================================
-   MOBILE
-========================================= */
 
 @media (max-width: 600px) {
 
@@ -1651,10 +1473,6 @@ html[dir="rtl"] .blog-read-more:hover span {
 
 
 
-/* =========================================
-   CLEANING TIPS SECTION
-========================================= */
-
 .cleaning-tips-section {
     padding: 90px 0;
 
@@ -1662,9 +1480,6 @@ html[dir="rtl"] .blog-read-more:hover span {
 }
 
 
-/* =========================================
-   MAIN WRAPPER
-========================================= */
 
 .cleaning-tips-wrapper {
     display: grid;
@@ -1681,9 +1496,6 @@ html[dir="rtl"] .blog-read-more:hover span {
 }
 
 
-/* =========================================
-   SECTION TAG
-========================================= */
 
 .cleaning-tips-content .section-tag {
     display: inline-block;
@@ -1700,9 +1512,6 @@ html[dir="rtl"] .blog-read-more:hover span {
 }
 
 
-/* =========================================
-   HEADING
-========================================= */
 
 .cleaning-tips-content h2 {
     max-width: 620px;
@@ -1716,9 +1525,7 @@ html[dir="rtl"] .blog-read-more:hover span {
 }
 
 
-/* =========================================
-   INTRO
-========================================= */
+
 
 .cleaning-tips-intro {
     max-width: 600px;
@@ -1732,10 +1539,6 @@ html[dir="rtl"] .blog-read-more:hover span {
 }
 
 
-/* =========================================
-   CLEANING TIP
-========================================= */
-
 .cleaning-tip {
     display: flex;
 
@@ -1746,10 +1549,6 @@ html[dir="rtl"] .blog-read-more:hover span {
     margin-bottom: 24px;
 }
 
-
-/* =========================================
-   TIP ICON
-========================================= */
 
 .cleaning-tip-icon {
     flex-shrink: 0;
@@ -1773,10 +1572,6 @@ html[dir="rtl"] .blog-read-more:hover span {
 }
 
 
-/* =========================================
-   TIP TEXT
-========================================= */
-
 .cleaning-tip-text h3 {
     margin-bottom: 5px;
 
@@ -1795,10 +1590,6 @@ html[dir="rtl"] .blog-read-more:hover span {
     line-height: 1.6;
 }
 
-
-/* =========================================
-   IMAGE
-========================================= */
 
 .cleaning-tips-image {
     position: relative;
@@ -1826,9 +1617,6 @@ html[dir="rtl"] .blog-read-more:hover span {
 }
 
 
-/* =========================================
-   IMAGE BADGE
-========================================= */
 
 .cleaning-tips-badge {
     position: absolute;
@@ -1863,9 +1651,6 @@ html[dir="rtl"] .blog-read-more:hover span {
 }
 
 
-/* =========================================
-   DARK MODE
-========================================= */
 
 html.dark-mode .cleaning-tips-section {
     background-color: var(--card-color);
@@ -1885,9 +1670,6 @@ html.dark-mode .cleaning-tips-badge span {
 }
 
 
-/* =========================================
-   RTL
-========================================= */
 
 html[dir="rtl"] .cleaning-tips-section {
     direction: rtl;
@@ -1901,10 +1683,6 @@ html[dir="rtl"] .cleaning-tips-badge {
     border-right: 4px solid var(--primary-color);
 }
 
-
-/* =========================================
-   TABLET
-========================================= */
 
 @media (max-width: 900px) {
 
@@ -1923,9 +1701,6 @@ html[dir="rtl"] .cleaning-tips-badge {
 }
 
 
-/* =========================================
-   MOBILE
-========================================= */
 
 @media (max-width: 600px) {
 
@@ -1956,9 +1731,6 @@ html[dir="rtl"] .cleaning-tips-badge {
 
 
 
-/* =========================================
-   COMMERCIAL INSIGHTS SECTION
-========================================= */
 
 .commercial-insights-section {
     padding: 90px 0;
@@ -1967,9 +1739,6 @@ html[dir="rtl"] .cleaning-tips-badge {
 }
 
 
-/* =========================================
-   MAIN WRAPPER
-========================================= */
 
 .commercial-insights-wrapper {
     display: grid;
@@ -1985,10 +1754,6 @@ html[dir="rtl"] .cleaning-tips-badge {
     margin: 0 auto;
 }
 
-
-/* =========================================
-   IMAGE
-========================================= */
 
 .commercial-insights-image {
     position: relative;
@@ -2016,9 +1781,6 @@ html[dir="rtl"] .cleaning-tips-badge {
 }
 
 
-/* =========================================
-   IMAGE LABEL
-========================================= */
 
 .commercial-image-label {
     position: absolute;
@@ -2048,9 +1810,6 @@ html[dir="rtl"] .cleaning-tips-badge {
 }
 
 
-/* =========================================
-   CONTENT
-========================================= */
 
 .commercial-insights-content .section-tag {
     display: inline-block;
@@ -2087,9 +1846,6 @@ html[dir="rtl"] .cleaning-tips-badge {
 }
 
 
-/* =========================================
-   POINT
-========================================= */
 
 .commercial-point {
     display: flex;
@@ -2102,9 +1858,6 @@ html[dir="rtl"] .cleaning-tips-badge {
 }
 
 
-/* =========================================
-   POINT ICON
-========================================= */
 
 .commercial-point-icon {
     flex-shrink: 0;
@@ -2128,9 +1881,6 @@ html[dir="rtl"] .cleaning-tips-badge {
 }
 
 
-/* =========================================
-   POINT TEXT
-========================================= */
 
 .commercial-point h3 {
     margin-bottom: 5px;
@@ -2151,9 +1901,6 @@ html[dir="rtl"] .cleaning-tips-badge {
 }
 
 
-/* =========================================
-   BUTTON
-========================================= */
 
 .commercial-insights-btn {
     display: inline-flex;
@@ -2195,9 +1942,6 @@ html[dir="rtl"] .cleaning-tips-badge {
 }
 
 
-/* =========================================
-   DARK MODE
-========================================= */
 
 html.dark-mode .commercial-insights-content h2,
 html.dark-mode .commercial-point h3 {
@@ -2211,9 +1955,6 @@ html.dark-mode .commercial-image-label {
 }
 
 
-/* =========================================
-   RTL
-========================================= */
 
 html[dir="rtl"] .commercial-insights-section {
     direction: rtl;
@@ -2229,9 +1970,6 @@ html[dir="rtl"] .commercial-insights-btn:hover span {
 }
 
 
-/* =========================================
-   TABLET
-========================================= */
 
 @media (max-width: 900px) {
 
@@ -2249,10 +1987,6 @@ html[dir="rtl"] .commercial-insights-btn:hover span {
 
 }
 
-
-/* =========================================
-   MOBILE
-========================================= */
 
 @media (max-width: 600px) {
 
@@ -2277,10 +2011,6 @@ html[dir="rtl"] .commercial-insights-btn:hover span {
 
 
 
-/* =========================================
-   NEWSLETTER SECTION
-========================================= */
-
 .blog-newsletter-section {
     padding: 75px 0;
 
@@ -2292,9 +2022,6 @@ html[dir="rtl"] .commercial-insights-btn:hover span {
 }
 
 
-/* =========================================
-   MAIN WRAPPER
-========================================= */
 
 .blog-newsletter-wrapper {
     display: grid;
@@ -2309,11 +2036,6 @@ html[dir="rtl"] .commercial-insights-btn:hover span {
 
     margin: 0 auto;
 }
-
-
-/* =========================================
-   CONTENT
-========================================= */
 
 .blog-newsletter-content .section-tag {
     display: inline-block;
@@ -2352,9 +2074,6 @@ html[dir="rtl"] .commercial-insights-btn:hover span {
 }
 
 
-/* =========================================
-   FORM
-========================================= */
 
 .blog-newsletter-form {
     display: flex;
@@ -2373,9 +2092,6 @@ html[dir="rtl"] .commercial-insights-btn:hover span {
 }
 
 
-/* =========================================
-   INPUT WRAPPER
-========================================= */
 
 .newsletter-input-wrapper {
     flex: 1;
@@ -2396,9 +2112,6 @@ html[dir="rtl"] .commercial-insights-btn:hover span {
 }
 
 
-/* =========================================
-   INPUT
-========================================= */
 
 .newsletter-input-wrapper input {
     width: 100%;
@@ -2420,9 +2133,6 @@ html[dir="rtl"] .commercial-insights-btn:hover span {
 }
 
 
-/* =========================================
-   BUTTON
-========================================= */
 
 .newsletter-btn {
     display: inline-flex;
@@ -2464,9 +2174,6 @@ html[dir="rtl"] .commercial-insights-btn:hover span {
 }
 
 
-/* =========================================
-   DARK MODE
-========================================= */
 
 html.dark-mode .blog-newsletter-section {
     background: linear-gradient(
@@ -2477,9 +2184,7 @@ html.dark-mode .blog-newsletter-section {
 }
 
 
-/* =========================================
-   RTL
-========================================= */
+
 
 html[dir="rtl"] .blog-newsletter-section {
     direction: rtl;
@@ -2489,10 +2194,6 @@ html[dir="rtl"] .newsletter-btn:hover i {
     transform: translateX(-4px);
 }
 
-
-/* =========================================
-   TABLET
-========================================= */
 
 @media (max-width: 900px) {
 
@@ -2515,9 +2216,6 @@ html[dir="rtl"] .newsletter-btn:hover i {
 }
 
 
-/* =========================================
-   MOBILE
-========================================= */
 
 @media (max-width: 600px) {
 
@@ -2640,11 +2338,6 @@ html[dir="rtl"] .newsletter-btn:hover i {
 
 
 
-
-/* =========================
-   FOOTER
-========================= */
-
 .footer {
     background: var(--bg-color);
     color: var(--text-color);
@@ -2663,9 +2356,7 @@ html[dir="rtl"] .newsletter-btn:hover i {
     gap: 50px;
 }
 
-/* =========================
-   FOOTER LOGO
-========================= */
+
 
 .footer-logo {
     display: flex;
@@ -2701,9 +2392,7 @@ html[dir="rtl"] .newsletter-btn:hover i {
     color: var(--text-light);
 }
 
-/* =========================
-   FOOTER ABOUT
-========================= */
+
 
 .footer-brand p {
     max-width: 320px;
@@ -2715,9 +2404,7 @@ margin-bottom: 10px;
 }
 
 
-/* ================================
-   FOOTER SOCIAL ICONS
-================================ */
+
 
 .footer-social h4 {
     color: var(--white-color);
@@ -2774,9 +2461,6 @@ margin-bottom: 10px;
 
 
 
-/* =========================
-   FOOTER COLUMNS
-========================= */
 
 .footer-column h3 {
     margin-bottom: 20px;
@@ -2809,9 +2493,7 @@ margin-bottom: 10px;
     margin-bottom: 12px;
 }
 
-/* =========================
-   FOOTER BOTTOM
-========================= */
+
 
 .footer-bottom {
     max-width: 1200px;
@@ -2884,11 +2566,8 @@ margin-bottom: 10px;
 
 
 
-/* =========================================================
-   FOOTER RESPONSIVE DESIGN
-========================================================= */
 
-/* ---------- TABLET ---------- */
+
 
 @media (max-width: 992px) {
 
@@ -2908,7 +2587,7 @@ margin-bottom: 10px;
 }
 
 
-/* ---------- MOBILE ---------- */
+
 
 @media (max-width: 768px) {
 
@@ -2946,7 +2625,7 @@ margin-bottom: 10px;
 }
 
 
-/* ---------- SMALL MOBILE ---------- */
+
 
 @media (max-width: 576px) {
 
@@ -2980,7 +2659,7 @@ margin-bottom: 10px;
 }
 
 
-/* ---------- VERY SMALL DEVICES ---------- */
+
 
 @media (max-width: 400px) {
 

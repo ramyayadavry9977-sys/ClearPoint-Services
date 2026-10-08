@@ -1,13 +1,4 @@
-/* =========================================================
-   HEADER
-   WINDOW CLEANING SERVICE
-   FRESH GLASS DESIGN
-   ========================================================= */
 
-
-/* =========================================================
-   HEADER
-   ========================================================= */
 
 .site-header {
     width: 100%;
@@ -27,9 +18,6 @@
 }
 
 
-/* =========================================================
-   HEADER CONTAINER
-   ========================================================= */
 
 .header-container {
     height: 100%;
@@ -42,9 +30,6 @@
 }
 
 
-/* =========================================================
-   LOGO
-   ========================================================= */
 
 .site-logo {
     display: inline-flex;
@@ -72,7 +57,7 @@
 }
 
 
-/* Glass Lines */
+
 
 .logo-icon span {
     width: 5px;
@@ -94,7 +79,7 @@
 }
 
 
-/* Logo Text */
+
 
 .logo-text {
     display: flex;
@@ -121,9 +106,6 @@
 }
 
 
-/* =========================================================
-   NAVIGATION
-   ========================================================= */
 
 .main-nav {
     height: 100%;
@@ -181,21 +163,21 @@
 }
 
 
-/* Hover */
+
 
 .nav-link:hover {
     color: var(--primary-color);
 }
 
 
-/* Active */
+
 
 .nav-link.active {
     color: var(--primary-color);
 }
 
 
-/* Active underline */
+
 .nav-link.active::after,
 .nav-dropdown-btn.active::after {
     content: "";
@@ -214,9 +196,7 @@
 }
 
 
-/* =========================================================
-   DROPDOWN ICON
-   ========================================================= */
+
 
 .dropdown-icon {
     width: 16px;
@@ -230,9 +210,6 @@
 }
 
 
-/* =========================================================
-   HOME DROPDOWN
-   ========================================================= */
 
 .dropdown-menu {
     position: absolute;
@@ -264,7 +241,7 @@
 }
 
 
-/* Open Dropdown */
+
 
 .home-dropdown.open .dropdown-menu {
     opacity: 1;
@@ -274,7 +251,7 @@
 }
 
 
-/* Dropdown Links */
+
 
 .dropdown-menu li {
     width: 100%;
@@ -307,7 +284,7 @@
 }
 
 
-/* Active Dropdown Link */
+
 
 .dropdown-menu a.active {
     background-color: rgba(22, 119, 184, 0.10);
@@ -317,10 +294,6 @@
     font-weight: 600;
 }
 
-
-/* =========================================================
-   HEADER ACTIONS
-   ========================================================= */
 
 .header-actions {
     display: flex;
@@ -332,9 +305,6 @@
 }
 
 
-/* =========================================================
-   HEADER ICON BUTTON
-   ========================================================= */
 
 .header-icon-btn {
     width: 40px;
@@ -394,9 +364,6 @@ html.dark-mode .header-icon-btn:hover {
 }
 
 
-/* =========================================================
-   DARK MODE ICON
-   ========================================================= */
 
 .moon-icon {
     display: none;
@@ -411,9 +378,7 @@ body.dark-mode .moon-icon {
 }
 
 
-/* =========================================================
-   HEADER CTA
-   ========================================================= */
+
 
 .header-cta {
     min-width: 90px;
@@ -426,9 +391,6 @@ body.dark-mode .moon-icon {
 }
 
 
-/* =========================================================
-   MOBILE MENU BUTTON
-   ========================================================= */
 
 .menu-toggle {
     width: 40px;
@@ -463,9 +425,6 @@ body.dark-mode .moon-icon {
 }
 
 
-/* =========================================================
-   MOBILE MENU ACTIVE
-   ========================================================= */
 
 .menu-toggle.active span:nth-child(1) {
     transform: translateY(7px) rotate(45deg);
@@ -480,9 +439,7 @@ body.dark-mode .moon-icon {
 }
 
 
-/* =========================================================
-   RTL
-   ========================================================= */
+
 
 html[dir="rtl"] .dropdown-menu {
     left: auto;
@@ -495,9 +452,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================================
-   RESPONSIVE - 1200px
-   ========================================================= */
 
 @media (max-width: 1200px) {
 
@@ -521,10 +475,6 @@ html[dir="rtl"] .nav-link.active::after {
 
 
 
-/* =========================================================
-   HEADER - TABLET / SMALL LAPTOP
-   1100px
-========================================================= */
 
 @media (max-width: 1100px) and (min-width: 993px) {
 
@@ -596,7 +546,7 @@ html[dir="rtl"] .nav-link.active::after {
         font-size: 8px;
     }
 
-    /* HEADER ACTIONS */
+
     .header-actions {
         flex-shrink: 0;
         display: flex;
@@ -610,7 +560,7 @@ html[dir="rtl"] .nav-link.active::after {
         flex-shrink: 0;
     }
 
-    /* LOGIN */
+
     .header-cta,
     .login-btn {
         width: 98px;
@@ -628,9 +578,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================================
-   RESPONSIVE - 992px
-   ========================================================= */
 
 @media (max-width: 992px) {
 
@@ -715,7 +662,7 @@ html[dir="rtl"] .nav-link.active::after {
     }
 
 
-    /* Mobile Dropdown */
+  
 
     .dropdown-menu {
         position: static;
@@ -751,7 +698,7 @@ html[dir="rtl"] .nav-link.active::after {
     }
 
 
-    /* Mobile Menu */
+
 
     .menu-toggle {
         display: flex;
@@ -763,10 +710,6 @@ html[dir="rtl"] .nav-link.active::after {
     }
 }
 
-
-/* =========================================================
-   RESPONSIVE - 576px
-   ========================================================= */
 
 @media (max-width: 576px) {
 
@@ -819,9 +762,6 @@ html[dir="rtl"] .nav-link.active::after {
     }
 }
 
-/* =====================================================
-   HOME 2 — PREMIUM HERO
-===================================================== */
 
 .premium-hero {
     position: relative;
@@ -850,9 +790,7 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =====================================================
-   CONTENT
-===================================================== */
+
 
 .premium-hero-content {
     max-width: 590px;
@@ -912,9 +850,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =====================================================
-   BUTTONS
-===================================================== */
 
 .premium-hero-buttons {
     display: flex;
@@ -988,9 +923,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =====================================================
-   TRUST ITEMS
-===================================================== */
 
 .premium-hero-trust {
     display: flex;
@@ -1029,9 +961,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =====================================================
-   HERO IMAGE
-===================================================== */
 
 .premium-hero-visual {
     position: relative;
@@ -1070,9 +999,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =====================================================
-   FLOATING CARD
-===================================================== */
 
 .hero-floating-card {
     position: absolute;
@@ -1145,9 +1071,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================
-   SLIDE FROM LEFT
-========================================= */
 
 .slide-left {
     animation: slideFromLeft 0.8s ease-out both;
@@ -1166,9 +1089,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================
-   SLIDE FROM RIGHT
-========================================= */
 
 .slide-right {
     animation: slideFromRight 0.8s ease-out both;
@@ -1187,10 +1107,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================
-   RTL SUPPORT
-========================================= */
-
 html[dir="rtl"] .slide-left {
     animation-name: slideFromRight;
 }
@@ -1199,9 +1115,7 @@ html[dir="rtl"] .slide-right {
     animation-name: slideFromLeft;
 }
 
-/* =====================================================
-   DARK MODE
-===================================================== */
+
 
 html.dark-mode .premium-hero {
     background-color: var(--bg-color);
@@ -1239,9 +1153,6 @@ html.dark-mode .hero-floating-card strong {
 }
 
 
-/* =====================================================
-   RESPONSIVE
-===================================================== */
 
 @media (max-width: 1000px) {
 
@@ -1326,9 +1237,7 @@ html.dark-mode .hero-floating-card strong {
 }
 
 
-/* =========================
-   PREMIUM ABOUT SECTION
-========================= */
+
 
 .premium-about {
     padding: 100px 20px;
@@ -1347,7 +1256,7 @@ html.dark-mode .hero-floating-card strong {
 }
 
 
-/* IMAGE */
+
 
 .premium-about-image {
     position: relative;
@@ -1368,7 +1277,7 @@ html.dark-mode .hero-floating-card strong {
 }
 
 
-/* EXPERIENCE BADGE */
+
 
 .about-experience {
     position: absolute;
@@ -1408,7 +1317,7 @@ html.dark-mode .hero-floating-card strong {
 }
 
 
-/* CONTENT */
+
 
 .premium-about-content {
     max-width: 570px;
@@ -1435,7 +1344,6 @@ html.dark-mode .hero-floating-card strong {
 }
 
 
-/* HEADING */
 
 .premium-about-content h2 {
     margin: 0 0 20px;
@@ -1453,7 +1361,7 @@ html.dark-mode .hero-floating-card strong {
 }
 
 
-/* TEXT */
+
 
 .premium-about-intro {
     margin: 0 0 15px;
@@ -1475,7 +1383,7 @@ html.dark-mode .hero-floating-card strong {
 }
 
 
-/* FEATURES */
+
 
 .premium-about-features {
     display: grid;
@@ -1537,7 +1445,7 @@ html.dark-mode .hero-floating-card strong {
 }
 
 
-/* BUTTON */
+
 
 .premium-about-btn {
     display: inline-flex;
@@ -1587,7 +1495,6 @@ html.dark-mode .hero-floating-card strong {
 }
 
 
-/* DARK MODE */
 
 html.dark-mode .premium-about {
     background: var(--bg-color);
@@ -1606,7 +1513,7 @@ html.dark-mode .premium-about-feature h3 {
 }
 
 
-/* RTL */
+
 
 html[dir="rtl"] .about-experience {
     right: auto;
@@ -1630,7 +1537,7 @@ html[dir="rtl"] .premium-about-btn:hover svg {
 }
 
 
-/* RESPONSIVE */
+
 
 @media (max-width: 992px) {
 
@@ -1683,9 +1590,6 @@ html[dir="rtl"] .premium-about-btn:hover svg {
 }
 
 
-/* =========================================================
-   PREMIUM SERVICES
-========================================================= */
 
 .premium-services {
     padding: 110px 20px;
@@ -1699,9 +1603,6 @@ html[dir="rtl"] .premium-about-btn:hover svg {
 }
 
 
-/* =========================================================
-   HEADING
-========================================================= */
 
 .premium-services-heading {
     margin-bottom: 55px;
@@ -1762,9 +1663,6 @@ html[dir="rtl"] .premium-about-btn:hover svg {
 }
 
 
-/* =========================================================
-   SERVICES GRID
-========================================================= */
 
 .premium-services-grid {
     display: grid;
@@ -1773,18 +1671,12 @@ html[dir="rtl"] .premium-about-btn:hover svg {
 }
 
 
-/* =========================================================
-   SERVICE CARD
-========================================================= */
 
 .premium-service-card {
     min-width: 0;
 }
 
 
-/* =========================================================
-   SERVICE IMAGE
-========================================================= */
 
 .premium-service-image {
     position: relative;
@@ -1815,7 +1707,7 @@ html[dir="rtl"] .premium-about-btn:hover svg {
 }
 
 
-/* Image overlay */
+
 
 .premium-service-image::after {
     content: "";
@@ -1833,9 +1725,6 @@ html[dir="rtl"] .premium-about-btn:hover svg {
 }
 
 
-/* =========================================================
-   SERVICE NUMBER
-========================================================= */
 
 .premium-service-number {
     position: absolute;
@@ -1861,9 +1750,6 @@ html[dir="rtl"] .premium-about-btn:hover svg {
 }
 
 
-/* =========================================================
-   FLOATING ARROW
-========================================================= */
 
 .premium-service-arrow {
     position: absolute;
@@ -1906,9 +1792,6 @@ html[dir="rtl"] .premium-about-btn:hover svg {
 }
 
 
-/* =========================================================
-   SERVICE CONTENT
-========================================================= */
 
 .premium-service-content {
     padding: 25px 4px 0;
@@ -1951,9 +1834,6 @@ html[dir="rtl"] .premium-about-btn:hover svg {
 }
 
 
-/* =========================================================
-   SERVICE LINK
-========================================================= */
 
 .premium-service-link {
     display: inline-flex;
@@ -1988,9 +1868,6 @@ html[dir="rtl"] .premium-about-btn:hover svg {
 }
 
 
-/* =========================================================
-   DARK MODE
-========================================================= */
 
 html.dark-mode .premium-services {
     background: var(--bg-color);
@@ -2037,9 +1914,6 @@ html.dark-mode .premium-service-link {
 }
 
 
-/* =========================================================
-   RTL
-========================================================= */
 
 html[dir="rtl"] .premium-services-heading-top {
     flex-direction: row-reverse;
@@ -2068,10 +1942,6 @@ html[dir="rtl"] .premium-service-link:hover i {
 }
 
 
-/* =========================================================
-   TABLET
-========================================================= */
-
 @media (max-width: 1024px) {
 
     .premium-services {
@@ -2098,9 +1968,6 @@ html[dir="rtl"] .premium-service-link:hover i {
 }
 
 
-/* =========================================================
-   MOBILE TABLET
-========================================================= */
 
 @media (max-width: 768px) {
 
@@ -2135,9 +2002,6 @@ html[dir="rtl"] .premium-service-link:hover i {
 }
 
 
-/* =========================================================
-   MOBILE
-========================================================= */
 
 @media (max-width: 600px) {
 
@@ -2218,9 +2082,6 @@ html[dir="rtl"] .premium-service-link:hover i {
     transform: translateX(-5px);
 }
 
-/* =========================================================
-   SMALL MOBILE
-========================================================= */
 
 @media (max-width: 400px) {
 
@@ -2238,9 +2099,7 @@ html[dir="rtl"] .premium-service-link:hover i {
 
 }
 
- /* =========================
-    PREMIUM WHY CHOOSE US
- ========================= */
+
 
 .premium-why {
     padding: 60px 20px;
@@ -2259,7 +2118,6 @@ html[dir="rtl"] .premium-service-link:hover i {
 }
 
 
-/* CONTENT */
 
 .premium-why-content {
     max-width: 560px;
@@ -2309,7 +2167,7 @@ html[dir="rtl"] .premium-service-link:hover i {
 }
 
 
-/* FEATURE LIST */
+
 
 .premium-why-list {
     display: flex;
@@ -2376,7 +2234,7 @@ html[dir="rtl"] .premium-service-link:hover i {
 }
 
 
-/* BUTTON */
+
 
 .premium-why-btn {
     display: inline-flex;
@@ -2426,7 +2284,6 @@ html[dir="rtl"] .premium-service-link:hover i {
 }
 
 
-/* IMAGE */
 
 .premium-why-visual {
     position: relative;
@@ -2449,7 +2306,7 @@ html[dir="rtl"] .premium-service-link:hover i {
 }
 
 
-/* FLOATING CARD */
+
 
 .premium-why-card {
     position: absolute;
@@ -2515,7 +2372,7 @@ html[dir="rtl"] .premium-service-link:hover i {
 }
 
 
-/* DARK MODE */
+
 
 html.dark-mode .premium-why {
     background: var(--bg-color);
@@ -2532,7 +2389,7 @@ html.dark-mode .premium-why-card {
 }
 
 
-/* RTL */
+
 
 html[dir="rtl"] .premium-why-label {
     flex-direction: row-reverse;
@@ -2556,7 +2413,7 @@ html[dir="rtl"] .premium-why-btn:hover svg {
 }
 
 
-/* RESPONSIVE */
+
 
 @media (max-width: 992px) {
 
@@ -2597,9 +2454,6 @@ html[dir="rtl"] .premium-why-btn:hover svg {
 }
 
 
- /* =========================
-    PREMIUM HOW IT WORKS
- ========================= */
 
 .premium-process {
     padding: 100px 20px;
@@ -2612,7 +2466,7 @@ html[dir="rtl"] .premium-why-btn:hover svg {
 }
 
 
-/* HEADING */
+
 
 .premium-process-heading {
     max-width: 700px;
@@ -2667,7 +2521,7 @@ html[dir="rtl"] .premium-why-btn:hover svg {
 }
 
 
-/* PROCESS GRID */
+
 
 .premium-process-grid {
     position: relative;
@@ -2679,7 +2533,7 @@ html[dir="rtl"] .premium-why-btn:hover svg {
 }
 
 
-/* CONNECTING LINE */
+
 
 .premium-process-grid::before {
     content: "";
@@ -2698,7 +2552,7 @@ html[dir="rtl"] .premium-why-btn:hover svg {
 }
 
 
-/* PROCESS ITEM */
+
 
 .premium-process-item {
     position: relative;
@@ -2709,7 +2563,7 @@ html[dir="rtl"] .premium-why-btn:hover svg {
 }
 
 
-/* NUMBER */
+
 
 .premium-process-number {
     display: inline-flex;
@@ -2744,7 +2598,7 @@ html[dir="rtl"] .premium-why-btn:hover svg {
 }
 
 
-/* ICON */
+
 
 .premium-process-icon {
     width: 52px;
@@ -2802,7 +2656,7 @@ html[dir="rtl"] .premium-why-btn:hover svg {
 }
 
 
-/* DARK MODE */
+
 
 html.dark-mode .premium-process {
     background: var(--bg-color);
@@ -2818,7 +2672,7 @@ html.dark-mode .premium-process-number {
 }
 
 
-/* RTL */
+
 
 html[dir="rtl"] .premium-process-grid::before {
     left: 10%;
@@ -2826,7 +2680,7 @@ html[dir="rtl"] .premium-process-grid::before {
 }
 
 
-/* RESPONSIVE */
+
 
 @media (max-width: 992px) {
 
@@ -2859,9 +2713,6 @@ html[dir="rtl"] .premium-process-grid::before {
 }
 
 
-/* =====================================================
-   PREMIUM TESTIMONIALS
-===================================================== */
 
 .premium-testimonials {
     position: relative;
@@ -2880,9 +2731,6 @@ html[dir="rtl"] .premium-process-grid::before {
 }
 
 
-/* =====================================================
-   BACKGROUND DECORATION
-===================================================== */
 
 .premium-testimonials::before {
     content: "";
@@ -2920,9 +2768,6 @@ html[dir="rtl"] .premium-process-grid::before {
 }
 
 
-/* =====================================================
-   CONTAINER
-===================================================== */
 
 .premium-testimonials-container {
     position: relative;
@@ -2935,9 +2780,6 @@ html[dir="rtl"] .premium-process-grid::before {
 }
 
 
-/* =====================================================
-   HEADING
-===================================================== */
 
 .premium-testimonials-heading {
     max-width: 760px;
@@ -3005,9 +2847,7 @@ html[dir="rtl"] .premium-process-grid::before {
 }
 
 
-/* =====================================================
-   MAIN TESTIMONIAL GRID
-===================================================== */
+
 
 .premium-testimonials-grid {
     display: grid;
@@ -3020,9 +2860,6 @@ html[dir="rtl"] .premium-process-grid::before {
 }
 
 
-/* =====================================================
-   FEATURED TESTIMONIAL
-===================================================== */
 
 .premium-testimonial-featured {
     position: relative;
@@ -3057,7 +2894,7 @@ html[dir="rtl"] .premium-process-grid::before {
 }
 
 
-/* Featured Card Decoration */
+
 
 .premium-testimonial-featured::after {
     content: "";
@@ -3088,9 +2925,6 @@ html[dir="rtl"] .premium-process-grid::before {
 }
 
 
-/* =====================================================
-   PREMIUM QUOTE ICON
-===================================================== */
 
 .testimonial-quote-icon {
     width: 52px;
@@ -3126,9 +2960,6 @@ html[dir="rtl"] .premium-process-grid::before {
 }
 
 
-/* =====================================================
-   SMALL QUOTE ICON
-===================================================== */
 
 .testimonial-small-quote {
     width: 40px;
@@ -3162,10 +2993,6 @@ html[dir="rtl"] .premium-process-grid::before {
 }
 
 
-/* =====================================================
-   HOVER
-===================================================== */
-
 .testimonial-quote-icon,
 .testimonial-small-quote {
     transition:
@@ -3198,9 +3025,6 @@ html[dir="rtl"] .premium-process-grid::before {
 }
 
 
-/* =====================================================
-   DARK MODE
-===================================================== */
 
 html.dark-mode .testimonial-quote-icon,
 html.dark-mode .testimonial-small-quote {
@@ -3222,9 +3046,6 @@ html.dark-mode .premium-testimonial-card:hover .testimonial-small-quote {
 }
 
 
-/* =====================================================
-   STARS
-===================================================== */
 
 .premium-stars {
     display: flex;
@@ -3244,9 +3065,6 @@ html.dark-mode .premium-testimonial-card:hover .testimonial-small-quote {
 }
 
 
-/* =====================================================
-   FEATURED REVIEW TEXT
-===================================================== */
 
 .featured-review {
     max-width: 570px;
@@ -3262,9 +3080,6 @@ html.dark-mode .premium-testimonial-card:hover .testimonial-small-quote {
 }
 
 
-/* =====================================================
-   RIGHT SIDE
-===================================================== */
 
 .premium-testimonial-side {
     display: grid;
@@ -3275,9 +3090,6 @@ html.dark-mode .premium-testimonial-card:hover .testimonial-small-quote {
 }
 
 
-/* =====================================================
-   SMALL TESTIMONIAL CARD
-===================================================== */
 
 .premium-testimonial-card {
     position: relative;
@@ -3313,9 +3125,6 @@ html.dark-mode .premium-testimonial-card:hover .testimonial-small-quote {
 }
 
 
-/* =====================================================
-   CARD TOP
-===================================================== */
 
 .premium-card-top {
     display: flex;
@@ -3326,9 +3135,6 @@ html.dark-mode .premium-testimonial-card:hover .testimonial-small-quote {
 }
 
 
-/* =====================================================
-   SMALL QUOTE
-===================================================== */
 
 .testimonial-small-quote {
     width: 40px;
@@ -3360,9 +3166,6 @@ html.dark-mode .premium-testimonial-card:hover .testimonial-small-quote {
 }
 
 
-/* =====================================================
-   SMALL REVIEW TEXT
-===================================================== */
 
 .premium-testimonial-card > p {
     max-width: 500px;
@@ -3376,10 +3179,6 @@ html.dark-mode .premium-testimonial-card:hover .testimonial-small-quote {
 }
 
 
-/* =====================================================
-   AUTHOR
-===================================================== */
-
 .premium-review-author {
     display: flex;
     align-items: center;
@@ -3392,9 +3191,6 @@ html.dark-mode .premium-testimonial-card:hover .testimonial-small-quote {
 }
 
 
-/* =====================================================
-   PROFILE IMAGE
-===================================================== */
 
 .review-avatar {
     width: 58px;
@@ -3428,9 +3224,6 @@ html.dark-mode .premium-testimonial-card:hover .testimonial-small-quote {
 }
 
 
-/* =====================================================
-   AUTHOR DETAILS
-===================================================== */
 
 .premium-review-author strong {
     display: block;
@@ -3452,10 +3245,6 @@ html.dark-mode .premium-testimonial-card:hover .testimonial-small-quote {
     font-size: 12px;
 }
 
-
-/* =====================================================
-   DARK MODE
-===================================================== */
 
 html.dark-mode .premium-testimonials {
     background:
@@ -3560,10 +3349,6 @@ html.dark-mode .review-avatar {
 }
 
 
-/* =====================================================
-   TABLET
-   1024px
-===================================================== */
 
 @media (max-width: 1024px) {
 
@@ -3603,10 +3388,6 @@ html.dark-mode .review-avatar {
 }
 
 
-/* =====================================================
-   SMALL TABLET
-   768px
-===================================================== */
 
 @media (max-width: 768px) {
 
@@ -3653,10 +3434,6 @@ html.dark-mode .review-avatar {
 }
 
 
-/* =====================================================
-   MOBILE
-   576px
-===================================================== */
 
 @media (max-width: 576px) {
 
@@ -3767,11 +3544,6 @@ html.dark-mode .review-avatar {
 }
 
 
-/* =====================================================
-   SMALL MOBILE
-   400px
-===================================================== */
-
 @media (max-width: 400px) {
 
     .premium-testimonials {
@@ -3812,10 +3584,6 @@ html.dark-mode .review-avatar {
 }
 
 
-/* =====================================================
-   RTL SUPPORT
-===================================================== */
-
 html[dir="rtl"] .premium-testimonial-featured,
 html[dir="rtl"] .premium-testimonial-card {
     text-align: right;
@@ -3838,9 +3606,6 @@ html[dir="rtl"] .testimonial-quote-icon {
 
 
 
-/* =========================
-   PREMIUM FINAL CTA
-========================= */
 
 .premium-final-cta {
     padding: 20px 10px;
@@ -3853,7 +3618,7 @@ html[dir="rtl"] .testimonial-quote-icon {
 }
 
 
-/* CTA BOX */
+
 
 .premium-final-cta-inner {
     position: relative;
@@ -3877,7 +3642,7 @@ html[dir="rtl"] .testimonial-quote-icon {
 }
 
 
-/* TOP ACCENT */
+
 
 .premium-final-cta-inner::before {
     content: "";
@@ -3896,7 +3661,7 @@ html[dir="rtl"] .testimonial-quote-icon {
 }
 
 
-/* ICON */
+
 
 .premium-final-cta-icon {
     width: 58px;
@@ -3927,7 +3692,7 @@ html[dir="rtl"] .testimonial-quote-icon {
 }
 
 
-/* LABEL */
+
 
 .premium-final-cta-label {
     display: block;
@@ -3943,7 +3708,7 @@ html[dir="rtl"] .testimonial-quote-icon {
 }
 
 
-/* HEADING */
+
 
 .premium-final-cta-inner h2 {
     margin: 0 0 18px;
@@ -3962,7 +3727,7 @@ html[dir="rtl"] .testimonial-quote-icon {
 }
 
 
-/* DESCRIPTION */
+
 
 .premium-final-cta-inner > p {
     max-width: 600px;
@@ -3976,7 +3741,7 @@ html[dir="rtl"] .testimonial-quote-icon {
 }
 
 
-/* BUTTONS */
+
 
 .premium-final-cta-buttons {
     display: flex;
@@ -3987,7 +3752,6 @@ html[dir="rtl"] .testimonial-quote-icon {
 }
 
 
-/* PRIMARY */
 
 .premium-final-primary-btn {
     height: 50px;
@@ -4036,7 +3800,7 @@ html[dir="rtl"] .testimonial-quote-icon {
 }
 
 
-/* PHONE BUTTON */
+
 
 .premium-final-phone-btn {
     height: 50px;
@@ -4080,9 +3844,6 @@ html[dir="rtl"] .testimonial-quote-icon {
 }
 
 
-/* =========================
-   DARK MODE
-========================= */
 
 html.dark-mode .premium-final-cta {
     background: var(--bg-color);
@@ -4094,10 +3855,6 @@ html.dark-mode .premium-final-cta-inner {
 }
 
 
-/* =========================
-   RTL
-========================= */
-
 html[dir="rtl"] .premium-final-primary-btn svg {
     transform: rotate(180deg);
 }
@@ -4106,10 +3863,6 @@ html[dir="rtl"] .premium-final-primary-btn:hover svg {
     transform: rotate(180deg) translateX(4px);
 }
 
-
-/* =========================
-   RESPONSIVE
-========================= */
 
 @media (max-width: 600px) {
 
@@ -4171,11 +3924,6 @@ html[dir="rtl"] .premium-final-primary-btn:hover svg {
 
 
 
-
-/* =========================
-   FOOTER
-========================= */
-
 .footer {
     background: var(--bg-color);
     color: var(--text-color);
@@ -4194,9 +3942,7 @@ html[dir="rtl"] .premium-final-primary-btn:hover svg {
     gap: 50px;
 }
 
-/* =========================
-   FOOTER LOGO
-========================= */
+
 
 .footer-logo {
     display: flex;
@@ -4232,9 +3978,7 @@ html[dir="rtl"] .premium-final-primary-btn:hover svg {
     color: var(--text-light);
 }
 
-/* ================================
-   FOOTER SOCIAL ICONS
-================================ */
+
 
 .footer-social h4 {
     color: var(--white-color);
@@ -4286,9 +4030,7 @@ html[dir="rtl"] .premium-final-primary-btn:hover svg {
 
     transform: translateY(-3px);
 }
-/* =========================
-   FOOTER ABOUT
-========================= */
+
 
 .footer-brand p {
     max-width: 320px;
@@ -4299,9 +4041,6 @@ margin-bottom: 10px;
     line-height: 1.7;
 }
 
-/* =========================
-   FOOTER COLUMNS
-========================= */
 
 .footer-column h3 {
     margin-bottom: 20px;
@@ -4334,9 +4073,7 @@ margin-bottom: 10px;
     margin-bottom: 12px;
 }
 
-/* =========================
-   FOOTER BOTTOM
-========================= */
+
 
 .footer-bottom {
     max-width: 1200px;
@@ -4410,11 +4147,6 @@ margin-bottom: 10px;
 
 
 
-/* =========================================================
-   FOOTER RESPONSIVE DESIGN
-========================================================= */
-
-/* ---------- TABLET ---------- */
 
 @media (max-width: 992px) {
 
@@ -4434,7 +4166,7 @@ margin-bottom: 10px;
 }
 
 
-/* ---------- MOBILE ---------- */
+
 
 @media (max-width: 768px) {
 
@@ -4472,7 +4204,6 @@ margin-bottom: 10px;
 }
 
 
-/* ---------- SMALL MOBILE ---------- */
 
 @media (max-width: 576px) {
 
@@ -4506,7 +4237,7 @@ margin-bottom: 10px;
 }
 
 
-/* ---------- VERY SMALL DEVICES ---------- */
+
 
 @media (max-width: 400px) {
 

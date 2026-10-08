@@ -1,13 +1,3 @@
-/* =========================================================
-   HEADER
-   WINDOW CLEANING SERVICE
-   FRESH GLASS DESIGN
-   ========================================================= */
-
-
-/* =========================================================
-   HEADER
-   ========================================================= */
 
 .site-header {
     width: 100%;
@@ -27,9 +17,6 @@
 }
 
 
-/* =========================================================
-   HEADER CONTAINER
-   ========================================================= */
 
 .header-container {
     height: 100%;
@@ -42,9 +29,6 @@
 }
 
 
-/* =========================================================
-   LOGO
-   ========================================================= */
 
 .site-logo {
     display: inline-flex;
@@ -72,7 +56,7 @@
 }
 
 
-/* Glass Lines */
+
 
 .logo-icon span {
     width: 5px;
@@ -94,7 +78,7 @@
 }
 
 
-/* Logo Text */
+
 
 .logo-text {
     display: flex;
@@ -121,9 +105,7 @@
 }
 
 
-/* =========================================================
-   NAVIGATION
-   ========================================================= */
+
 
 .main-nav {
     height: 100%;
@@ -151,7 +133,7 @@
 }
 
 
-/* Navigation Link */
+
 
 .nav-link {
     height: 100%;
@@ -186,9 +168,7 @@
 .nav-link:hover {
     color: var(--primary-color);
 }
-/* ================================
-   NAV LINKS
-================================ */
+
 
 .nav-link,
 .nav-dropdown-btn {
@@ -198,13 +178,13 @@
     height: 80px;
 }
 
-/* Active link */
+
 .nav-link.active,
 .nav-dropdown-btn.active {
     color: var(--primary-color);
 }
 
-/* Active underline */
+
 .nav-link.active::after,
 .nav-dropdown-btn.active::after {
     content: "";
@@ -221,9 +201,7 @@
 
     border-radius: 2px;
 }
-/* =========================================================
-   DROPDOWN ICON
-   ========================================================= */
+
 
 .dropdown-icon {
     width: 16px;
@@ -237,9 +215,6 @@
 }
 
 
-/* =========================
-   HOME DROPDOWN FIX
-========================= */
 
 .home-dropdown {
     position: relative !important;
@@ -302,7 +277,7 @@
 }
 
 
-/* DARK MODE */
+
 
 html.dark-mode .home-dropdown .dropdown-menu {
     background: #172832;
@@ -317,9 +292,7 @@ html.dark-mode .home-dropdown .dropdown-menu a:hover {
     background: #1677B8;
     color: #ffffff;
 }
-/* =========================================================
-   HEADER ACTIONS
-   ========================================================= */
+
 
 .header-actions {
     display: flex;
@@ -331,9 +304,6 @@ html.dark-mode .home-dropdown .dropdown-menu a:hover {
 }
 
 
-/* =========================================================
-   HEADER ICON BUTTON
-   ========================================================= */
 
 .header-icon-btn {
     width: 40px;
@@ -380,9 +350,7 @@ html.dark-mode .home-dropdown .dropdown-menu a:hover {
     stroke-linejoin: round;
 }
 
-/* =========================================
-   DARK MODE
-========================================= */
+
 
 html.dark-mode .header-icon-btn {
     border-color: var(--primary-color);
@@ -394,9 +362,7 @@ html.dark-mode .header-icon-btn:hover {
     color: #ffffff;
     border-color: var(--primary-color);
 }
-/* =========================================================
-   DARK MODE ICON
-   ========================================================= */
+
 
 .moon-icon {
     display: none;
@@ -411,9 +377,6 @@ body.dark-mode .moon-icon {
 }
 
 
-/* =========================================================
-   HEADER CTA
-   ========================================================= */
 
 .header-cta {
     min-width: 90px;
@@ -426,9 +389,6 @@ body.dark-mode .moon-icon {
 }
 
 
-/* =========================================================
-   MOBILE MENU BUTTON
-   ========================================================= */
 
 .menu-toggle {
     width: 40px;
@@ -463,9 +423,6 @@ body.dark-mode .moon-icon {
 }
 
 
-/* =========================================================
-   MOBILE MENU ACTIVE
-   ========================================================= */
 
 .menu-toggle.active span:nth-child(1) {
     transform: translateY(7px) rotate(45deg);
@@ -480,9 +437,6 @@ body.dark-mode .moon-icon {
 }
 
 
-/* =========================================================
-   RTL
-   ========================================================= */
 
 html[dir="rtl"] .dropdown-menu {
     left: auto;
@@ -495,9 +449,7 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================================
-   RESPONSIVE - 1200px
-   ========================================================= */
+
 
 @media (max-width: 1200px) {
 
@@ -519,10 +471,7 @@ html[dir="rtl"] .nav-link.active::after {
     }
 }
 
-/* =========================================================
-   HEADER - TABLET / SMALL LAPTOP
-   1100px
-========================================================= */
+
 
 @media (max-width: 1100px) and (min-width: 993px) {
 
@@ -554,7 +503,7 @@ html[dir="rtl"] .nav-link.active::after {
         font-size: 8px;
     }
 
-    /* NAV */
+   
     .main-nav {
         flex: 1;
         min-width: 0;
@@ -594,7 +543,7 @@ html[dir="rtl"] .nav-link.active::after {
         font-size: 8px;
     }
 
-    /* HEADER ACTIONS */
+  
     .header-actions {
         flex-shrink: 0;
         display: flex;
@@ -608,7 +557,7 @@ html[dir="rtl"] .nav-link.active::after {
         flex-shrink: 0;
     }
 
-    /* LOGIN */
+
     .header-cta,
     .login-btn {
         width: 98px;
@@ -627,10 +576,6 @@ html[dir="rtl"] .nav-link.active::after {
 
 
 
-
-/* =========================================================
-   RESPONSIVE - 992px
-   ========================================================= */
 
 @media (max-width: 992px) {
 
@@ -715,7 +660,7 @@ html[dir="rtl"] .nav-link.active::after {
     }
 
 
-    /* Mobile Dropdown */
+  
 
     .dropdown-menu {
         position: static;
@@ -751,7 +696,7 @@ html[dir="rtl"] .nav-link.active::after {
     }
 
 
-    /* Mobile Menu */
+
 
     .menu-toggle {
         display: flex;
@@ -764,9 +709,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================================
-   RESPONSIVE - 576px
-   ========================================================= */
 
 @media (max-width: 576px) {
 
@@ -821,19 +763,12 @@ html[dir="rtl"] .nav-link.active::after {
 
 
 
-/* =========================================
-   CONTACT HERO
-========================================= */
-
 .contact-hero {
     padding: 40px 0;
     background-color: var(--bg-color);
 }
 
 
-/* =========================================
-   HERO WRAPPER
-========================================= */
 
 .contact-hero-wrapper {
     display: grid;
@@ -842,10 +777,6 @@ html[dir="rtl"] .nav-link.active::after {
     gap: 70px;
 }
 
-
-/* =========================================
-   LEFT CONTENT
-========================================= */
 
 .contact-hero-content {
     max-width: 560px;
@@ -886,10 +817,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================
-   BUTTONS
-========================================= */
-
 .contact-hero-buttons {
     display: flex;
     align-items: center;
@@ -903,10 +830,6 @@ html[dir="rtl"] .nav-link.active::after {
     gap: 9px;
 }
 
-
-/* =========================================
-   RIGHT IMAGE
-========================================= */
 .contact-hero-image {
     position: relative;
     height: 480px;
@@ -934,9 +857,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================
-   IMAGE BADGE
-========================================= */
 
 .contact-hero-image-badge {
     position: absolute;
@@ -979,18 +899,12 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================
-   DARK MODE
-========================================= */
 
 html.dark-mode .contact-hero-image-badge {
     background-color: var(--card-color);
 }
 
 
-/* =========================================
-   RTL
-========================================= */
 
 html[dir="rtl"] .contact-hero-wrapper {
     direction: rtl;
@@ -1002,9 +916,6 @@ html[dir="rtl"] .contact-hero-image-badge {
 }
 
 
-/* =========================================
-   TABLET
-========================================= */
 
 @media (max-width: 992px) {
 
@@ -1022,10 +933,6 @@ html[dir="rtl"] .contact-hero-image-badge {
 
 }
 
-
-/* =========================================
-   MOBILE
-========================================= */
 
 @media (max-width: 768px) {
 
@@ -1059,9 +966,6 @@ html[dir="rtl"] .contact-hero-image-badge {
 }
 
 
-/* =========================================
-   SMALL MOBILE
-========================================= */
 
 @media (max-width: 576px) {
 
@@ -1097,9 +1001,6 @@ html[dir="rtl"] .contact-hero-image-badge {
 }
 
 
-/* =========================================
-   CONTACT INFORMATION
-========================================= */
 
 .contact-info-section {
     padding: 80px 0;
@@ -1107,9 +1008,6 @@ html[dir="rtl"] .contact-hero-image-badge {
 }
 
 
-/* =========================================
-   MAIN WRAPPER
-========================================= */
 
 .contact-info-wrapper {
     display: grid;
@@ -1119,9 +1017,6 @@ html[dir="rtl"] .contact-hero-image-badge {
 }
 
 
-/* =========================================
-   LEFT CONTENT
-========================================= */
 
 .contact-info-intro {
     max-width: 460px;
@@ -1162,9 +1057,6 @@ html[dir="rtl"] .contact-hero-image-badge {
 }
 
 
-/* =========================================
-   DECORATIVE LINE
-========================================= */
 
 .contact-info-line {
     width: 55px;
@@ -1176,9 +1068,6 @@ html[dir="rtl"] .contact-hero-image-badge {
 }
 
 
-/* =========================================
-   SUPPORT NOTE
-========================================= */
 
 .contact-info-note {
     display: flex;
@@ -1222,9 +1111,6 @@ html[dir="rtl"] .contact-hero-image-badge {
 }
 
 
-/* =========================================
-   CONTACT DETAILS
-========================================= */
 
 .contact-details {
     display: flex;
@@ -1233,9 +1119,6 @@ html[dir="rtl"] .contact-hero-image-badge {
 }
 
 
-/* =========================================
-   DETAIL ITEM
-========================================= */
 
 .contact-detail-item {
     position: relative;
@@ -1265,9 +1148,6 @@ html[dir="rtl"] .contact-hero-image-badge {
 }
 
 
-/* =========================================
-   ICON
-========================================= */
 
 .contact-detail-icon {
     display: flex;
@@ -1289,9 +1169,6 @@ html[dir="rtl"] .contact-hero-image-badge {
 }
 
 
-/* =========================================
-   CONTENT
-========================================= */
 
 .contact-detail-content {
     flex: 1;
@@ -1326,9 +1203,6 @@ html[dir="rtl"] .contact-hero-image-badge {
 }
 
 
-/* =========================================
-   ARROW
-========================================= */
 
 .contact-detail-arrow {
     font-size: 14px;
@@ -1344,9 +1218,6 @@ html[dir="rtl"] .contact-hero-image-badge {
 }
 
 
-/* =========================================
-   DARK MODE
-========================================= */
 
 html.dark-mode .contact-detail-item {
     background-color: var(--card-color);
@@ -1357,9 +1228,6 @@ html.dark-mode .contact-detail-icon {
 }
 
 
-/* =========================================
-   RTL
-========================================= */
 
 html[dir="rtl"] .contact-info-wrapper {
     direction: rtl;
@@ -1378,9 +1246,6 @@ html[dir="rtl"] .contact-detail-item:hover .contact-detail-arrow {
 }
 
 
-/* =========================================
-   TABLET
-========================================= */
 
 @media (max-width: 992px) {
 
@@ -1396,9 +1261,6 @@ html[dir="rtl"] .contact-detail-item:hover .contact-detail-arrow {
 }
 
 
-/* =========================================
-   MOBILE
-========================================= */
 
 @media (max-width: 768px) {
 
@@ -1422,11 +1284,6 @@ html[dir="rtl"] .contact-detail-item:hover .contact-detail-arrow {
 
 }
 
-
-/* =========================================
-   SMALL MOBILE
-========================================= */
-
 @media (max-width: 576px) {
 
     .contact-info-intro h2 {
@@ -1447,9 +1304,6 @@ html[dir="rtl"] .contact-detail-item:hover .contact-detail-arrow {
 
 }
 
-/* =========================================
-   CONTACT FORM SECTION
-========================================= */
 
 .contact-form-section {
     padding: 80px 0;
@@ -1457,9 +1311,6 @@ html[dir="rtl"] .contact-detail-item:hover .contact-detail-arrow {
 }
 
 
-/* =========================================
-   MAIN WRAPPER
-========================================= */
 
 .contact-form-wrapper {
     display: grid;
@@ -1469,9 +1320,6 @@ html[dir="rtl"] .contact-detail-item:hover .contact-detail-arrow {
 }
 
 
-/* =========================================
-   FORM CONTENT
-========================================= */
 
 .contact-form-content {
     max-width: 700px;
@@ -1501,9 +1349,6 @@ html[dir="rtl"] .contact-detail-item:hover .contact-detail-arrow {
 }
 
 
-/* =========================================
-   FORM
-========================================= */
 
 .contact-form {
     display: flex;
@@ -1518,9 +1363,6 @@ html[dir="rtl"] .contact-detail-item:hover .contact-detail-arrow {
 }
 
 
-/* =========================================
-   FORM GROUP
-========================================= */
 
 .form-group {
     display: flex;
@@ -1536,9 +1378,6 @@ html[dir="rtl"] .contact-detail-item:hover .contact-detail-arrow {
 }
 
 
-/* =========================================
-   INPUT WRAPPER
-========================================= */
 
 .input-wrapper {
     position: relative;
@@ -1601,10 +1440,6 @@ html[dir="rtl"] .contact-detail-item:hover .contact-detail-arrow {
 }
 
 
-/* =========================================
-   FOCUS
-========================================= */
-
 .input-wrapper input:focus,
 .input-wrapper select:focus,
 .input-wrapper textarea:focus {
@@ -1614,9 +1449,6 @@ html[dir="rtl"] .contact-detail-item:hover .contact-detail-arrow {
 }
 
 
-/* =========================================
-   PLACEHOLDER
-========================================= */
 
 .input-wrapper input::placeholder,
 .input-wrapper textarea::placeholder {
@@ -1625,18 +1457,12 @@ html[dir="rtl"] .contact-detail-item:hover .contact-detail-arrow {
 }
 
 
-/* =========================================
-   SELECT
-========================================= */
 
 .input-wrapper select {
     cursor: pointer;
 }
 
 
-/* =========================================
-   SUBMIT BUTTON
-========================================= */
 
 .contact-form > .btn {
     width: fit-content;
@@ -1650,9 +1476,7 @@ html[dir="rtl"] .contact-detail-item:hover .contact-detail-arrow {
 }
 
 
-/* =========================================
-   RIGHT SIDE
-========================================= */
+
 
 .contact-form-side {
     display: flex;
@@ -1661,9 +1485,6 @@ html[dir="rtl"] .contact-detail-item:hover .contact-detail-arrow {
 }
 
 
-/* =========================================
-   SIDE IMAGE
-========================================= */
 
 .contact-side-image {
     position: relative;
@@ -1695,9 +1516,6 @@ html[dir="rtl"] .contact-detail-item:hover .contact-detail-arrow {
 }
 
 
-/* =========================================
-   IMAGE OVERLAY
-========================================= */
 
 .contact-side-overlay {
     position: absolute;
@@ -1711,10 +1529,6 @@ html[dir="rtl"] .contact-detail-item:hover .contact-detail-arrow {
     );
 }
 
-
-/* =========================================
-   IMAGE CONTENT
-========================================= */
 
 .contact-side-content {
     position: absolute;
@@ -1755,9 +1569,6 @@ html[dir="rtl"] .contact-detail-item:hover .contact-detail-arrow {
 }
 
 
-/* =========================================
-   SIDE POINTS
-========================================= */
 
 .contact-side-points {
     display: flex;
@@ -1784,10 +1595,6 @@ html[dir="rtl"] .contact-detail-item:hover .contact-detail-arrow {
 }
 
 
-/* =========================================
-   DARK MODE
-========================================= */
-
 html.dark-mode .input-wrapper input,
 html.dark-mode .input-wrapper select,
 html.dark-mode .input-wrapper textarea {
@@ -1804,9 +1611,6 @@ html.dark-mode .contact-side-overlay {
 }
 
 
-/* =========================================
-   RTL
-========================================= */
 
 html[dir="rtl"] .input-wrapper > i {
     left: auto;
@@ -1830,9 +1634,6 @@ html[dir="rtl"] .contact-side-content {
 }
 
 
-/* =========================================
-   TABLET
-========================================= */
 
 @media (max-width: 992px) {
 
@@ -1851,10 +1652,6 @@ html[dir="rtl"] .contact-side-content {
 
 }
 
-
-/* =========================================
-   MOBILE
-========================================= */
 
 @media (max-width: 768px) {
 
@@ -1882,9 +1679,6 @@ html[dir="rtl"] .contact-side-content {
 }
 
 
-/* =========================================
-   SMALL MOBILE
-========================================= */
 
 @media (max-width: 576px) {
 
@@ -1916,11 +1710,6 @@ html[dir="rtl"] .contact-side-content {
 
 
 
-
-
-/* =========================================
-   LOCATION SECTION HEADING
-========================================= */
 
 .contact-location-heading {
     max-width: 700px;
@@ -1959,10 +1748,6 @@ html[dir="rtl"] .contact-side-content {
 
 
 
-/* =========================================
-   MAIN WRAPPER
-========================================= */
-
 .contact-location-wrapper {
     display: grid;
     grid-template-columns: 1.35fr 0.65fr;
@@ -1978,10 +1763,6 @@ html[dir="rtl"] .contact-side-content {
     box-shadow: var(--shadow-sm);
 }
 
-
-/* =========================================
-   MAP
-========================================= */
 
 .contact-map {
     position: relative;
@@ -2002,9 +1783,6 @@ html[dir="rtl"] .contact-side-content {
 }
 
 
-/* =========================================
-   MAP LOCATION LABEL
-========================================= */
 
 .map-location-label {
     position: absolute;
@@ -2060,10 +1838,6 @@ html[dir="rtl"] .contact-side-content {
 }
 
 
-/* =========================================
-   SERVICE AREA CONTENT
-========================================= */
-
 .service-area-content {
     position: relative;
 
@@ -2090,10 +1864,6 @@ html[dir="rtl"] .contact-side-content {
 }
 
 
-/* =========================================
-   SERVICE ICON
-========================================= */
-
 .service-area-icon {
     display: flex;
     align-items: center;
@@ -2114,9 +1884,6 @@ html[dir="rtl"] .contact-side-content {
 }
 
 
-/* =========================================
-   CONTENT
-========================================= */
 
 .service-area-content h3 {
     margin-bottom: 14px;
@@ -2136,10 +1903,6 @@ html[dir="rtl"] .contact-side-content {
     color: var(--text-light);
 }
 
-
-/* =========================================
-   SERVICE LIST
-========================================= */
 
 .service-area-list {
     display: flex;
@@ -2177,10 +1940,6 @@ html[dir="rtl"] .contact-side-content {
 }
 
 
-/* =========================================
-   BUTTON
-========================================= */
-
 .service-area-content .btn {
     width: fit-content;
 
@@ -2189,10 +1948,6 @@ html[dir="rtl"] .contact-side-content {
     gap: 9px;
 }
 
-
-/* =========================================
-   DARK MODE
-========================================= */
 
 html.dark-mode .contact-location-wrapper,
 html.dark-mode .service-area-content {
@@ -2203,10 +1958,6 @@ html.dark-mode .map-location-label {
     background-color: var(--card-color);
 }
 
-
-/* =========================================
-   RTL
-========================================= */
 
 html[dir="rtl"] .contact-location-wrapper {
     direction: rtl;
@@ -2227,9 +1978,6 @@ html[dir="rtl"] .service-area-content .btn i {
 }
 
 
-/* =========================================
-   TABLET
-========================================= */
 
 @media (max-width: 992px) {
 
@@ -2251,10 +1999,6 @@ html[dir="rtl"] .service-area-content .btn i {
 
 }
 
-
-/* =========================================
-   MOBILE
-========================================= */
 
 @media (max-width: 768px) {
 
@@ -2289,10 +2033,6 @@ html[dir="rtl"] .service-area-content .btn i {
 }
 
 
-/* =========================================
-   SMALL MOBILE
-========================================= */
-
 @media (max-width: 576px) {
 
     .contact-map {
@@ -2323,10 +2063,6 @@ html[dir="rtl"] .service-area-content .btn i {
 
 
 
-/* =========================================
-   CONTACT CTA
-========================================= */
-
 .contact-cta {
     position: relative;
 
@@ -2346,10 +2082,6 @@ html[dir="rtl"] .service-area-content .btn i {
 }
 
 
-/* =========================================
-   OVERLAY
-========================================= */
-
 .contact-cta-overlay {
     position: absolute;
 
@@ -2364,9 +2096,6 @@ html[dir="rtl"] .service-area-content .btn i {
 }
 
 
-/* =========================================
-   CONTENT
-========================================= */
 
 .contact-cta-content {
     position: relative;
@@ -2381,9 +2110,6 @@ html[dir="rtl"] .service-area-content .btn i {
 }
 
 
-/* =========================================
-   LABEL
-========================================= */
 
 .contact-cta-label {
     display: inline-block;
@@ -2400,9 +2126,6 @@ html[dir="rtl"] .service-area-content .btn i {
 }
 
 
-/* =========================================
-   HEADING
-========================================= */
 
 .contact-cta-content h2 {
     margin-bottom: 18px;
@@ -2419,9 +2142,7 @@ html[dir="rtl"] .service-area-content .btn i {
 }
 
 
-/* =========================================
-   DESCRIPTION
-========================================= */
+
 
 .contact-cta-content p {
     max-width: 650px;
@@ -2436,9 +2157,6 @@ html[dir="rtl"] .service-area-content .btn i {
 }
 
 
-/* =========================================
-   BUTTONS
-========================================= */
 
 .contact-cta-buttons {
     display: flex;
@@ -2461,10 +2179,6 @@ html[dir="rtl"] .service-area-content .btn i {
 }
 
 
-/* =========================================
-   LIGHT BUTTON
-========================================= */
-
 .contact-cta-buttons .btn-light {
     background-color: #ffffff;
 
@@ -2482,9 +2196,6 @@ html[dir="rtl"] .service-area-content .btn i {
 }
 
 
-/* =========================================
-   DARK MODE
-========================================= */
 
 html.dark-mode .contact-cta-overlay {
     background:
@@ -2496,18 +2207,12 @@ html.dark-mode .contact-cta-overlay {
 }
 
 
-/* =========================================
-   RTL
-========================================= */
 
 html[dir="rtl"] .contact-cta-buttons {
     direction: rtl;
 }
 
 
-/* =========================================
-   TABLET
-========================================= */
 
 @media (max-width: 992px) {
 
@@ -2522,9 +2227,6 @@ html[dir="rtl"] .contact-cta-buttons {
 }
 
 
-/* =========================================
-   MOBILE
-========================================= */
 
 @media (max-width: 768px) {
 
@@ -2559,9 +2261,6 @@ html[dir="rtl"] .contact-cta-buttons {
 }
 
 
-/* =========================================
-   SMALL MOBILE
-========================================= */
 
 @media (max-width: 576px) {
 
@@ -2652,10 +2351,6 @@ html[dir="rtl"] .contact-cta-buttons {
 
 
 
-/* =========================
-   FOOTER
-========================= */
-
 .footer {
     background: var(--bg-color);
     color: var(--text-color);
@@ -2674,9 +2369,6 @@ html[dir="rtl"] .contact-cta-buttons {
     gap: 50px;
 }
 
-/* =========================
-   FOOTER LOGO
-========================= */
 
 .footer-logo {
     display: flex;
@@ -2712,9 +2404,7 @@ html[dir="rtl"] .contact-cta-buttons {
     color: var(--text-light);
 }
 
-/* =========================
-   FOOTER ABOUT
-========================= */
+
 
 .footer-brand p {
     max-width: 320px;
@@ -2726,9 +2416,6 @@ margin-bottom: 10px;
 }
 
 
-/* ================================
-   FOOTER SOCIAL ICONS
-================================ */
 
 .footer-social h4 {
     color: var(--white-color);
@@ -2785,10 +2472,6 @@ margin-bottom: 10px;
 
 
 
-/* =========================
-   FOOTER COLUMNS
-========================= */
-
 .footer-column h3 {
     margin-bottom: 20px;
 
@@ -2820,9 +2503,6 @@ margin-bottom: 10px;
     margin-bottom: 12px;
 }
 
-/* =========================
-   FOOTER BOTTOM
-========================= */
 
 .footer-bottom {
     max-width: 1200px;
@@ -2895,11 +2575,8 @@ margin-bottom: 10px;
 
 
 
-/* =========================================================
-   FOOTER RESPONSIVE DESIGN
-========================================================= */
 
-/* ---------- TABLET ---------- */
+
 
 @media (max-width: 992px) {
 
@@ -2919,7 +2596,7 @@ margin-bottom: 10px;
 }
 
 
-/* ---------- MOBILE ---------- */
+
 
 @media (max-width: 768px) {
 
@@ -2957,7 +2634,7 @@ margin-bottom: 10px;
 }
 
 
-/* ---------- SMALL MOBILE ---------- */
+
 
 @media (max-width: 576px) {
 
@@ -2991,7 +2668,7 @@ margin-bottom: 10px;
 }
 
 
-/* ---------- VERY SMALL DEVICES ---------- */
+
 
 @media (max-width: 400px) {
 

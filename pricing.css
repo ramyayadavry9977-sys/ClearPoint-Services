@@ -1,14 +1,3 @@
-/* =========================================================
-   HEADER
-   WINDOW CLEANING SERVICE
-   FRESH GLASS DESIGN
-   ========================================================= */
-
-
-/* =========================================================
-   HEADER
-   ========================================================= */
-
 .site-header {
     width: 100%;
     height: var(--header-height);
@@ -27,9 +16,6 @@
 }
 
 
-/* =========================================================
-   HEADER CONTAINER
-   ========================================================= */
 
 .header-container {
     height: 100%;
@@ -42,9 +28,6 @@
 }
 
 
-/* =========================================================
-   LOGO
-   ========================================================= */
 
 .site-logo {
     display: inline-flex;
@@ -72,7 +55,7 @@
 }
 
 
-/* Glass Lines */
+
 
 .logo-icon span {
     width: 5px;
@@ -94,7 +77,7 @@
 }
 
 
-/* Logo Text */
+
 
 .logo-text {
     display: flex;
@@ -121,9 +104,7 @@
 }
 
 
-/* =========================================================
-   NAVIGATION
-   ========================================================= */
+
 
 .main-nav {
     height: 100%;
@@ -151,7 +132,7 @@
 }
 
 
-/* Navigation Link */
+
 
 .nav-link {
     height: 100%;
@@ -181,14 +162,12 @@
 }
 
 
-/* Hover */
+
 
 .nav-link:hover {
     color: var(--primary-color);
 }
-/* ================================
-   NAV LINKS
-================================ */
+
 
 .nav-link,
 .nav-dropdown-btn {
@@ -198,13 +177,13 @@
     height: 80px;
 }
 
-/* Active link */
+
 .nav-link.active,
 .nav-dropdown-btn.active {
     color: var(--primary-color);
 }
 
-/* Active underline */
+
 .nav-link.active::after,
 .nav-dropdown-btn.active::after {
     content: "";
@@ -221,9 +200,7 @@
 
     border-radius: 2px;
 }
-/* =========================================================
-   DROPDOWN ICON
-   ========================================================= */
+
 
 .dropdown-icon {
     width: 16px;
@@ -237,9 +214,7 @@
 }
 
 
-/* =========================
-   HOME DROPDOWN FIX
-========================= */
+
 
 .home-dropdown {
     position: relative !important;
@@ -317,9 +292,7 @@ html.dark-mode .home-dropdown .dropdown-menu a:hover {
     background: #1677B8;
     color: #ffffff;
 }
-/* =========================================================
-   HEADER ACTIONS
-   ========================================================= */
+
 
 .header-actions {
     display: flex;
@@ -331,9 +304,6 @@ html.dark-mode .home-dropdown .dropdown-menu a:hover {
 }
 
 
-/* =========================================================
-   HEADER ICON BUTTON
-   ========================================================= */
 
 .header-icon-btn {
     width: 40px;
@@ -380,9 +350,7 @@ html.dark-mode .home-dropdown .dropdown-menu a:hover {
     stroke-linejoin: round;
 }
 
-/* =========================================
-   DARK MODE
-========================================= */
+
 
 html.dark-mode .header-icon-btn {
     border-color: var(--primary-color);
@@ -396,9 +364,6 @@ html.dark-mode .header-icon-btn:hover {
 }
 
 
-/* =========================================================
-   DARK MODE ICON
-   ========================================================= */
 
 .moon-icon {
     display: none;
@@ -413,9 +378,6 @@ body.dark-mode .moon-icon {
 }
 
 
-/* =========================================================
-   HEADER CTA
-   ========================================================= */
 
 .header-cta {
     min-width: 90px;
@@ -428,9 +390,6 @@ body.dark-mode .moon-icon {
 }
 
 
-/* =========================================================
-   MOBILE MENU BUTTON
-   ========================================================= */
 
 .menu-toggle {
     width: 40px;
@@ -465,9 +424,6 @@ body.dark-mode .moon-icon {
 }
 
 
-/* =========================================================
-   MOBILE MENU ACTIVE
-   ========================================================= */
 
 .menu-toggle.active span:nth-child(1) {
     transform: translateY(7px) rotate(45deg);
@@ -482,9 +438,6 @@ body.dark-mode .moon-icon {
 }
 
 
-/* =========================================================
-   RTL
-   ========================================================= */
 
 html[dir="rtl"] .dropdown-menu {
     left: auto;
@@ -497,9 +450,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================================
-   RESPONSIVE - 1200px
-   ========================================================= */
 
 @media (max-width: 1200px) {
 
@@ -521,10 +471,6 @@ html[dir="rtl"] .nav-link.active::after {
     }
 }
 
-/* =========================================================
-   HEADER - TABLET / SMALL LAPTOP
-   1100px
-========================================================= */
 
 @media (max-width: 1100px) and (min-width: 993px) {
 
@@ -630,10 +576,6 @@ html[dir="rtl"] .nav-link.active::after {
 
 
 
-/* =========================================================
-   RESPONSIVE - 992px
-   ========================================================= */
-
 @media (max-width: 992px) {
 
     .main-nav {
@@ -717,7 +659,7 @@ html[dir="rtl"] .nav-link.active::after {
     }
 
 
-    /* Mobile Dropdown */
+  
 
     .dropdown-menu {
         position: static;
@@ -753,7 +695,7 @@ html[dir="rtl"] .nav-link.active::after {
     }
 
 
-    /* Mobile Menu */
+  
 
     .menu-toggle {
         display: flex;
@@ -766,9 +708,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================================
-   RESPONSIVE - 576px
-   ========================================================= */
 
 @media (max-width: 576px) {
 
@@ -822,9 +761,7 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================
-   PRICING HERO
-========================================= */
+
 
 .pricing-hero {
     position: relative;
@@ -835,9 +772,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================
-   BACKGROUND IMAGE
-========================================= */
 
 .pricing-hero-bg {
     position: absolute;
@@ -852,9 +786,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================
-   OVERLAY
-========================================= */
 
 .pricing-hero-overlay {
     position: absolute;
@@ -871,9 +802,7 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================
-   CONTENT
-========================================= */
+
 
 .pricing-hero .container {
     position: relative;
@@ -887,9 +816,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================
-   LABEL
-========================================= */
 
 .pricing-hero-label {
     display: inline-block;
@@ -902,10 +828,6 @@ html[dir="rtl"] .nav-link.active::after {
     color: var(--secondary-color);
 }
 
-
-/* =========================================
-   HEADING
-========================================= */
 
 .pricing-hero-content h1 {
     margin-bottom: 20px;
@@ -921,10 +843,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================
-   DESCRIPTION
-========================================= */
-
 .pricing-hero-content > p {
     max-width: 680px;
     margin: 0 auto 30px;
@@ -936,9 +854,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================
-   HERO POINTS
-========================================= */
 
 .pricing-hero-points {
     display: flex;
@@ -964,10 +879,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================
-   DARK MODE
-========================================= */
-
 html.dark-mode .pricing-hero-overlay {
     background:
         linear-gradient(
@@ -979,18 +890,12 @@ html.dark-mode .pricing-hero-overlay {
 }
 
 
-/* =========================================
-   RTL
-========================================= */
 
 html[dir="rtl"] .pricing-hero-content {
     direction: rtl;
 }
 
 
-/* =========================================
-   RESPONSIVE
-========================================= */
 
 @media (max-width: 992px) {
 
@@ -1005,9 +910,6 @@ html[dir="rtl"] .pricing-hero-content {
 }
 
 
-/* =========================================
-   TABLET
-========================================= */
 
 @media (max-width: 768px) {
 
@@ -1036,10 +938,6 @@ html[dir="rtl"] .pricing-hero-content {
 }
 
 
-/* =========================================
-   MOBILE
-========================================= */
-
 @media (max-width: 576px) {
 
     .pricing-hero {
@@ -1059,9 +957,6 @@ html[dir="rtl"] .pricing-hero-content {
 }
 
 
-/* =========================================
-   PRICING PLANS
-========================================= */
 
 .pricing-plans {
     padding: 80px 0;
@@ -1069,9 +964,6 @@ html[dir="rtl"] .pricing-hero-content {
 }
 
 
-/* =========================================
-   SECTION HEADING
-========================================= */
 
 .pricing-plans-heading {
     max-width: 700px;
@@ -1108,9 +1000,6 @@ html[dir="rtl"] .pricing-hero-content {
 }
 
 
-/* =========================================
-   PRICING GRID
-========================================= */
 
 .pricing-plans-grid {
     display: grid;
@@ -1120,9 +1009,6 @@ html[dir="rtl"] .pricing-hero-content {
 }
 
 
-/* =========================================
-   PRICING CARD
-========================================= */
 
 .pricing-card {
     position: relative;
@@ -1144,9 +1030,6 @@ html[dir="rtl"] .pricing-hero-content {
 }
 
 
-/* =========================================
-   CARD TOP
-========================================= */
 
 .pricing-card-top {
     min-height: 215px;
@@ -1188,9 +1071,7 @@ html[dir="rtl"] .pricing-hero-content {
 }
 
 
-/* =========================================
-   PRICE
-========================================= */
+
 
 .pricing-price {
     display: flex;
@@ -1217,9 +1098,6 @@ html[dir="rtl"] .pricing-hero-content {
 }
 
 
-/* =========================================
-   DIVIDER
-========================================= */
 
 .pricing-divider {
     width: 100%;
@@ -1229,9 +1107,7 @@ html[dir="rtl"] .pricing-hero-content {
 }
 
 
-/* =========================================
-   FEATURES
-========================================= */
+
 
 .pricing-features {
     display: flex;
@@ -1259,9 +1135,6 @@ html[dir="rtl"] .pricing-hero-content {
 }
 
 
-/* =========================================
-   BUTTON
-========================================= */
 
 .pricing-btn {
     width: 100%;
@@ -1272,9 +1145,6 @@ html[dir="rtl"] .pricing-hero-content {
 
 
 
-/* =========================================
-   FEATURED CARD - SAME HEIGHT & ALIGNMENT
-========================================= */
 
 .pricing-card-featured {
     border: 2px solid var(--primary-color);
@@ -1286,10 +1156,6 @@ html[dir="rtl"] .pricing-hero-content {
     transform: translateY(-8px);
 }
 
-
-/* =========================================
-   KEEP ALL THREE CARDS SAME HEIGHT
-========================================= */
 
 .pricing-plans-grid {
     display: grid;
@@ -1304,9 +1170,6 @@ html[dir="rtl"] .pricing-hero-content {
 }
 
 
-/* =========================================
-   TABLET
-========================================= */
 
 @media (max-width: 992px) {
 
@@ -1325,9 +1188,6 @@ html[dir="rtl"] .pricing-hero-content {
 }
 
 
-/* =========================================
-   MOBILE
-========================================= */
 
 @media (max-width: 768px) {
 
@@ -1346,10 +1206,6 @@ html[dir="rtl"] .pricing-hero-content {
 }
 
 
-/* =========================================
-   FEATURED PRICING CARD
-========================================= */
-
 .pricing-card-featured {
     position: relative;
     border: 2px solid var(--primary-color);
@@ -1361,9 +1217,6 @@ html[dir="rtl"] .pricing-hero-content {
 }
 
 
-/* =========================================
-   MOST POPULAR BADGE
-========================================= */
 
 .pricing-popular {
     position: absolute;
@@ -1394,9 +1247,6 @@ html[dir="rtl"] .pricing-hero-content {
 }
 
 
-/* =========================================
-   FEATURED ICON
-========================================= */
 
 .pricing-card-featured .pricing-icon {
     background-color: var(--primary-color);
@@ -1404,18 +1254,12 @@ html[dir="rtl"] .pricing-hero-content {
 }
 
 
-/* =========================================
-   FEATURED PRICE
-========================================= */
+
 
 .pricing-card-featured .pricing-price strong {
     color: var(--primary-color);
 }
 
-
-/* =========================================
-   HOVER
-========================================= */
 
 .pricing-card-featured:hover {
     transform: translateY(-8px);
@@ -1423,9 +1267,6 @@ html[dir="rtl"] .pricing-hero-content {
 }
 
 
-/* =========================================
-   DARK MODE
-========================================= */
 
 html.dark-mode .pricing-card-featured {
     border-color: var(--primary-color);
@@ -1437,9 +1278,6 @@ html.dark-mode .pricing-popular {
 }
 
 
-/* =========================================
-   RTL
-========================================= */
 
 html[dir="rtl"] .pricing-popular {
     left: 50%;
@@ -1448,9 +1286,6 @@ html[dir="rtl"] .pricing-popular {
 }
 
 
-/* =========================================
-   MOBILE
-========================================= */
 
 @media (max-width: 768px) {
 
@@ -1465,11 +1300,6 @@ html[dir="rtl"] .pricing-popular {
 
 }
 
-
-
-/* =========================================
-   DARK MODE
-========================================= */
 
 html.dark-mode .pricing-card {
     background-color: var(--card-color);
@@ -1493,9 +1323,6 @@ html.dark-mode .pricing-card-featured .pricing-icon {
 }
 
 
-/* =========================================
-   RTL
-========================================= */
 
 html[dir="rtl"] .pricing-plans {
     direction: rtl;
@@ -1517,9 +1344,6 @@ html[dir="rtl"] .pricing-features li {
 }
 
 
-/* =========================================
-   RESPONSIVE
-========================================= */
 
 @media (max-width: 992px) {
 
@@ -1609,19 +1433,12 @@ html[dir="rtl"] .pricing-features li {
 }
 
 
-/* =========================================
-   COMPARE SERVICES
-========================================= */
 
 .compare-services {
     padding: 80px 0;
     background-color: var(--bg-color);
 }
 
-
-/* =========================================
-   SECTION HEADING
-========================================= */
 
 .compare-services-heading {
     max-width: 700px;
@@ -1664,9 +1481,6 @@ html[dir="rtl"] .pricing-features li {
 }
 
 
-/* =========================================
-   TABLE WRAPPER
-========================================= */
 
 .compare-table-wrapper {
     width: 100%;
@@ -1680,9 +1494,6 @@ html[dir="rtl"] .pricing-features li {
 }
 
 
-/* =========================================
-   TABLE
-========================================= */
 
 .compare-table {
     width: 100%;
@@ -1690,9 +1501,6 @@ html[dir="rtl"] .pricing-features li {
 }
 
 
-/* =========================================
-   ROW
-========================================= */
 
 .compare-row {
     display: grid;
@@ -1708,9 +1516,6 @@ html[dir="rtl"] .pricing-features li {
 }
 
 
-/* =========================================
-   CELLS
-========================================= */
 
 .compare-row > div {
     display: flex;
@@ -1733,9 +1538,6 @@ html[dir="rtl"] .pricing-features li {
 }
 
 
-/* =========================================
-   HEADER
-========================================= */
 
 .compare-header {
     min-height: 75px;
@@ -1756,9 +1558,6 @@ html[dir="rtl"] .pricing-features li {
 }
 
 
-/* =========================================
-   CHECK ICON
-========================================= */
 
 .compare-row .fa-check {
     display: flex;
@@ -1777,9 +1576,6 @@ html[dir="rtl"] .pricing-features li {
 }
 
 
-/* =========================================
-   MINUS ICON
-========================================= */
 
 .compare-row .fa-minus {
     color: var(--text-light);
@@ -1787,18 +1583,11 @@ html[dir="rtl"] .pricing-features li {
 }
 
 
-/* =========================================
-   HIGHLIGHT COMPLETE COLUMN
-========================================= */
-
 .compare-row > div:nth-child(3) {
     background-color: rgba(103, 199, 232, 0.05);
 }
 
 
-/* =========================================
-   NOTE
-========================================= */
 
 .compare-note {
     display: flex;
@@ -1832,9 +1621,6 @@ html[dir="rtl"] .pricing-features li {
 }
 
 
-/* =========================================
-   DARK MODE
-========================================= */
 
 html.dark-mode .compare-table-wrapper {
     background-color: var(--card-color);
@@ -1848,10 +1634,6 @@ html.dark-mode .compare-note {
     background-color: var(--card-color);
 }
 
-
-/* =========================================
-   RTL
-========================================= */
 
 html[dir="rtl"] .compare-services {
     direction: rtl;
@@ -1868,9 +1650,6 @@ html[dir="rtl"] .compare-note {
 }
 
 
-/* =========================================
-   RESPONSIVE
-========================================= */
 
 @media (max-width: 992px) {
 
@@ -1928,19 +1707,12 @@ html[dir="rtl"] .compare-note {
 
 
 
-/* =========================================
-   WHAT'S INCLUDED
-========================================= */
-
 .pricing-included {
     padding: 80px 0;
     background-color: var(--card-color);
 }
 
 
-/* =========================================
-   MAIN WRAPPER
-========================================= */
 
 .pricing-included-wrapper {
     display: grid;
@@ -1950,9 +1722,6 @@ html[dir="rtl"] .compare-note {
 }
 
 
-/* =========================================
-   LEFT CONTENT
-========================================= */
 
 .pricing-included-content {
     max-width: 470px;
@@ -1991,10 +1760,6 @@ html[dir="rtl"] .compare-note {
     color: var(--text-light);
 }
 
-
-/* =========================================
-   HIGHLIGHT BOX
-========================================= */
 
 .included-highlight {
     display: flex;
@@ -2045,10 +1810,6 @@ html[dir="rtl"] .compare-note {
 }
 
 
-/* =========================================
-   FEATURES GRID
-========================================= */
-
 .included-features {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -2056,9 +1817,6 @@ html[dir="rtl"] .compare-note {
 }
 
 
-/* =========================================
-   FEATURE
-========================================= */
 
 .included-feature {
     position: relative;
@@ -2087,9 +1845,6 @@ html[dir="rtl"] .compare-note {
 }
 
 
-/* =========================================
-   NUMBER
-========================================= */
 
 .included-feature-number {
     padding-top: 4px;
@@ -2099,11 +1854,6 @@ html[dir="rtl"] .compare-note {
 
     color: var(--secondary-color);
 }
-
-
-/* =========================================
-   ICON
-========================================= */
 
 .included-feature-icon {
     width: 48px;
@@ -2123,9 +1873,6 @@ html[dir="rtl"] .compare-note {
 }
 
 
-/* =========================================
-   FEATURE CONTENT
-========================================= */
 
 .included-feature-content h3 {
     margin-bottom: 7px;
@@ -2144,9 +1891,6 @@ html[dir="rtl"] .compare-note {
 }
 
 
-/* =========================================
-   DARK MODE
-========================================= */
 
 html.dark-mode .pricing-included {
     background-color: var(--card-color);
@@ -2165,9 +1909,6 @@ html.dark-mode .included-feature-icon {
 }
 
 
-/* =========================================
-   RTL
-========================================= */
 
 html[dir="rtl"] .pricing-included {
     direction: rtl;
@@ -2196,9 +1937,6 @@ html[dir="rtl"] .included-feature-content {
 }
 
 
-/* =========================================
-   RESPONSIVE
-========================================= */
 
 @media (max-width: 992px) {
 
@@ -2259,19 +1997,11 @@ html[dir="rtl"] .included-feature-content {
 }
 
 
-/* =========================================
-   PRICING FAQ
-========================================= */
 
 .pricing-faq {
     padding: 80px 0;
     background-color: var(--bg-color);
 }
-
-
-/* =========================================
-   FAQ HEADING
-========================================= */
 
 .pricing-faq-heading {
     max-width: 700px;
@@ -2314,9 +2044,6 @@ html[dir="rtl"] .included-feature-content {
 }
 
 
-/* =========================================
-   FAQ LIST
-========================================= */
 
 .pricing-faq-list {
     max-width: 850px;
@@ -2324,9 +2051,6 @@ html[dir="rtl"] .included-feature-content {
 }
 
 
-/* =========================================
-   FAQ ITEM
-========================================= */
 
 .pricing-faq-item {
     margin-bottom: 14px;
@@ -2346,9 +2070,6 @@ html[dir="rtl"] .included-feature-content {
 }
 
 
-/* =========================================
-   FAQ SUMMARY
-========================================= */
 
 .pricing-faq-item summary {
     display: flex;
@@ -2374,9 +2095,6 @@ html[dir="rtl"] .included-feature-content {
 }
 
 
-/* =========================================
-   PLUS ICON
-========================================= */
 
 .pricing-faq-item summary i {
     flex-shrink: 0;
@@ -2400,9 +2118,7 @@ html[dir="rtl"] .included-feature-content {
 }
 
 
-/* =========================================
-   OPEN STATE
-========================================= */
+
 
 .pricing-faq-item[open] {
     border-color: var(--primary-color);
@@ -2415,9 +2131,6 @@ html[dir="rtl"] .included-feature-content {
 }
 
 
-/* =========================================
-   ANSWER
-========================================= */
 
 .pricing-faq-answer {
     padding: 0 25px 23px;
@@ -2436,10 +2149,6 @@ html[dir="rtl"] .included-feature-content {
     color: var(--text-light);
 }
 
-
-/* =========================================
-   CONTACT STRIP
-========================================= */
 
 .pricing-faq-contact {
     max-width: 850px;
@@ -2496,9 +2205,6 @@ html[dir="rtl"] .included-feature-content {
 }
 
 
-/* =========================================
-   CONTACT BUTTON
-========================================= */
 
 .pricing-faq-contact .btn {
     display: inline-flex;
@@ -2509,9 +2215,6 @@ html[dir="rtl"] .included-feature-content {
 }
 
 
-/* =========================================
-   DARK MODE
-========================================= */
 
 html.dark-mode .pricing-faq-item,
 html.dark-mode .pricing-faq-contact {
@@ -2523,9 +2226,6 @@ html.dark-mode .pricing-faq-item[open] {
 }
 
 
-/* =========================================
-   RTL
-========================================= */
 
 html[dir="rtl"] .pricing-faq {
     direction: rtl;
@@ -2536,9 +2236,6 @@ html[dir="rtl"] .pricing-faq-contact {
 }
 
 
-/* =========================================
-   RESPONSIVE
-========================================= */
 
 @media (max-width: 992px) {
 
@@ -2705,9 +2402,7 @@ background-color: #ffffff;
 color: var(--primary-color);
 }
 
-/* ================================
-CTA CARD
-================================ */
+
 
 .pricing-final-cta-card {
 position: relative;
@@ -2781,9 +2476,7 @@ color: #ffffff;
 transform: translateX(4px);
 }
 
-/* ================================
-DECORATIVE SHAPES
-================================ */
+
 
 .pricing-cta-shape {
 position: absolute;
@@ -2807,9 +2500,7 @@ left: -100px;
 background-color: rgba(255, 255, 255, 0.08);
 }
 
-/* ================================
-DARK MODE
-================================ */
+
 
 html.dark-mode .pricing-final-cta {
 background-color: var(--primary-color);
@@ -2820,9 +2511,7 @@ background-color: rgba(0, 0, 0, 0.18);
 border-color: rgba(255, 255, 255, 0.18);
 }
 
-/* ================================
-RTL
-================================ */
+
 
 html[dir="rtl"] .pricing-final-cta {
 direction: rtl;
@@ -2832,9 +2521,7 @@ html[dir="rtl"] .pricing-cta-arrow:hover {
 transform: translateX(-4px);
 }
 
-/* ================================
-RESPONSIVE
-================================ */
+
 
 @media (max-width: 992px) {
 
@@ -2980,9 +2667,6 @@ RESPONSIVE
 
 
 
-/* =========================
-   FOOTER
-========================= */
 
 .footer {
     background: var(--bg-color);
@@ -3002,9 +2686,7 @@ RESPONSIVE
     gap: 50px;
 }
 
-/* =========================
-   FOOTER LOGO
-========================= */
+
 
 .footer-logo {
     display: flex;
@@ -3040,9 +2722,7 @@ RESPONSIVE
     color: var(--text-light);
 }
 
-/* =========================
-   FOOTER ABOUT
-========================= */
+
 
 .footer-brand p {
     max-width: 320px;
@@ -3054,9 +2734,7 @@ margin-bottom: 10px;
 }
 
 
-/* ================================
-   FOOTER SOCIAL ICONS
-================================ */
+
 
 .footer-social h4 {
     color: var(--white-color);
@@ -3113,10 +2791,6 @@ margin-bottom: 10px;
 
 
 
-/* =========================
-   FOOTER COLUMNS
-========================= */
-
 .footer-column h3 {
     margin-bottom: 20px;
 
@@ -3148,9 +2822,6 @@ margin-bottom: 10px;
     margin-bottom: 12px;
 }
 
-/* =========================
-   FOOTER BOTTOM
-========================= */
 
 .footer-bottom {
     max-width: 1200px;
@@ -3223,11 +2894,6 @@ margin-bottom: 10px;
 
 
 
-/* =========================================================
-   FOOTER RESPONSIVE DESIGN
-========================================================= */
-
-/* ---------- TABLET ---------- */
 
 @media (max-width: 992px) {
 
@@ -3247,7 +2913,6 @@ margin-bottom: 10px;
 }
 
 
-/* ---------- MOBILE ---------- */
 
 @media (max-width: 768px) {
 
@@ -3285,7 +2950,6 @@ margin-bottom: 10px;
 }
 
 
-/* ---------- SMALL MOBILE ---------- */
 
 @media (max-width: 576px) {
 
@@ -3319,7 +2983,6 @@ margin-bottom: 10px;
 }
 
 
-/* ---------- VERY SMALL DEVICES ---------- */
 
 @media (max-width: 400px) {
 

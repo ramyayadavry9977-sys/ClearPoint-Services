@@ -7,31 +7,25 @@
 <link rel="icon" type="image/png" href="image/logo-2.png">
     <title>Sign Up | ClearPoint Services</title>
 
-    <!-- Font Awesome -->
+  
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     >
 
-    <!-- Sign Up CSS -->
+   
     <link rel="stylesheet" href="signup.css">
 </head>
 
 <body>
 
-    <!-- =====================================================
-         SIGN UP PAGE
-    ====================================================== -->
 
     <main class="signup-page">
 
-        <!-- =================================================
-             TOP CONTROLS
-        ================================================== -->
 
         <div class="signup-controls">
 
-            <!-- RTL -->
+        
             <button
                 type="button"
                 class="control-btn"
@@ -43,7 +37,7 @@
             </button>
 
 
-            <!-- Dark Mode -->
+          
             <button
                 type="button"
                 class="control-btn"
@@ -57,16 +51,11 @@
         </div>
 
 
-        <!-- =================================================
-             SIGN UP CARD
-        ================================================== -->
+        
 
         <section class="signup-card">
 
-            <!-- =================================================
-                 LOGO
-            ================================================== -->
-
+            
             <a href="index.html" class="signup-logo">
 
                 <div class="logo-icon">
@@ -93,9 +82,6 @@
             </a>
 
 
-            <!-- =================================================
-                 HEADING
-            ================================================== -->
 
             <div class="signup-heading">
 
@@ -110,16 +96,12 @@
             </div>
 
 
-            <!-- =================================================
-                 SIGN UP FORM
-            ================================================== -->
-
             <form
                 id="signupForm"
                 class="signup-form"
             >
 
-                <!-- First Name -->
+             
 <div class="name-row">
 
     <div class="form-group">
@@ -160,7 +142,7 @@
 </div>
 
 
-                <!-- Email -->
+            
 
                 <div class="form-group">
 
@@ -186,7 +168,7 @@
                 </div>
 
 
-                <!-- Phone -->
+               
 
                 <div class="form-group">
 
@@ -212,7 +194,7 @@
                 </div>
 
 
-                <!-- Password -->
+    
 
                 <div class="form-group">
 
@@ -248,7 +230,7 @@
                 </div>
 
 
-                <!-- Confirm Password -->
+             
 
                 <div class="form-group">
 
@@ -284,7 +266,7 @@
                 </div>
 
 
-                <!-- Terms -->
+             
 
                 <div class="terms-row">
 
@@ -314,7 +296,7 @@
                 </div>
 
 
-                <!-- Sign Up Button -->
+             
 
                 <button
                     type="submit"
@@ -330,7 +312,7 @@
                 </button>
 
 
-                <!-- Message -->
+        
 
                 <div
                     id="signupMessage"
@@ -341,9 +323,6 @@
             </form>
 
 
-            <!-- =================================================
-                 DIVIDER
-            ================================================== -->
 
             <div class="divider">
 
@@ -356,13 +335,9 @@
             </div>
 
 
-            <!-- =================================================
-                 SOCIAL SIGN UP
-            ================================================== -->
-
             <div class="social-signup">
 
-                <!-- Google -->
+          
 
                 <button
                     type="button"
@@ -379,7 +354,7 @@
                 </button>
 
 
-                <!-- Apple -->
+          
 
                 <button
                     type="button"
@@ -398,9 +373,7 @@
             </div>
 
 
-            <!-- =================================================
-                 LOGIN LINK
-            ================================================== -->
+     
 
             <div class="login-text">
 
@@ -415,9 +388,7 @@
             </div>
 
 
-            <!-- =================================================
-                 BACK HOME
-            ================================================== -->
+         
 
             <a
                 href="index.html"
@@ -437,19 +408,13 @@
     </main>
 
 
-    <!-- Sign Up JavaScript -->
+   
     <script>
-/* =========================================================
-   CLEARPOINT SERVICES
-   SIGN UP JAVASCRIPT
-========================================================= */
+
 
 document.addEventListener("DOMContentLoaded", () => {
 
 
-    /* =====================================================
-       ELEMENTS
-    ===================================================== */
 
     const signupForm =
         document.getElementById("signupForm");
@@ -482,9 +447,6 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("appleSignup");
 
 
-    /* =====================================================
-       THEME
-    ===================================================== */
 
     const savedTheme =
         localStorage.getItem("clearPointTheme");
@@ -564,9 +526,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    /* =====================================================
-       RTL / LTR
-    ===================================================== */
 
     const savedDirection =
         localStorage.getItem("clearPointDirection");
@@ -607,9 +566,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    /* =====================================================
-       PASSWORD VISIBILITY FUNCTION
-    ===================================================== */
 
     function setupPasswordToggle(
         button,
@@ -686,10 +642,6 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
 
-    /* =====================================================
-       SIGN UP FORM
-    ===================================================== */
-
     if (signupForm) {
 
         signupForm.addEventListener(
@@ -741,7 +693,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     "var(--danger-color)";
 
 
-                /* Validation */
+           
 
                 if (!firstName) {
 
@@ -806,12 +758,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
 
 
-                /*
-                 * Front-end validation completed.
-                 *
-                 * Connect your real authentication
-                 * backend here later.
-                 */
+             
 
                 signupMessage.style.color =
                     "var(--success-color)";
@@ -820,14 +767,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     "Account details validated successfully.";
 
 
-                /*
-                 * Example:
-                 *
-                 * window.location.href = "dashboard.html";
-                 *
-                 * Do this only after connecting
-                 * your real authentication system.
-                 */
+              
 
             }
         );
@@ -835,9 +775,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    /* =====================================================
-       GOOGLE SIGN UP
-    ===================================================== */
 
     if (googleSignup) {
 
@@ -857,9 +794,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    /* =====================================================
-       APPLE SIGN UP
-    ===================================================== */
 
     if (appleSignup) {
 

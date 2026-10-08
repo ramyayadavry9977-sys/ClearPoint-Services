@@ -7,31 +7,25 @@
 <link rel="icon" type="image/png" href="image/logo-2.png">
     <title>Login | ClearPoint Services</title>
 
-    <!-- Font Awesome -->
+    
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     >
 
-    <!-- Login CSS -->
+    
     <link rel="stylesheet" href="login.css">
 </head>
 
 <body>
 
-    <!-- =====================================================
-         LOGIN PAGE
-    ====================================================== -->
 
     <main class="login-page">
 
-        <!-- =================================================
-             TOP CONTROLS
-        ================================================== -->
 
         <div class="login-controls">
 
-            <!-- RTL -->
+          
             <button
                 type="button"
                 class="control-btn"
@@ -42,7 +36,6 @@
                 <i class="fa-solid fa-arrow-right-arrow-left"></i>
             </button>
 
-            <!-- Dark Mode -->
             <button
                 type="button"
                 class="control-btn"
@@ -56,15 +49,9 @@
         </div>
 
 
-        <!-- =================================================
-             LOGIN CARD
-        ================================================== -->
 
         <section class="login-card">
 
-            <!-- =================================================
-                 LOGO
-            ================================================== -->
 
             <a href="index.html" class="login-logo">
 
@@ -83,9 +70,6 @@
             </a>
 
 
-            <!-- =================================================
-                 HEADING
-            ================================================== -->
 
             <div class="login-heading">
 
@@ -104,13 +88,10 @@
             </div>
 
 
-            <!-- =================================================
-                 LOGIN FORM
-            ================================================== -->
 
             <form id="loginForm" class="login-form">
 
-                <!-- Email -->
+             
 
                 <div class="form-group">
 
@@ -136,7 +117,7 @@
                 </div>
 
 
-                <!-- Password -->
+         
 
                 <div class="form-group">
 
@@ -172,7 +153,7 @@
                 </div>
 
 
-                <!-- Remember + Forgot -->
+    
 
                 <div class="login-options">
 
@@ -202,7 +183,7 @@
                 </div>
 
 
-                <!-- Login Button -->
+      
 
                 <button
                     type="submit"
@@ -216,7 +197,7 @@
                 </button>
 
 
-                <!-- Login Message -->
+   
 
                 <div
                     id="loginMessage"
@@ -227,9 +208,6 @@
             </form>
 
 
-            <!-- =================================================
-                 DIVIDER
-            ================================================== -->
 
             <div class="divider">
 
@@ -242,13 +220,10 @@
             </div>
 
 
-            <!-- =================================================
-                 SOCIAL LOGIN
-            ================================================== -->
 
             <div class="social-login">
 
-                <!-- Google -->
+      
 
                 <button
                     type="button"
@@ -265,7 +240,7 @@
                 </button>
 
 
-                <!-- Apple -->
+             
 
                 <button
                     type="button"
@@ -284,9 +259,6 @@
             </div>
 
 
-            <!-- =================================================
-                 SIGN UP
-            ================================================== -->
 
             <div class="signup-text">
 
@@ -301,9 +273,6 @@
             </div>
 
 
-            <!-- =================================================
-                 BACK TO WEBSITE
-            ================================================== -->
 
             <a
                 href="index.html"
@@ -321,19 +290,13 @@
     </main>
 
 
-    <!-- Login JavaScript -->
+
     <script>
-/* =========================================================
-   CLEARPOINT SERVICES
-   LOGIN JAVASCRIPT
-========================================================= */
+
 
 document.addEventListener("DOMContentLoaded", () => {
 
 
-    /* =====================================================
-       ELEMENTS
-    ===================================================== */
 
     const loginForm =
         document.getElementById("loginForm");
@@ -366,9 +329,6 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("rememberMe");
 
 
-    /* =====================================================
-       LOAD SAVED THEME
-    ===================================================== */
 
     const savedTheme =
         localStorage.getItem("clearPointTheme");
@@ -381,10 +341,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 
-
-    /* =====================================================
-       UPDATE THEME ICON
-    ===================================================== */
 
     function updateThemeIcon() {
 
@@ -426,9 +382,6 @@ document.addEventListener("DOMContentLoaded", () => {
     updateThemeIcon();
 
 
-    /* =====================================================
-       DARK MODE
-    ===================================================== */
 
     if (themeBtn) {
 
@@ -455,9 +408,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    /* =====================================================
-       LOAD DIRECTION
-    ===================================================== */
 
     const savedDirection =
         localStorage.getItem("clearPointDirection");
@@ -473,9 +423,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    /* =====================================================
-       RTL / LTR
-    ===================================================== */
 
     if (directionBtn) {
 
@@ -502,9 +449,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    /* =====================================================
-       PASSWORD VISIBILITY
-    ===================================================== */
 
     if (passwordToggle && passwordInput) {
 
@@ -556,9 +500,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    /* =====================================================
-       REMEMBER ME
-    ===================================================== */
 
     const savedEmail =
         localStorage.getItem("clearPointRememberedEmail");
@@ -572,9 +513,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    /* =====================================================
-       LOGIN FORM
-    ===================================================== */
 
     if (loginForm) {
 
@@ -590,7 +528,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 passwordInput.value.trim();
 
 
-            /* Clear previous message */
 
             loginMessage.textContent = "";
 
@@ -598,7 +535,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 "var(--danger-color)";
 
 
-            /* Validation */
+     
 
             if (!email) {
 
@@ -640,14 +577,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
 
-            /*
-             * -------------------------------------------------
-             * DEMO FRONT-END LOGIN
-             * -------------------------------------------------
-             *
-             * Replace this section with your real
-             * authentication/backend later.
-             */
+            
 
             loginMessage.style.color =
                 "var(--success-color)";
@@ -668,17 +598,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    /* =====================================================
-       GOOGLE LOGIN
-    ===================================================== */
+   
 
     if (googleLogin) {
 
         googleLogin.addEventListener("click", () => {
 
-            /*
-             * Connect Google OAuth here later.
-             */
+          
 
             loginMessage.style.color =
                 "var(--text-light)";
@@ -691,17 +617,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    /* =====================================================
-       APPLE LOGIN
-    ===================================================== */
-
     if (appleLogin) {
 
         appleLogin.addEventListener("click", () => {
 
-            /*
-             * Connect Apple Sign In here later.
-             */
+           
 
             loginMessage.style.color =
                 "var(--text-light)";
