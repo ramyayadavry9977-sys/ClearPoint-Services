@@ -1,13 +1,4 @@
-/* =========================================================
-   HEADER
-   WINDOW CLEANING SERVICE
-   FRESH GLASS DESIGN
-   ========================================================= */
 
-
-/* =========================================================
-   HEADER
-   ========================================================= */
 
 .site-header {
     width: 100%;
@@ -27,9 +18,7 @@
 }
 
 
-/* =========================================================
-   HEADER CONTAINER
-   ========================================================= */
+
 
 .header-container {
     height: 100%;
@@ -42,9 +31,6 @@
 }
 
 
-/* =========================================================
-   LOGO
-   ========================================================= */
 
 .site-logo {
     display: inline-flex;
@@ -72,7 +58,7 @@
 }
 
 
-/* Glass Lines */
+
 
 .logo-icon span {
     width: 5px;
@@ -94,7 +80,6 @@
 }
 
 
-/* Logo Text */
 
 .logo-text {
     display: flex;
@@ -121,9 +106,6 @@
 }
 
 
-/* =========================================================
-   NAVIGATION
-   ========================================================= */
 
 .main-nav {
     height: 100%;
@@ -151,7 +133,7 @@
 }
 
 
-/* Navigation Link */
+
 
 .nav-link {
     height: 100%;
@@ -181,14 +163,12 @@
 }
 
 
-/* Hover */
+
 
 .nav-link:hover {
     color: var(--primary-color);
 }
-/* ================================
-   NAV LINKS
-================================ */
+
 
 .nav-link,
 .nav-dropdown-btn {
@@ -198,13 +178,12 @@
     height: 80px;
 }
 
-/* Active link */
 .nav-link.active,
 .nav-dropdown-btn.active {
     color: var(--primary-color);
 }
 
-/* Active underline */
+
 .nav-link.active::after,
 .nav-dropdown-btn.active::after {
     content: "";
@@ -221,9 +200,7 @@
 
     border-radius: 2px;
 }
-/* =========================================================
-   DROPDOWN ICON
-   ========================================================= */
+
 
 .dropdown-icon {
     width: 16px;
@@ -237,9 +214,7 @@
 }
 
 
-/* =========================
-   HOME DROPDOWN FIX
-========================= */
+
 
 .home-dropdown {
     position: relative !important;
@@ -317,9 +292,7 @@ html.dark-mode .home-dropdown .dropdown-menu a:hover {
     background: #1677B8;
     color: #ffffff;
 }
-/* =========================================================
-   HEADER ACTIONS
-   ========================================================= */
+
 
 .header-actions {
     display: flex;
@@ -331,9 +304,6 @@ html.dark-mode .home-dropdown .dropdown-menu a:hover {
 }
 
 
-/* =========================================================
-   HEADER ICON BUTTON
-   ========================================================= */
 
 .header-icon-btn {
     width: 40px;
@@ -380,9 +350,7 @@ html.dark-mode .home-dropdown .dropdown-menu a:hover {
     stroke-linejoin: round;
 }
 
-/* =========================================
-   DARK MODE
-========================================= */
+
 
 html.dark-mode .header-icon-btn {
     border-color: var(--primary-color);
@@ -394,9 +362,7 @@ html.dark-mode .header-icon-btn:hover {
     color: #ffffff;
     border-color: var(--primary-color);
 }
-/* =========================================================
-   DARK MODE ICON
-   ========================================================= */
+
 
 .moon-icon {
     display: none;
@@ -411,9 +377,6 @@ body.dark-mode .moon-icon {
 }
 
 
-/* =========================================================
-   HEADER CTA
-   ========================================================= */
 
 .header-cta {
     min-width: 90px;
@@ -426,9 +389,6 @@ body.dark-mode .moon-icon {
 }
 
 
-/* =========================================================
-   MOBILE MENU BUTTON
-   ========================================================= */
 
 .menu-toggle {
     width: 40px;
@@ -463,9 +423,6 @@ body.dark-mode .moon-icon {
 }
 
 
-/* =========================================================
-   MOBILE MENU ACTIVE
-   ========================================================= */
 
 .menu-toggle.active span:nth-child(1) {
     transform: translateY(7px) rotate(45deg);
@@ -480,9 +437,6 @@ body.dark-mode .moon-icon {
 }
 
 
-/* =========================================================
-   RTL
-   ========================================================= */
 
 html[dir="rtl"] .dropdown-menu {
     left: auto;
@@ -495,9 +449,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================================
-   RESPONSIVE - 1200px
-   ========================================================= */
 
 @media (max-width: 1200px) {
 
@@ -520,12 +471,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-
-
-/* =========================================================
-   HEADER - TABLET / SMALL LAPTOP
-   1100px
-========================================================= */
 
 @media (max-width: 1100px) and (min-width: 993px) {
 
@@ -628,9 +573,7 @@ html[dir="rtl"] .nav-link.active::after {
     }
 }
 
-/* =========================================================
-   RESPONSIVE - 992px
-   ========================================================= */
+
 
 @media (max-width: 992px) {
 
@@ -764,9 +707,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================================
-   RESPONSIVE - 576px
-   ========================================================= */
 
 @media (max-width: 576px) {
 
@@ -820,9 +760,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================
-   SERVICE DETAILS HERO
-========================================= */
 
 .service-details-hero {
     position: relative;
@@ -852,9 +789,7 @@ html[dir="rtl"] .nav-link.active::after {
 .glass-door-hero {
     background-image: url("image/image-23.webp");
 }
-/* =========================================
-   HERO OVERLAY
-========================================= */
+
 
 .service-details-hero-overlay {
     position: absolute;
@@ -869,9 +804,7 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================
-   HERO CONTENT
-========================================= */
+
 
 .service-details-hero .container {
     position: relative;
@@ -885,9 +818,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================
-   HERO TAG
-========================================= */
 
 .service-details-tag {
     display: inline-flex;
@@ -910,9 +840,7 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================
-   HERO HEADING
-========================================= */
+
 
 .service-details-hero h1 {
     margin: 0 0 22px;
@@ -927,9 +855,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================
-   HERO DESCRIPTION
-========================================= */
 
 .service-details-hero p {
     max-width: 650px;
@@ -942,10 +867,6 @@ html[dir="rtl"] .nav-link.active::after {
     line-height: 1.7;
 }
 
-
-/* =========================================
-   HERO BUTTONS
-========================================= */
 
 .service-details-hero-buttons {
     display: flex;
@@ -1016,9 +937,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================
-   DARK MODE
-========================================= */
 
 .dark-mode .service-details-hero-overlay {
     background: linear-gradient(
@@ -1030,10 +948,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================
-   RTL
-========================================= */
-
 html[dir="rtl"] .service-details-hero-content {
     text-align: right;
 }
@@ -1043,9 +957,6 @@ html[dir="rtl"] .service-details-hero-buttons {
 }
 
 
-/* =========================================
-   TABLET
-========================================= */
 
 @media (max-width: 992px) {
 
@@ -1065,9 +976,6 @@ html[dir="rtl"] .service-details-hero-buttons {
 }
 
 
-/* =========================================
-   MOBILE
-========================================= */
 
 @media (max-width: 768px) {
 
@@ -1109,9 +1017,6 @@ html[dir="rtl"] .service-details-hero-buttons {
 }
 
 
-/* =========================================
-   SMALL MOBILE
-========================================= */
 
 @media (max-width: 480px) {
 
@@ -1130,9 +1035,6 @@ html[dir="rtl"] .service-details-hero-buttons {
 }
 
 
-/* =========================================
-   SERVICE OVERVIEW
-========================================= */
 
 .service-overview-section {
     padding: 100px 0;
@@ -1140,9 +1042,6 @@ html[dir="rtl"] .service-details-hero-buttons {
 }
 
 
-/* =========================================
-   OVERVIEW WRAPPER
-========================================= */
 
 .service-overview-wrapper {
     display: grid;
@@ -1152,9 +1051,6 @@ html[dir="rtl"] .service-details-hero-buttons {
 }
 
 
-/* =========================================
-   OVERVIEW IMAGE
-========================================= */
 
 .service-overview-image {
     position: relative;
@@ -1173,9 +1069,6 @@ html[dir="rtl"] .service-details-hero-buttons {
 }
 
 
-/* =========================================
-   EXPERIENCE CARD
-========================================= */
 
 .service-overview-experience {
     position: absolute;
@@ -1229,9 +1122,6 @@ html[dir="rtl"] .service-details-hero-buttons {
 }
 
 
-/* =========================================
-   OVERVIEW CONTENT
-========================================= */
 
 .service-overview-content {
     max-width: 620px;
@@ -1272,9 +1162,6 @@ html[dir="rtl"] .service-details-hero-buttons {
 }
 
 
-/* =========================================
-   INCLUDED SERVICES
-========================================= */
 
 .service-included {
     margin-top: 30px;
@@ -1332,9 +1219,6 @@ html[dir="rtl"] .service-details-hero-buttons {
 }
 
 
-/* =========================================
-   OVERVIEW BUTTON
-========================================= */
 
 .service-overview-btn {
     display: inline-flex;
@@ -1367,10 +1251,6 @@ html[dir="rtl"] .service-details-hero-buttons {
 }
 
 
-/* =========================================
-   DARK MODE
-========================================= */
-
 .dark-mode .service-overview-experience {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
@@ -1380,9 +1260,6 @@ html[dir="rtl"] .service-details-hero-buttons {
 }
 
 
-/* =========================================
-   RTL
-========================================= */
 
 html[dir="rtl"] .service-overview-wrapper {
     direction: rtl;
@@ -1394,9 +1271,6 @@ html[dir="rtl"] .service-overview-experience {
 }
 
 
-/* =========================================
-   TABLET
-========================================= */
 
 @media (max-width: 992px) {
 
@@ -1427,10 +1301,6 @@ html[dir="rtl"] .service-overview-experience {
 
 }
 
-
-/* =========================================
-   MOBILE
-========================================= */
 
 @media (max-width: 768px) {
 
@@ -1470,9 +1340,6 @@ html[dir="rtl"] .service-overview-experience {
 
 }
 
-/* =========================================
-   SERVICE GALLERY
-========================================= */
 
 .service-gallery-section {
     padding: 40px 0;
@@ -1480,9 +1347,6 @@ html[dir="rtl"] .service-overview-experience {
 }
 
 
-/* =========================================
-   GALLERY GRID
-========================================= */
 
 .service-gallery-grid {
     display: grid;
@@ -1495,9 +1359,6 @@ html[dir="rtl"] .service-overview-experience {
 }
 
 
-/* =========================================
-   GALLERY ITEM
-========================================= */
 
 .service-gallery-item {
     position: relative;
@@ -1521,27 +1382,19 @@ html[dir="rtl"] .service-overview-experience {
 }
 
 
-/* =========================================
-   LARGE IMAGE
-========================================= */
+
 
 .service-gallery-large {
     grid-row: span 2;
 }
 
 
-/* =========================================
-   IMAGE HOVER
-========================================= */
 
 .service-gallery-item:hover img {
     transform: scale(1.06);
 }
 
 
-/* =========================================
-   OVERLAY
-========================================= */
 
 .service-gallery-overlay {
     position: absolute;
@@ -1578,27 +1431,18 @@ html[dir="rtl"] .service-overview-experience {
 }
 
 
-/* =========================================
-   DARK MODE
-========================================= */
 
 .dark-mode .service-gallery-item {
     border: 1px solid var(--border-color);
 }
 
 
-/* =========================================
-   RTL
-========================================= */
 
 html[dir="rtl"] .service-gallery-overlay {
     text-align: right;
 }
 
 
-/* =========================================
-   TABLET
-========================================= */
 
 @media (max-width: 992px) {
 
@@ -1621,9 +1465,6 @@ html[dir="rtl"] .service-gallery-overlay {
 }
 
 
-/* =========================================
-   MOBILE
-========================================= */
 
 @media (max-width: 600px) {
 
@@ -1656,9 +1497,6 @@ html[dir="rtl"] .service-gallery-overlay {
 
 }
 
-/* =========================================
-   WHAT'S INCLUDED
-========================================= */
 
 .service-included-section {
     padding: 40px 0;
@@ -1666,9 +1504,6 @@ html[dir="rtl"] .service-gallery-overlay {
 }
 
 
-/* =========================================
-   MAIN WRAPPER
-========================================= */
 
 .service-included-wrapper {
     display: grid;
@@ -1680,10 +1515,6 @@ html[dir="rtl"] .service-gallery-overlay {
     align-items: center;
 }
 
-
-/* =========================================
-   LEFT CONTENT
-========================================= */
 
 .service-included-content {
     max-width: 500px;
@@ -1709,9 +1540,6 @@ html[dir="rtl"] .service-gallery-overlay {
 }
 
 
-/* =========================================
-   BUTTON
-========================================= */
 
 .service-included-btn {
     display: inline-flex;
@@ -1744,9 +1572,7 @@ html[dir="rtl"] .service-gallery-overlay {
 }
 
 
-/* =========================================
-   FEATURES LIST
-========================================= */
+
 
 .service-included-list {
     display: flex;
@@ -1755,10 +1581,6 @@ html[dir="rtl"] .service-gallery-overlay {
     gap: 18px;
 }
 
-
-/* =========================================
-   FEATURE ITEM
-========================================= */
 
 .service-included-item {
     display: flex;
@@ -1783,10 +1605,6 @@ html[dir="rtl"] .service-gallery-overlay {
 }
 
 
-/* =========================================
-   ICON
-========================================= */
-
 .service-included-icon {
     width: 52px;
     height: 52px;
@@ -1807,9 +1625,6 @@ html[dir="rtl"] .service-gallery-overlay {
 }
 
 
-/* =========================================
-   ITEM CONTENT
-========================================= */
 
 .service-included-item h3 {
     margin: 0 0 7px;
@@ -1830,18 +1645,11 @@ html[dir="rtl"] .service-gallery-overlay {
 }
 
 
-/* =========================================
-   DARK MODE
-========================================= */
 
 .dark-mode .service-included-icon {
     background: rgba(103, 199, 232, 0.10);
 }
 
-
-/* =========================================
-   RTL
-========================================= */
 
 html[dir="rtl"] .service-included-wrapper {
     direction: rtl;
@@ -1852,9 +1660,6 @@ html[dir="rtl"] .service-included-item:hover {
 }
 
 
-/* =========================================
-   TABLET
-========================================= */
 
 @media (max-width: 992px) {
 
@@ -1875,9 +1680,6 @@ html[dir="rtl"] .service-included-item:hover {
 }
 
 
-/* =========================================
-   MOBILE
-========================================= */
 
 @media (max-width: 600px) {
 
@@ -1908,9 +1710,6 @@ html[dir="rtl"] .service-included-item:hover {
 
 }
 
-/* =========================================
-   CLEANING PROCESS
-========================================= */
 
 .service-process-section {
     padding: 40px 0;
@@ -1918,9 +1717,6 @@ html[dir="rtl"] .service-included-item:hover {
 }
 
 
-/* =========================================
-   PROCESS GRID
-========================================= */
 
 .service-process-grid {
     position: relative;
@@ -1935,9 +1731,6 @@ html[dir="rtl"] .service-included-item:hover {
 }
 
 
-/* =========================================
-   CONNECTING LINE
-========================================= */
 
 .service-process-grid::before {
     content: "";
@@ -1957,9 +1750,7 @@ html[dir="rtl"] .service-included-item:hover {
 }
 
 
-/* =========================================
-   PROCESS ITEM
-========================================= */
+
 
 .service-process-item {
     position: relative;
@@ -1970,9 +1761,6 @@ html[dir="rtl"] .service-included-item:hover {
 }
 
 
-/* =========================================
-   NUMBER
-========================================= */
 
 .service-process-number {
     width: 60px;
@@ -1997,9 +1785,7 @@ html[dir="rtl"] .service-included-item:hover {
 }
 
 
-/* =========================================
-   ICON
-========================================= */
+
 
 .service-process-icon {
     width: 52px;
@@ -2023,9 +1809,6 @@ html[dir="rtl"] .service-included-item:hover {
 }
 
 
-/* =========================================
-   CONTENT
-========================================= */
 
 .service-process-item h3 {
     margin: 0 0 10px;
@@ -2049,10 +1832,6 @@ html[dir="rtl"] .service-included-item:hover {
 }
 
 
-/* =========================================
-   PROCESS ITEM HOVER
-========================================= */
-
 .service-process-item {
     transition: transform 0.3s ease;
 }
@@ -2061,10 +1840,6 @@ html[dir="rtl"] .service-included-item:hover {
     transform: translateY(-6px);
 }
 
-
-/* =========================================
-   NUMBER HOVER
-========================================= */
 
 .service-process-item:hover .service-process-number {
     background: var(--primary-color);
@@ -2075,9 +1850,6 @@ html[dir="rtl"] .service-included-item:hover {
 }
 
 
-/* =========================================
-   ICON HOVER
-========================================= */
 
 .service-process-item:hover .service-process-icon {
     transform: scale(1.08);
@@ -2096,27 +1868,19 @@ html[dir="rtl"] .service-included-item:hover {
         box-shadow 0.3s ease;
 }
 
-/* =========================================
-   DARK MODE
-========================================= */
 
 .dark-mode .service-process-number {
     background: var(--card-color);
 }
 
 
-/* =========================================
-   RTL
-========================================= */
 
 html[dir="rtl"] .service-process-grid {
     direction: rtl;
 }
 
 
-/* =========================================
-   TABLET
-========================================= */
+
 
 @media (max-width: 992px) {
 
@@ -2137,9 +1901,7 @@ html[dir="rtl"] .service-process-grid {
 }
 
 
-/* =========================================
-   MOBILE
-========================================= */
+
 
 @media (max-width: 600px) {
 
@@ -2165,9 +1927,6 @@ html[dir="rtl"] .service-process-grid {
 
 }
 
-/* =========================================
-   BEFORE & AFTER
-========================================= */
 
 .service-before-after-section {
     padding: 40px 0;
@@ -2175,9 +1934,6 @@ html[dir="rtl"] .service-process-grid {
 }
 
 
-/* =========================================
-   BEFORE AFTER WRAPPER
-========================================= */
 
 .service-before-after-wrapper {
     position: relative;
@@ -2196,9 +1952,6 @@ html[dir="rtl"] .service-process-grid {
 }
 
 
-/* =========================================
-   IMAGE CARD
-========================================= */
 
 .service-before-after-card {
     overflow: hidden;
@@ -2233,9 +1986,6 @@ html[dir="rtl"] .service-process-grid {
 }
 
 
-/* =========================================
-   LABEL
-========================================= */
 
 .before-after-label {
     position: absolute;
@@ -2263,9 +2013,6 @@ html[dir="rtl"] .service-process-grid {
 }
 
 
-/* =========================================
-   CENTER DIVIDER
-========================================= */
 
 .service-before-after-divider {
     display: flex;
@@ -2311,9 +2058,6 @@ html[dir="rtl"] .service-process-grid {
 }
 
 
-/* =========================================
-   CTA
-========================================= */
 
 .service-before-after-cta {
     max-width: 700px;
@@ -2348,9 +2092,6 @@ html[dir="rtl"] .service-process-grid {
 }
 
 
-/* =========================================
-   CTA BUTTON
-========================================= */
 
 .service-before-after-btn {
     display: inline-flex;
@@ -2383,18 +2124,11 @@ html[dir="rtl"] .service-process-grid {
 }
 
 
-/* =========================================
-   DARK MODE
-========================================= */
-
 .dark-mode .service-before-after-cta {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 
-/* =========================================
-   RTL
-========================================= */
 
 html[dir="rtl"] .service-before-after-wrapper {
     direction: rtl;
@@ -2406,9 +2140,6 @@ html[dir="rtl"] .before-after-label {
 }
 
 
-/* =========================================
-   TABLET
-========================================= */
 
 @media (max-width: 900px) {
 
@@ -2433,9 +2164,6 @@ html[dir="rtl"] .before-after-label {
 }
 
 
-/* =========================================
-   MOBILE
-========================================= */
 
 @media (max-width: 600px) {
 
@@ -2465,9 +2193,7 @@ html[dir="rtl"] .before-after-label {
 
 }
 
-/* =========================================
-   CENTER ALL SECTION HEADINGS
-========================================= */
+
 
 .service-section-heading {
     max-width: 750px;
@@ -2490,9 +2216,7 @@ html[dir="rtl"] .before-after-label {
     text-align: center;
 }
 
-/* =========================================
-   FAQ SECTION
-========================================= */
+
 
 .service-faq-section {
     padding: 100px 0;
@@ -2500,9 +2224,6 @@ html[dir="rtl"] .before-after-label {
 }
 
 
-/* =========================================
-   FAQ LIST
-========================================= */
 
 .service-faq-list {
     max-width: 900px;
@@ -2516,9 +2237,7 @@ html[dir="rtl"] .before-after-label {
 }
 
 
-/* =========================================
-   FAQ ITEM
-========================================= */
+
 
 .service-faq-item {
     overflow: hidden;
@@ -2536,9 +2255,7 @@ html[dir="rtl"] .before-after-label {
 }
 
 
-/* =========================================
-   QUESTION
-========================================= */
+
 
 .service-faq-question {
     width: 100%;
@@ -2591,9 +2308,6 @@ html[dir="rtl"] .before-after-label {
 }
 
 
-/* =========================================
-   ANSWER
-========================================= */
 
 .service-faq-answer {
     max-height: 0;
@@ -2617,10 +2331,6 @@ html[dir="rtl"] .before-after-label {
 }
 
 
-/* =========================================
-   ACTIVE FAQ
-========================================= */
-
 .service-faq-item.active .service-faq-answer {
     max-height: 200px;
 
@@ -2633,27 +2343,20 @@ html[dir="rtl"] .before-after-label {
 }
 
 
-/* =========================================
-   HOVER
-========================================= */
 
 .service-faq-question:hover {
     color: var(--primary-color);
 }
 
 
-/* =========================================
-   DARK MODE
-========================================= */
+
 
 .dark-mode .service-faq-question i {
     background: rgba(103, 199, 232, 0.10);
 }
 
 
-/* =========================================
-   RTL
-========================================= */
+
 
 html[dir="rtl"] .service-faq-question {
     text-align: right;
@@ -2664,9 +2367,6 @@ html[dir="rtl"] .service-faq-question i {
 }
 
 
-/* =========================================
-   MOBILE
-========================================= */
 
 @media (max-width: 600px) {
 
@@ -2696,9 +2396,6 @@ html[dir="rtl"] .service-faq-question i {
 }
 
 
-/* =========================================
-   FINAL CTA
-========================================= */
 
 .service-final-cta-section {
     padding: 100px 0;
@@ -2706,9 +2403,6 @@ html[dir="rtl"] .service-faq-question i {
 }
 
 
-/* =========================================
-   CTA BOX
-========================================= */
 
 .service-final-cta {
     position: relative;
@@ -2725,9 +2419,6 @@ html[dir="rtl"] .service-faq-question i {
 }
 
 
-/* =========================================
-   DECORATIVE ELEMENTS
-========================================= */
 
 .service-final-cta::before {
     content: "";
@@ -2762,9 +2453,7 @@ html[dir="rtl"] .service-faq-question i {
 }
 
 
-/* =========================================
-   CTA CONTENT
-========================================= */
+
 
 .service-final-cta-content {
     position: relative;
@@ -2777,9 +2466,6 @@ html[dir="rtl"] .service-faq-question i {
 }
 
 
-/* =========================================
-   CTA TAG
-========================================= */
 
 .service-final-cta-tag {
     display: inline-block;
@@ -2797,9 +2483,6 @@ html[dir="rtl"] .service-faq-question i {
 }
 
 
-/* =========================================
-   CTA HEADING
-========================================= */
 
 .service-final-cta h2 {
     margin: 0 0 20px;
@@ -2812,9 +2495,6 @@ html[dir="rtl"] .service-faq-question i {
 }
 
 
-/* =========================================
-   CTA DESCRIPTION
-========================================= */
 
 .service-final-cta p {
     max-width: 620px;
@@ -2829,9 +2509,6 @@ html[dir="rtl"] .service-faq-question i {
 }
 
 
-/* =========================================
-   CTA BUTTONS
-========================================= */
 
 .service-final-cta-buttons {
     display: flex;
@@ -2881,7 +2558,7 @@ html[dir="rtl"] .service-faq-question i {
 }
 
 
-/* SECONDARY BUTTON */
+
 
 .service-final-cta-secondary {
     display: inline-flex;
@@ -2919,18 +2596,12 @@ html[dir="rtl"] .service-faq-question i {
 }
 
 
-/* =========================================
-   RTL
-========================================= */
 
 html[dir="rtl"] .service-final-cta {
     direction: rtl;
 }
 
 
-/* =========================================
-   TABLET
-========================================= */
 
 @media (max-width: 768px) {
 
@@ -2949,9 +2620,6 @@ html[dir="rtl"] .service-final-cta {
 }
 
 
-/* =========================================
-   MOBILE
-========================================= */
 
 @media (max-width: 500px) {
 
@@ -2999,10 +2667,6 @@ html[dir="rtl"] .service-final-cta {
 
 
 
-/* =========================
-   FOOTER
-========================= */
-
 .footer {
     background: var(--bg-color);
     color: var(--text-color);
@@ -3021,9 +2685,7 @@ html[dir="rtl"] .service-final-cta {
     gap: 50px;
 }
 
-/* =========================
-   FOOTER LOGO
-========================= */
+
 
 .footer-logo {
     display: flex;
@@ -3059,9 +2721,7 @@ html[dir="rtl"] .service-final-cta {
     color: var(--text-light);
 }
 
-/* =========================
-   FOOTER ABOUT
-========================= */
+
 
 .footer-brand p {
     max-width: 320px;
@@ -3073,9 +2733,6 @@ margin-bottom: 10px;
 }
 
 
-/* ================================
-   FOOTER SOCIAL ICONS
-================================ */
 
 .footer-social h4 {
     color: var(--white-color);
@@ -3132,9 +2789,6 @@ margin-bottom: 10px;
 
 
 
-/* =========================
-   FOOTER COLUMNS
-========================= */
 
 .footer-column h3 {
     margin-bottom: 20px;
@@ -3167,9 +2821,7 @@ margin-bottom: 10px;
     margin-bottom: 12px;
 }
 
-/* =========================
-   FOOTER BOTTOM
-========================= */
+
 
 .footer-bottom {
     max-width: 1200px;
@@ -3242,9 +2894,6 @@ margin-bottom: 10px;
 
 
 
-/* =========================================================
-   FOOTER RESPONSIVE DESIGN
-========================================================= */
 
 /* ---------- TABLET ---------- */
 
@@ -3266,7 +2915,7 @@ margin-bottom: 10px;
 }
 
 
-/* ---------- MOBILE ---------- */
+
 
 @media (max-width: 768px) {
 
@@ -3304,7 +2953,6 @@ margin-bottom: 10px;
 }
 
 
-/* ---------- SMALL MOBILE ---------- */
 
 @media (max-width: 576px) {
 
@@ -3338,7 +2986,6 @@ margin-bottom: 10px;
 }
 
 
-/* ---------- VERY SMALL DEVICES ---------- */
 
 @media (max-width: 400px) {
 

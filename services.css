@@ -1,13 +1,4 @@
-/* =========================================================
-   HEADER
-   WINDOW CLEANING SERVICE
-   FRESH GLASS DESIGN
-   ========================================================= */
 
-
-/* =========================================================
-   HEADER
-   ========================================================= */
 
 .site-header {
     width: 100%;
@@ -26,11 +17,6 @@
         border-color var(--transition);
 }
 
-
-/* =========================================================
-   HEADER CONTAINER
-   ========================================================= */
-
 .header-container {
     height: 100%;
 
@@ -42,9 +28,6 @@
 }
 
 
-/* =========================================================
-   LOGO
-   ========================================================= */
 
 .site-logo {
     display: inline-flex;
@@ -121,9 +104,6 @@
 }
 
 
-/* =========================================================
-   NAVIGATION
-   ========================================================= */
 
 .main-nav {
     height: 100%;
@@ -186,9 +166,7 @@
 .nav-link:hover {
     color: var(--primary-color);
 }
-/* ================================
-   NAV LINKS
-================================ */
+
 
 .nav-link,
 .nav-dropdown-btn {
@@ -221,9 +199,7 @@
 
     border-radius: 2px;
 }
-/* =========================================================
-   DROPDOWN ICON
-   ========================================================= */
+
 
 .dropdown-icon {
     width: 16px;
@@ -236,10 +212,6 @@
     transform: rotate(180deg);
 }
 
-
-/* =========================
-   HOME DROPDOWN FIX
-========================= */
 
 .home-dropdown {
     position: relative !important;
@@ -317,9 +289,7 @@ html.dark-mode .home-dropdown .dropdown-menu a:hover {
     background: #1677B8;
     color: #ffffff;
 }
-/* =========================================================
-   HEADER ACTIONS
-   ========================================================= */
+
 
 .header-actions {
     display: flex;
@@ -331,9 +301,7 @@ html.dark-mode .home-dropdown .dropdown-menu a:hover {
 }
 
 
-/* =========================================================
-   HEADER ICON BUTTON
-   ========================================================= */
+
 
 .header-icon-btn {
     width: 40px;
@@ -380,9 +348,7 @@ html.dark-mode .home-dropdown .dropdown-menu a:hover {
     stroke-linejoin: round;
 }
 
-/* =========================================
-   DARK MODE
-========================================= */
+
 
 html.dark-mode .header-icon-btn {
     border-color: var(--primary-color);
@@ -394,9 +360,7 @@ html.dark-mode .header-icon-btn:hover {
     color: #ffffff;
     border-color: var(--primary-color);
 }
-/* =========================================================
-   DARK MODE ICON
-   ========================================================= */
+
 
 .moon-icon {
     display: none;
@@ -411,9 +375,6 @@ body.dark-mode .moon-icon {
 }
 
 
-/* =========================================================
-   HEADER CTA
-   ========================================================= */
 
 .header-cta {
     min-width: 90px;
@@ -426,9 +387,6 @@ body.dark-mode .moon-icon {
 }
 
 
-/* =========================================================
-   MOBILE MENU BUTTON
-   ========================================================= */
 
 .menu-toggle {
     width: 40px;
@@ -463,9 +421,6 @@ body.dark-mode .moon-icon {
 }
 
 
-/* =========================================================
-   MOBILE MENU ACTIVE
-   ========================================================= */
 
 .menu-toggle.active span:nth-child(1) {
     transform: translateY(7px) rotate(45deg);
@@ -480,9 +435,6 @@ body.dark-mode .moon-icon {
 }
 
 
-/* =========================================================
-   RTL
-   ========================================================= */
 
 html[dir="rtl"] .dropdown-menu {
     left: auto;
@@ -495,9 +447,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================================
-   RESPONSIVE - 1200px
-   ========================================================= */
 
 @media (max-width: 1200px) {
 
@@ -521,10 +470,6 @@ html[dir="rtl"] .nav-link.active::after {
 
 
 
-/* =========================================================
-   HEADER - TABLET / SMALL LAPTOP
-   1100px
-========================================================= */
 
 @media (max-width: 1100px) and (min-width: 993px) {
 
@@ -626,11 +571,6 @@ html[dir="rtl"] .nav-link.active::after {
         white-space: nowrap;
     }
 }
-
-
-/* =========================================================
-   RESPONSIVE - 992px
-   ========================================================= */
 
 @media (max-width: 992px) {
 
@@ -764,9 +704,6 @@ html[dir="rtl"] .nav-link.active::after {
 }
 
 
-/* =========================================================
-   RESPONSIVE - 576px
-   ========================================================= */
 
 @media (max-width: 576px) {
 
@@ -937,9 +874,7 @@ color: var(--secondary-color);
 font-size: 14px;
 }
 
-/* ================================
-DARK MODE
-================================ */
+
 
 html.dark-mode .services-hero-overlay {
 background:
@@ -951,9 +886,6 @@ rgba(15, 26, 33, 0.80) 100%
 );
 }
 
-/* ================================
-RTL
-================================ */
 
 html[dir="rtl"] .services-hero {
 direction: rtl;
@@ -963,9 +895,7 @@ html[dir="rtl"] .services-hero-content {
 text-align: right;
 }
 
-/* ================================
-RESPONSIVE
-================================ */
+
 
 @media (max-width: 992px) {
 
@@ -1082,9 +1012,7 @@ line-height: 1.8;
 color: var(--text-light);
 }
 
-/* ================================
-SERVICES GRID
-================================ */
+
 
 .services-list-grid {
 display: grid;
@@ -1092,9 +1020,7 @@ grid-template-columns: repeat(3, 1fr);
 gap: 25px;
 }
 
-/* ================================
-SERVICE CARD
-================================ */
+
 
 .service-card {
 display: flex;
@@ -1114,9 +1040,7 @@ border-color: var(--secondary-color);
 box-shadow: var(--shadow-md);
 }
 
-/* ================================
-CARD IMAGE
-================================ */
+
 
 .service-card-image {
 position: relative;
@@ -1158,9 +1082,7 @@ letter-spacing: 0.5px;
 
 }
 
-/* ================================
-CARD CONTENT
-================================ */
+
 
 .service-card-content {
 position: relative;
@@ -1236,9 +1158,7 @@ color: var(--secondary-color);
 transform: translateX(4px);
 }
 
-/* ================================
-DARK MODE
-================================ */
+
 
 html.dark-mode .services-list {
 background-color: var(--bg-color);
@@ -1252,9 +1172,6 @@ html.dark-mode .service-card-icon {
 background-color: rgba(103, 199, 232, 0.10);
 }
 
-/* ================================
-RTL
-================================ */
 
 html[dir="rtl"] .services-list {
 direction: rtl;
@@ -1269,9 +1186,7 @@ html[dir="rtl"] .service-card-link:hover i {
 transform: translateX(-4px);
 }
 
-/* ================================
-RESPONSIVE
-================================ */
+
 
 @media (max-width: 992px) {
 
@@ -1388,9 +1303,7 @@ line-height: 1.8;
 color: var(--text-light);
 }
 
-/* ================================
-WHY CHOOSE GRID
-================================ */
+
 
 .services-why-grid {
 display: grid;
@@ -1398,9 +1311,7 @@ grid-template-columns: repeat(4, 1fr);
 gap: 20px;
 }
 
-/* ================================
-WHY CARD
-================================ */
+
 
 .why-service-card {
 position: relative;
@@ -1424,9 +1335,7 @@ border-color: var(--secondary-color);
 box-shadow: var(--shadow-md);
 }
 
-/* ================================
-NUMBER
-================================ */
+
 
 .why-service-number {
 position: absolute;
@@ -1443,9 +1352,7 @@ color: var(--secondary-color);
 
 }
 
-/* ================================
-ICON
-================================ */
+
 
 .why-service-icon {
 width: 55px;
@@ -1475,9 +1382,7 @@ background-color: var(--primary-color);
 color: #ffffff;
 }
 
-/* ================================
-CONTENT
-================================ */
+
 
 .why-service-card h3 {
 margin-bottom: 11px;
@@ -1500,9 +1405,6 @@ color: var(--text-light);
 
 }
 
-/* ================================
-BOTTOM LINE
-================================ */
 
 .why-service-line {
 width: 35px;
@@ -1525,9 +1427,7 @@ width: 60px;
 background-color: var(--primary-color);
 }
 
-/* ================================
-DARK MODE
-================================ */
+
 
 html.dark-mode .services-why {
 background-color: var(--card-color);
@@ -1541,9 +1441,7 @@ html.dark-mode .why-service-icon {
 background-color: rgba(103, 199, 232, 0.10);
 }
 
-/* ================================
-RTL
-================================ */
+
 
 html[dir="rtl"] .services-why {
 direction: rtl;
@@ -1554,9 +1452,7 @@ right: auto;
 left: 22px;
 }
 
-/* ================================
-RESPONSIVE
-================================ */
+
 
 @media (max-width: 1100px) {
 
@@ -1631,9 +1527,6 @@ RESPONSIVE
 }
 
 
-/* =========================================================
-   SERVICES PRICING
-========================================================= */
 
 .services-pricing {
     padding: 80px 0;
@@ -1641,9 +1534,6 @@ RESPONSIVE
 }
 
 
-/* =========================================================
-   PRICING HEADING
-========================================================= */
 
 .services-pricing-heading {
     max-width: 720px;
@@ -1689,9 +1579,6 @@ RESPONSIVE
 }
 
 
-/* =========================================================
-   PRICING GRID
-========================================================= */
 
 .services-pricing-grid {
     display: grid;
@@ -1700,9 +1587,6 @@ RESPONSIVE
 }
 
 
-/* =========================================================
-   PRICING CARD
-========================================================= */
 
 .pricing-card {
     position: relative;
@@ -1737,9 +1621,6 @@ RESPONSIVE
 }
 
 
-/* =========================================================
-   FEATURED CARD
-========================================================= */
 
 .pricing-card-featured {
     border-color: var(--primary-color);
@@ -1756,9 +1637,6 @@ RESPONSIVE
 }
 
 
-/* =========================================================
-   FEATURED BADGE
-========================================================= */
 
 .pricing-featured-badge {
     position: absolute;
@@ -1779,9 +1657,6 @@ RESPONSIVE
 }
 
 
-/* =========================================================
-   CARD TOP
-========================================================= */
 
 .pricing-card-top {
     display: flex;
@@ -1791,10 +1666,6 @@ RESPONSIVE
     margin-bottom: 24px;
 }
 
-
-/* =========================================================
-   PRICING ICON
-========================================================= */
 
 .pricing-icon {
     width: 52px;
@@ -1823,9 +1694,6 @@ RESPONSIVE
 }
 
 
-/* =========================================================
-   CARD NUMBER
-========================================================= */
 
 .pricing-number {
     font-size: 11px;
@@ -1836,9 +1704,6 @@ RESPONSIVE
 }
 
 
-/* =========================================================
-   CARD CONTENT
-========================================================= */
 
 .pricing-card-content {
     display: flex;
@@ -1847,9 +1712,7 @@ RESPONSIVE
 }
 
 
-/* =========================================================
-   LABEL
-========================================================= */
+
 
 .pricing-label {
     display: block;
@@ -1864,10 +1727,6 @@ RESPONSIVE
 }
 
 
-/* =========================================================
-   TITLE
-========================================================= */
-
 .pricing-card-content h3 {
     margin-bottom: 10px;
 
@@ -1878,9 +1737,6 @@ RESPONSIVE
 }
 
 
-/* =========================================================
-   DESCRIPTION
-========================================================= */
 
 .pricing-description {
     min-height: 68px;
@@ -1894,9 +1750,6 @@ RESPONSIVE
 }
 
 
-/* =========================================================
-   PRICE
-========================================================= */
 
 .pricing-price {
     display: flex;
@@ -1931,9 +1784,6 @@ RESPONSIVE
 }
 
 
-/* =========================================================
-   DIVIDER
-========================================================= */
 
 .pricing-divider {
     width: 100%;
@@ -1945,9 +1795,6 @@ RESPONSIVE
 }
 
 
-/* =========================================================
-   FEATURES
-========================================================= */
 
 .pricing-features {
     display: flex;
@@ -1984,9 +1831,6 @@ RESPONSIVE
 }
 
 
-/* =========================================================
-   PRICING BUTTON
-========================================================= */
 
 .pricing-btn {
     display: inline-flex;
@@ -2036,9 +1880,6 @@ RESPONSIVE
 }
 
 
-/* =========================================================
-   PRICING NOTE
-========================================================= */
 
 .pricing-note {
     max-width: 850px;
@@ -2077,9 +1918,6 @@ RESPONSIVE
 }
 
 
-/* =========================================================
-   DARK MODE
-========================================================= */
 
 html.dark-mode .services-pricing {
     background-color: var(--card-color);
@@ -2102,9 +1940,6 @@ html.dark-mode .pricing-note {
 }
 
 
-/* =========================================================
-   RTL
-========================================================= */
 
 html[dir="rtl"] .services-pricing {
     direction: rtl;
@@ -2138,10 +1973,6 @@ html[dir="rtl"] .pricing-featured-badge {
 }
 
 
-/* =========================================================
-   RESPONSIVE - 1100px
-========================================================= */
-
 @media (max-width: 1100px) {
 
     .services-pricing-grid {
@@ -2152,9 +1983,6 @@ html[dir="rtl"] .pricing-featured-badge {
 }
 
 
-/* =========================================================
-   RESPONSIVE - 992px
-========================================================= */
 
 @media (max-width: 992px) {
 
@@ -2172,10 +2000,6 @@ html[dir="rtl"] .pricing-featured-badge {
 
 }
 
-
-/* =========================================================
-   RESPONSIVE - 768px
-========================================================= */
 
 @media (max-width: 768px) {
 
@@ -2211,9 +2035,6 @@ html[dir="rtl"] .pricing-featured-badge {
 }
 
 
-/* =========================================================
-   RESPONSIVE - 576px
-========================================================= */
 
 @media (max-width: 576px) {
 
@@ -2263,9 +2084,6 @@ html[dir="rtl"] .pricing-featured-badge {
 }
 
 
-/* =========================================================
-   RESPONSIVE - 400px
-========================================================= */
 
 @media (max-width: 400px) {
 
@@ -2300,9 +2118,6 @@ html[dir="rtl"] .pricing-featured-badge {
 
 
 
-/* =========================================================
-   BEFORE & AFTER SECTION
-========================================================= */
 
 .services-before-after {
     padding: 80px 0;
@@ -2347,9 +2162,6 @@ html[dir="rtl"] .pricing-featured-badge {
 }
 
 
-/* =========================================================
-   BEFORE & AFTER GRID
-========================================================= */
 
 .before-after-grid {
     display: grid;
@@ -2358,9 +2170,6 @@ html[dir="rtl"] .pricing-featured-badge {
 }
 
 
-/* =========================================================
-   CARD
-========================================================= */
 
 .before-after-card {
     overflow: hidden;
@@ -2382,9 +2191,6 @@ html[dir="rtl"] .pricing-featured-badge {
 }
 
 
-/* =========================================================
-   IMAGE AREA
-========================================================= */
 
 .before-after-images {
     display: grid;
@@ -2411,7 +2217,7 @@ html[dir="rtl"] .pricing-featured-badge {
 }
 
 
-/* IMAGE LABEL */
+
 
 .image-label {
     position: absolute;
@@ -2432,16 +2238,13 @@ html[dir="rtl"] .pricing-featured-badge {
 }
 
 
-/* AFTER LABEL */
+
 
 .after-image .image-label {
     background-color: var(--primary-color);
 }
 
 
-/* =========================================================
-   CARD CONTENT
-========================================================= */
 
 .before-after-content {
     padding: 24px 23px 25px;
@@ -2477,9 +2280,6 @@ html[dir="rtl"] .pricing-featured-badge {
 }
 
 
-/* =========================================================
-   VIEW SERVICE LINK
-========================================================= */
 
 .before-after-link {
     display: inline-flex;
@@ -2510,9 +2310,6 @@ html[dir="rtl"] .pricing-featured-badge {
 }
 
 
-/* =========================================================
-   NOTE
-========================================================= */
 
 .before-after-note {
     max-width: 850px;
@@ -2549,9 +2346,6 @@ html[dir="rtl"] .pricing-featured-badge {
 }
 
 
-/* =========================================================
-   DARK MODE
-========================================================= */
 
 html.dark-mode .services-before-after {
     background-color: var(--bg-color);
@@ -2570,9 +2364,6 @@ html.dark-mode .image-label {
 }
 
 
-/* =========================================================
-   RTL
-========================================================= */
 
 html[dir="rtl"] .services-before-after {
     direction: rtl;
@@ -2600,9 +2391,6 @@ html[dir="rtl"] .before-after-note {
 }
 
 
-/* =========================================================
-   RESPONSIVE - 992px
-========================================================= */
 
 @media (max-width: 992px) {
 
@@ -2633,9 +2421,6 @@ html[dir="rtl"] .before-after-note {
 }
 
 
-/* =========================================================
-   RESPONSIVE - 768px
-========================================================= */
 
 @media (max-width: 768px) {
 
@@ -2679,9 +2464,6 @@ html[dir="rtl"] .before-after-note {
 }
 
 
-/* =========================================================
-   RESPONSIVE - 576px
-========================================================= */
 
 @media (max-width: 576px) {
 
@@ -2735,10 +2517,6 @@ html[dir="rtl"] .before-after-note {
 
 }
 
-
-/* =========================================================
-   RESPONSIVE - 400px
-========================================================= */
 
 @media (max-width: 400px) {
 
@@ -2823,9 +2601,6 @@ line-height: 1.8;
 color: var(--text-light);
 }
 
-/* ================================
-TEAM GRID
-================================ */
 
 .services-team-grid {
 display: grid;
@@ -2833,9 +2608,6 @@ grid-template-columns: repeat(4, 1fr);
 gap: 22px;
 }
 
-/* ================================
-TEAM CARD
-================================ */
 
 .team-card {
 overflow: hidden;
@@ -2856,9 +2628,7 @@ border-color: var(--secondary-color);
 box-shadow: var(--shadow-md);
 }
 
-/* ================================
-TEAM IMAGE
-================================ */
+
 
 .team-card-image {
 position: relative;
@@ -2879,9 +2649,7 @@ transition: transform 0.5s ease;
 transform: scale(1.05);
 }
 
-/* ================================
-SOCIAL ICONS
-================================ */
+
 
 .team-social {
 position: absolute;
@@ -2933,9 +2701,7 @@ background-color: var(--primary-color);
 color: #ffffff;
 }
 
-/* ================================
-TEAM CONTENT
-================================ */
+
 
 .team-card-content {
 padding: 23px 22px 25px;
@@ -2977,9 +2743,6 @@ color: var(--text-light);
 
 }
 
-/* ================================
-DARK MODE
-================================ */
 
 html.dark-mode .services-team {
 background-color: var(--card-color);
@@ -2999,9 +2762,7 @@ background-color: var(--primary-color);
 color: #ffffff;
 }
 
-/* ================================
-RTL
-================================ */
+
 
 html[dir="rtl"] .services-team {
 direction: rtl;
@@ -3012,9 +2773,7 @@ right: auto;
 left: 15px;
 }
 
-/* ================================
-RESPONSIVE
-================================ */
+
 
 @media (max-width: 1100px) {
 
@@ -3103,9 +2862,6 @@ RESPONSIVE
 }
 
 
-/* ================================
-   SERVICES FINAL CTA
-================================= */
 
 .services-final-cta {
     position: relative;
@@ -3115,9 +2871,6 @@ RESPONSIVE
 }
 
 
-/* ================================
-   DECORATIVE SHAPES
-================================= */
 
 .services-cta-shape {
     position: absolute;
@@ -3142,9 +2895,7 @@ RESPONSIVE
 }
 
 
-/* ================================
-   CTA WRAPPER
-================================= */
+
 
 .services-cta-wrapper {
     position: relative;
@@ -3157,9 +2908,7 @@ RESPONSIVE
 }
 
 
-/* ================================
-   CTA CONTENT
-================================= */
+
 
 .services-cta-content {
     max-width: 720px;
@@ -3202,9 +2951,6 @@ RESPONSIVE
 }
 
 
-/* ================================
-   CTA BUTTONS
-================================= */
 
 .services-cta-buttons {
     display: flex;
@@ -3252,9 +2998,6 @@ RESPONSIVE
 }
 
 
-/* ================================
-   CTA INFO CARD
-================================= */
 
 .services-cta-card {
     position: relative;
@@ -3365,9 +3108,6 @@ RESPONSIVE
 }
 
 
-/* ================================
-   DARK MODE
-================================= */
 
 html.dark-mode .services-final-cta {
     background: #0D5F91;
@@ -3383,9 +3123,6 @@ html.dark-mode .services-cta-card:hover {
 }
 
 
-/* ================================
-   RTL
-================================= */
 
 html[dir="rtl"] .services-cta-card-arrow {
     transform: rotate(180deg);
@@ -3396,9 +3133,7 @@ html[dir="rtl"] .services-cta-card:hover .services-cta-card-arrow {
 }
 
 
-/* ================================
-   TABLET
-================================= */
+
 
 @media (max-width: 992px) {
 
@@ -3434,9 +3169,7 @@ html[dir="rtl"] .services-cta-card:hover .services-cta-card-arrow {
 }
 
 
-/* ================================
-   MOBILE
-================================= */
+
 
 @media (max-width: 768px) {
 
@@ -3458,9 +3191,6 @@ html[dir="rtl"] .services-cta-card:hover .services-cta-card-arrow {
 }
 
 
-/* ================================
-   SMALL MOBILE
-================================= */
 
 @media (max-width: 576px) {
 
@@ -3575,12 +3305,6 @@ html[dir="rtl"] .services-cta-card:hover .services-cta-card-arrow {
 
 
 
-
-
-/* =========================
-   FOOTER
-========================= */
-
 .footer {
     background: var(--bg-color);
     color: var(--text-color);
@@ -3599,9 +3323,6 @@ html[dir="rtl"] .services-cta-card:hover .services-cta-card-arrow {
     gap: 50px;
 }
 
-/* =========================
-   FOOTER LOGO
-========================= */
 
 .footer-logo {
     display: flex;
@@ -3637,9 +3358,7 @@ html[dir="rtl"] .services-cta-card:hover .services-cta-card-arrow {
     color: var(--text-light);
 }
 
-/* =========================
-   FOOTER ABOUT
-========================= */
+
 
 .footer-brand p {
     max-width: 320px;
@@ -3651,9 +3370,6 @@ margin-bottom: 10px;
 }
 
 
-/* ================================
-   FOOTER SOCIAL ICONS
-================================ */
 
 .footer-social h4 {
     color: var(--white-color);
@@ -3710,9 +3426,6 @@ margin-bottom: 10px;
 
 
 
-/* =========================
-   FOOTER COLUMNS
-========================= */
 
 .footer-column h3 {
     margin-bottom: 20px;
@@ -3745,9 +3458,7 @@ margin-bottom: 10px;
     margin-bottom: 12px;
 }
 
-/* =========================
-   FOOTER BOTTOM
-========================= */
+
 
 .footer-bottom {
     max-width: 1200px;
@@ -3821,12 +3532,6 @@ margin-bottom: 10px;
 
 
 
-/* =========================================================
-   FOOTER RESPONSIVE DESIGN
-========================================================= */
-
-/* ---------- TABLET ---------- */
-
 @media (max-width: 992px) {
 
     .footer-container {
@@ -3845,7 +3550,7 @@ margin-bottom: 10px;
 }
 
 
-/* ---------- MOBILE ---------- */
+
 
 @media (max-width: 768px) {
 
@@ -3883,7 +3588,7 @@ margin-bottom: 10px;
 }
 
 
-/* ---------- SMALL MOBILE ---------- */
+
 
 @media (max-width: 576px) {
 
@@ -3917,7 +3622,7 @@ margin-bottom: 10px;
 }
 
 
-/* ---------- VERY SMALL DEVICES ---------- */
+
 
 @media (max-width: 400px) {
 
